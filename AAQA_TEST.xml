@@ -1,0 +1,1202 @@
+<sections>
+    <section>
+        <name>Login</name>
+        <cases>
+            <case>
+                <title>Verify login with invalid credentials</title>
+            </case>
+            <case>
+                <title>Verify login with blank fields</title>
+            </case>
+            <case>
+                <title>Verify login password field display</title>
+            </case>
+            <case>
+                <title>Verify 'Forgot Password' functionality</title>
+            </case>
+            <case>
+                <title>Verify login with valid credentials</title>
+            </case>
+            <case>
+                <title>Verify logout</title>
+            </case>
+        </cases>
+    </section>
+    <section>
+        <name>Register</name>
+        <cases>
+            <case>
+                <title>Verify the messages for each mandatory field</title>
+            </case>
+            <case>
+                <title>Verify registration with an existing email</title>
+            </case>
+            <case>
+                <title>Verify not identical confirm password is invalid</title>
+            </case>
+            <case>
+                <title>Verify creating a new account</title>
+            </case>
+        </cases>
+    </section>
+    <section>
+        <name>Top Menu</name>
+        <cases>
+            <case>
+                <title>Verify the top menu languages items display</title>
+            </case>
+            <case>
+                <title>Verify languages functionality</title>
+            </case>
+            <case>
+                <title>Verify logo functionality on homepage</title>
+            </case>
+            <case>
+                <title>Verify homepage button</title>
+            </case>
+            <case>
+                <title>Verify menu items functionality</title>
+            </case>
+            <case>
+                <title>Verify menu items display</title>
+            </case>
+            <case>
+                <title>Verify 'More Sites'</title>
+            </case>
+            <case>
+                <title>Verify the "Training" button in "MORE SITES" drop-down menu at the top center link to RPA
+                    Training & Certification page.
+                </title>
+            </case>
+            <case>
+                <title>Verify the "Partner Portal" button in "MORE SITES" drop-down menu at the top center link to
+                    Partners page.
+                </title>
+            </case>
+            <case>
+                <title>Verify the "Bot Store" button in "MORE SITES" drop-down menu at the top center link to Bot Store
+                    page.
+                </title>
+            </case>
+            <case>
+                <title>Verify the "A-People Community" button in "MORE SITES" drop-down menu at the top center link to
+                    Apeople page.
+                </title>
+            </case>
+            <case>
+                <title>Verify the "Developer Portal" button in "MORE SITES" drop-down menu at the top center link to
+                    Developer page.
+                </title>
+            </case>
+            <case>
+                <title>Verify the "LIBRARY" button at the top center link to the library page.</title>
+            </case>
+            <case>
+                <title>Verify the "MY CONTENT" button at the top center open and close drop down menu with items.
+                </title>
+            </case>
+            <case>
+                <title>Verify the "My Topics" button in "MY CONTENT" drop-down menu at the top center link to log in
+                    page when not logged in.
+                </title>
+            </case>
+            <case>
+                <title>Verify the "Following" button in "MY CONTENT" drop-down menu at the top center link to log in
+                    page when not logged in.
+                </title>
+            </case>
+            <case>
+                <title>Verify the "My Topics" button in "MY CONTENT" drop-down menu at the top center link to My Topic
+                    page after logged in.
+                </title>
+            </case>
+            <case>
+                <title>Verify the "Following" button in "MY CONTENT" drop-down menu at the top center link to Following
+                    topics and subjects page after logged in.
+                </title>
+            </case>
+            <case>
+                <title>Verify the "Get Community Edition- FREE" button is at the top right link to the Community-Edition
+                    page when not logged in.
+                </title>
+            </case>
+            <case>
+                <title>Verify the "Get Community Edition- FREE" button at the top right is not there after logged in.
+                </title>
+            </case>
+            <case>
+                <title>Verify the "LOG IN" button at the top right link to log in page when not logged in.</title>
+            </case>
+            <case>
+                <title>Verify the "User" button at the top right open and close drop down menu after logged in.</title>
+            </case>
+            <case>
+                <title>Verify the "Admin" button in "User" drop-down menu at the top right link to admin page after
+                    logged in as admin.
+                </title>
+            </case>
+            <case>
+                <title>Verify the "Search preference" button in "User" drop-down menu at the top right link to admin
+                    page after logged in.
+                </title>
+            </case>
+            <case>
+                <title>Verify the "Forgot password" button in "User" drop-down menu at the top right link to admin page
+                    after logged in.
+                </title>
+            </case>
+            <case>
+                <title>Verify the "Contact us" button in "User" drop-down menu at the top right link to admin page after
+                    logged in.
+                </title>
+            </case>
+            <case>
+                <title>Verify the "Services & support" button in "User" drop-down menu at the top right link to admin
+                    page after logged in.
+                </title>
+            </case>
+            <case>
+                <title>Verify the "Log out" button in "User" drop-down menu at the top right link to admin page after
+                    logged in.
+                </title>
+            </case>
+        </cases>
+    </section>
+    <section>
+        <name>Localization</name>
+        <cases>
+            <case>
+                <title>Change languages and make sure all work - need to access content to make sure content exists in
+                    all languages
+                </title>
+            </case>
+            <case>
+                <title>Confirm that uploading of HTML has not been negatively impacted</title>
+            </case>
+        </cases>
+    </section>
+    <section>
+        <name>Uploading</name>
+        <cases>
+            <case>
+                <title>Confirm that uploading of a resource bundle has not been negatively impacted</title>
+            </case>
+            <case>
+                <title>Upload content in multiple languages - single upload pkg for each bundle</title>
+            </case>
+            <case>
+                <title>upload content in multiple languages - upload pkg w/several localized pubs in a bundle</title>
+            </case>
+        </cases>
+    </section>
+    <section>
+        <name>Admin</name>
+        <cases>
+            <case>
+                <title>upload localized subject scheme</title>
+            </case>
+            <case>
+                <title>Verify tile icons on admin page</title>
+            </case>
+            <case>
+                <title>Test all possible outputclasses for categories file</title>
+            </case>
+            <case>
+                <title>test invalid categories file to confirm it gets an error</title>
+            </case>
+            <case>
+                <title>test loading speed of site for latency</title>
+            </case>
+            <case>
+                <title>test upload of subject scheme</title>
+            </case>
+            <case>
+                <title>test download of subject scheme</title>
+            </case>
+            <case>
+                <title>test uploading invalid subject scheme</title>
+            </case>
+            <case>
+                <title>test changelog was updated upon uploading subject scheme</title>
+            </case>
+            <case>
+                <title>test upload of Categories</title>
+            </case>
+            <case>
+                <title>test download of Categories</title>
+            </case>
+            <case>
+                <title>test changelog was updated upon uploading Categories</title>
+            </case>
+            <case>
+                <title>test upload of Metadata Mappings</title>
+            </case>
+            <case>
+                <title>check metromaps -ex.
+                    https://automationanywhere-dev.zoominsoftware.io/category/get-started-discovery-bot
+                </title>
+            </case>
+            <case>
+                <title>test uploading invalid Metadata Mappings</title>
+            </case>
+            <case>
+                <title>test changelog was updated upon uploading Metadata Mappings</title>
+            </case>
+            <case>
+                <title>test upload of Robots.txt</title>
+            </case>
+            <case>
+                <title>test download of Robots.txt</title>
+            </case>
+            <case>
+                <title>test uploading invalid Robots.txt</title>
+            </case>
+            <case>
+                <title>test changelog was updated upon uploading Robots.txt</title>
+            </case>
+            <case>
+                <title>check preview of uploaded Robots.txt</title>
+            </case>
+            <case>
+                <title>test upload of CSS</title>
+            </case>
+            <case>
+                <title>test download of CSS</title>
+            </case>
+            <case>
+                <title>test uploading invalid CSS</title>
+            </case>
+            <case>
+                <title>test changelog was updated upon uploading CSS</title>
+            </case>
+            <case>
+                <title>test upload of userMappings</title>
+            </case>
+            <case>
+                <title>test download of user Mappings</title>
+            </case>
+            <case>
+                <title>test uploading invalid user Mappings</title>
+            </case>
+            <case>
+                <title>test changelog was updated upon uploading user Mappings</title>
+            </case>
+            <case>
+                <title>test export ICU count</title>
+            </case>
+        </cases>
+    </section>
+    <section>
+        <name>Search preferences</name>
+        <cases>
+            <case>
+                <title>do filters work in both main search and filter dropdown from search box?</title>
+            </case>
+            <case>
+                <title>do the button under the user icon "search preferences", lead to the Search preference page?
+                </title>
+            </case>
+            <case>
+                <title>Verify update preferences</title>
+            </case>
+            <case>
+                <title>Verify arrows functionality, on search preference</title>
+            </case>
+            <case>
+                <title>Verify check box functionality</title>
+            </case>
+            <case>
+                <title>verift text box functionality</title>
+            </case>
+            <case>
+                <title>Verify preferences affect the search</title>
+            </case>
+        </cases>
+    </section>
+    <section>
+        <name>watchlist</name>
+        <cases>
+            <case>
+                <title>on following "unfollow all" works</title>
+            </case>
+            <case>
+                <title>Verify "eye" icon works (add/remove item from watchlist)</title>
+            </case>
+            <case>
+                <title>On Following, "Enable notification" toggle move and change its color</title>
+            </case>
+            <case>
+                <title>On Following, "Subjects you are following" section "Expand all" button, expend all the titles on
+                    the table below (product, version task)
+                </title>
+            </case>
+            <case>
+                <title>On Following, "Subjects you are following" section "Collapse all" button, collapse all the titles
+                    on the table below (product, version task)
+                </title>
+            </case>
+            <case>
+                <title>Verify "unfollow all in page" on following</title>
+            </case>
+        </cases>
+    </section>
+    <section>
+        <name>nan</name>
+        <cases>
+            <case>
+                <title>upload localized categories</title>
+            </case>
+            <case>
+                <title>do categories work in different languages</title>
+            </case>
+            <case>
+                <title>check metromaps -ex.
+                    https://automationanywhere-dev.zoominsoftware.io/category/get-started-discovery-bot with different
+                    languages
+                </title>
+            </case>
+            <case>
+                <title>Check tiles view of metromaps in multiple languages</title>
+            </case>
+            <case>
+                <title>Does mydocs work w/localized bundles</title>
+            </case>
+            <case>
+                <title>does search preferences work w/localized bundles</title>
+            </case>
+            <case>
+                <title>Ensure metromaps work - map-note,popup doesn't close</title>
+            </case>
+            <case>
+                <title>Ensure metromaps work - tiles - note, currently popup doesn't close</title>
+            </case>
+            <case>
+                <title>Ensure spacing and UI are correct with Tiles list view (JIRA->Support->ST-11457)</title>
+            </case>
+            <case>
+                <title>Ensure "chiclets" show - chiclets are what AA calls the tag bubbles that appear in search
+                    results, in the library, and on topic pages
+                </title>
+            </case>
+            <case>
+                <title>Verify chiclets in all localized languages</title>
+            </case>
+            <case>
+                <title>How to test whether feedback emails actually get sent?</title>
+            </case>
+            <case>
+                <title>Verify sharing collection works</title>
+            </case>
+            <case>
+                <title>Verify sharing collection with non-user works</title>
+            </case>
+            <case>
+                <title>Verify receiving collection works with permissions for content</title>
+            </case>
+            <case>
+                <title>Verify receiving collection works without permissions for content</title>
+            </case>
+            <case>
+                <title>Verify accepting a shared collection works as a non-authenticated user (test plan should say it
+                    doesn't work or needs to be logged in?)
+                </title>
+            </case>
+            <case>
+                <title>Verify accepting a shared colletion works as an authenticated user</title>
+            </case>
+            <case>
+                <title>SEO: Page latency - check loading speed - ST-9966</title>
+            </case>
+            <case>
+                <title>Announcements - Verify announcement creation works as expected - ST-9437 - though on 8 october
+                    Tom said we're rolling out UAB soon
+                </title>
+            </case>
+            <case>
+                <title>Verify CSS in busy topic - localized languages</title>
+            </case>
+            <case>
+                <title>Verify CSS in busy topic in mobile - all languages</title>
+            </case>
+            <case>
+                <title>Check web traffic - ex: https://zoomin-software.atlassian.net/browse/ZW-2976</title>
+            </case>
+            <case>
+                <title>Confirm sitemaps are working as expected</title>
+            </case>
+        </cases>
+    </section>
+    <section>
+        <name>Footer</name>
+        <cases>
+            <case>
+                <title>Verify the footer items display</title>
+            </case>
+            <case>
+                <title>Verify footer links are clickable and opened in a new tab</title>
+            </case>
+        </cases>
+    </section>
+    <section>
+        <name>Home page</name>
+        <cases>
+            <case>
+                <title>Verify home page appearance</title>
+            </case>
+            <case>
+                <title>Verify that home page is responsive</title>
+            </case>
+            <case>
+                <title>Verify categories</title>
+            </case>
+            <case>
+                <title>Verify children categories</title>
+            </case>
+        </cases>
+    </section>
+    <section>
+        <name>Search</name>
+        <cases>
+            <case>
+                <title>Verify searching with clicking on 'Enter'</title>
+            </case>
+            <case>
+                <title>Verify search when clicking on magnifying glass</title>
+            </case>
+            <case>
+                <title>Verify autosuggestion display</title>
+            </case>
+            <case>
+                <title>Verify autosuggestion</title>
+            </case>
+            <case>
+                <title>Verify search functionality on other pages</title>
+            </case>
+            <case>
+                <title>Verify search in all languages localization</title>
+            </case>
+        </cases>
+    </section>
+    <section>
+        <name>Filters functionality</name>
+        <cases>
+            <case>
+                <title>Verify opening of the filters menu</title>
+            </case>
+            <case>
+                <title>Verify filters are clickable - filters functionality</title>
+            </case>
+            <case>
+                <title>Verify 'Clear filters'</title>
+            </case>
+            <case>
+                <title>Verify filters</title>
+            </case>
+            <case>
+                <title>Verify filters on other pages</title>
+            </case>
+        </cases>
+    </section>
+    <section>
+        <name>Search results</name>
+        <cases>
+            <case>
+                <title>Verify regular results page</title>
+            </case>
+            <case>
+                <title>Verify no results page</title>
+            </case>
+            <case>
+                <title>Verify filters are clickable - search results page</title>
+            </case>
+            <case>
+                <title>Verify filters are functional - search results page</title>
+            </case>
+            <case>
+                <title>Verify 'Clear filters' - search results page</title>
+            </case>
+            <case>
+                <title>Verify search results sorting</title>
+            </case>
+            <case>
+                <title>Verify search results sorting</title>
+            </case>
+            <case>
+                <title>Verify pagination - search results page</title>
+            </case>
+            <case>
+                <title>Verify number of results per page appearance</title>
+            </case>
+            <case>
+                <title>Verify did-you-mean functionality</title>
+            </case>
+            <case>
+                <title>Verify search clustering</title>
+            </case>
+        </cases>
+    </section>
+    <section>
+        <name>Library</name>
+        <cases>
+            <case>
+                <title>Verify entrance to bundle page</title>
+            </case>
+            <case>
+                <title>Verify search functionality in bundle page</title>
+            </case>
+            <case>
+                <title>Verify filters functionality in bundle page</title>
+            </case>
+            <case>
+                <title>Verify 'PDF Download' functionality from bundle page</title>
+            </case>
+            <case>
+                <title>Verify pagination functionality in bundle page</title>
+            </case>
+            <case>
+                <title>Verify download time pdf</title>
+            </case>
+            <case>
+                <title>Verify descending order in bundle page</title>
+            </case>
+            <case>
+                <title>Verify bundle clustering</title>
+            </case>
+        </cases>
+    </section>
+    <section>
+        <name>Topic Page</name>
+        <cases>
+            <case>
+                <title>Verify all content appears as expected in the topic page</title>
+            </case>
+            <case>
+                <title>Verify breadcrumbs functionality - topic page</title>
+            </case>
+            <case>
+                <title>Verify navigate to topic page by insert URL of specific topic</title>
+            </case>
+            <case>
+                <title>Verify TOC</title>
+            </case>
+            <case>
+                <title>Verify mini-toc works - example:
+                    https://docs.automationanywhere.com/bundle/enterprise-v2019/page/enterprise-cloud/topics/deployment-planning/on-prem-install/cloud-prerequisites-control-room.html
+                </title>
+            </case>
+            <case>
+                <title>Verify related links work - example:
+                    https://docs.automationanywhere.com/bundle/enterprise-v2019/page/enterprise-cloud/topics/deplnt-planning/on-prem-install/cloud-prerequisites-control-room.html
+                </title>
+            </case>
+            <case>
+                <title>Verify glossary popups work (popups, and page is not in toc) - example:
+                    https://docs.automationanywhere.com/bundle/enterprise-v11.3/page/enterprise/topics/aae-architecture-implementation/client-overview.html
+                </title>
+            </case>
+            <case>
+                <title>Verify tab's name</title>
+            </case>
+            <case>
+                <title>Verify tooltips display</title>
+            </case>
+        </cases>
+    </section>
+    <section>
+        <name>PDF Download</name>
+        <cases>
+            <case>
+                <title>Verify dropdown menu on click - PDF download</title>
+            </case>
+            <case>
+                <title>Verify save selected topic</title>
+            </case>
+            <case>
+                <title>Verify save selected topic and subtopics</title>
+            </case>
+            <case>
+                <title>Verify save all topic</title>
+            </case>
+            <case>
+                <title>Verify total pages</title>
+            </case>
+            <case>
+                <title>Verify pre-processed PDF</title>
+            </case>
+        </cases>
+    </section>
+    <section>
+        <name>Feedback functionality</name>
+        <cases>
+            <case>
+                <title>Verify feedback pop-up</title>
+            </case>
+            <case>
+                <title>Verify feedback with blank fields</title>
+            </case>
+            <case>
+                <title>Verify cancel feedback</title>
+            </case>
+            <case>
+                <title>Verify send a feedback</title>
+            </case>
+            <case>
+                <title>Verify feedback filling out fields</title>
+            </case>
+        </cases>
+    </section>
+    <section>
+        <name>Content</name>
+        <cases>
+            <case>
+                <title>Verify code blocks appearance</title>
+            </case>
+        </cases>
+    </section>
+    <section>
+        <name>Metromap</name>
+        <cases>
+            <case>
+                <title>Verify metromap display</title>
+            </case>
+            <case>
+                <title>Verify metromap buttons</title>
+            </case>
+            <case>
+                <title>Verify metromap steps functionality</title>
+            </case>
+            <case>
+                <title>Verify 'previous step' in topic page of metromap</title>
+            </case>
+            <case>
+                <title>Verify 'Workflow map' button in topic page of metromap</title>
+            </case>
+            <case>
+                <title>Verify 'next step' in topic page of metromap</title>
+            </case>
+        </cases>
+    </section>
+    <section>
+        <name>metromap</name>
+        <cases>
+            <case>
+                <title>Verify progress in metromap</title>
+            </case>
+            <case>
+                <title>Verify 'Mark as done' button(Authorized user)</title>
+            </case>
+            <case>
+                <title>Verify 'Mark as done' button(unauthorized user)</title>
+            </case>
+            <case>
+                <title>Verify 'Mark as done' button(mobile user)</title>
+            </case>
+            <case>
+                <title>Verify 'Tiles list' button in workflow map</title>
+            </case>
+            <case>
+                <title>Verify workflow map(metromap) arrows</title>
+            </case>
+            <case>
+                <title>Verify 'Read Topic' button</title>
+            </case>
+        </cases>
+    </section>
+    <section>
+        <name>Add to my topics</name>
+        <cases>
+            <case>
+                <title>Verify dropdown menu on click</title>
+            </case>
+            <case>
+                <title>Verify default collection name in dropdown row</title>
+            </case>
+            <case>
+                <title>Verify approval announcement text</title>
+            </case>
+            <case>
+                <title>Verify choose collection</title>
+            </case>
+            <case>
+                <title>Verify create new collection blank field name</title>
+            </case>
+            <case>
+                <title>Verify create new collection</title>
+            </case>
+            <case>
+                <title>Verify set as default collection</title>
+            </case>
+            <case>
+                <title>Verify adding topic and subtopics</title>
+            </case>
+            <case>
+                <title>Verify add the topic that's already added to the same collection functionality</title>
+            </case>
+            <case>
+                <title>Verify adding entire publication</title>
+            </case>
+            <case>
+                <title>Verify topics I added to mydocs (new and default collections) display afterwards</title>
+            </case>
+        </cases>
+    </section>
+    <section>
+        <name>My Topics</name>
+        <cases>
+            <case>
+                <title>Verify entering My Topics with no permission errors</title>
+            </case>
+            <case>
+                <title>Verify entering My Topics as public user redirects to login</title>
+            </case>
+            <case>
+                <title>Verify view topic in collection</title>
+            </case>
+            <case>
+                <title>Verify Download PDF for checked topics in collection</title>
+            </case>
+            <case>
+                <title>Verfiy Delete for checked topics in collection</title>
+            </case>
+            <case>
+                <title>Verfiy Shared with me</title>
+            </case>
+            <case>
+                <title>Verify Find Collection</title>
+            </case>
+            <case>
+                <title>Verify Collection name cannot be an empty string</title>
+            </case>
+            <case>
+                <title>Verfiy 'My Topics' access only to logged in users</title>
+            </case>
+        </cases>
+    </section>
+    <section>
+        <name>SSR</name>
+        <cases>
+            <case>
+                <title>Verify SSR functionality</title>
+            </case>
+            <case>
+                <title>How to check SSR? It's mentioned in ST-11393</title>
+            </case>
+            <case>
+                <title>SEO: Create Self Referential Canonical Tags with SSR ex:
+                    https://zoomin-software.atlassian.net/browse/ST-11177
+                </title>
+            </case>
+        </cases>
+    </section>
+    <section>
+        <name>SEO</name>
+        <cases>
+            <case>
+                <title>SEO: Make sure SEO titles and descriptions are picked up from categories - ST-8132 and ST-8134
+                </title>
+            </case>
+        </cases>
+    </section>
+    <section>
+        <name>Search Collection</name>
+        <cases>
+            <case>
+                <title>Verify search for existing collection</title>
+            </case>
+            <case>
+                <title>Verify search for non-existing collection</title>
+            </case>
+        </cases>
+    </section>
+    <section>
+        <name>Collection functionality</name>
+        <cases>
+            <case>
+                <title>Verify uncheck topic</title>
+            </case>
+            <case>
+                <title>Verify save selected topics from collection</title>
+            </case>
+            <case>
+                <title>Verify delete selected topics from collection display</title>
+            </case>
+            <case>
+                <title>Verify delete selected topics from collection functionality</title>
+            </case>
+            <case>
+                <title>Verify open a topic</title>
+            </case>
+            <case>
+                <title>Verify open a linked topic</title>
+            </case>
+            <case>
+                <title>Verify toaster messages on MyTopics</title>
+            </case>
+        </cases>
+    </section>
+    <section>
+        <name>Collection menu</name>
+        <cases>
+            <case>
+                <title>Verify collection menu</title>
+            </case>
+            <case>
+                <title>Verify save PDF functionality - no topic presented</title>
+            </case>
+            <case>
+                <title>Verify save PDF functionality - topic presented</title>
+            </case>
+            <case>
+                <title>Verify share collection window</title>
+            </case>
+            <case>
+                <title>Verify share collection</title>
+            </case>
+            <case>
+                <title>Verify change default collection</title>
+            </case>
+            <case>
+                <title>Verify rename with invalid credentials(note,changing with invalid credentials)</title>
+            </case>
+            <case>
+                <title>Verify duplicate collection name is invalid</title>
+            </case>
+            <case>
+                <title>Verify rename collection</title>
+            </case>
+            <case>
+                <title>Verify delete collection</title>
+            </case>
+            <case>
+                <title>Verify delete default collection</title>
+            </case>
+        </cases>
+    </section>
+    <section>
+        <name>Create new collection</name>
+        <cases>
+            <case>
+                <title>Verify create new collection window</title>
+            </case>
+            <case>
+                <title>Verify create new collection</title>
+            </case>
+            <case>
+                <title>Verify set as default new collection</title>
+            </case>
+        </cases>
+    </section>
+    <section>
+        <name>Search Preferences</name>
+        <cases>
+            <case>
+                <title>Verify entrance to search preferences page</title>
+            </case>
+            <case>
+                <title>Verify filters are clickable - search preferences</title>
+            </case>
+            <case>
+                <title>Verify 'Select all' and 'Clear all'</title>
+            </case>
+            <case>
+                <title>Verify 'Personalize my results'</title>
+            </case>
+            <case>
+                <title>Verify 'i' functionality</title>
+            </case>
+            <case>
+                <title>Verify 'Edit preferences'</title>
+            </case>
+        </cases>
+    </section>
+    <section>
+        <name>Publications</name>
+        <cases>
+            <case>
+                <title>Verify publications page is presented</title>
+            </case>
+            <case>
+                <title>Verify publications filters</title>
+            </case>
+            <case>
+                <title>Verify publications search</title>
+            </case>
+            <case>
+                <title>Verify publications page pagination</title>
+            </case>
+            <case>
+                <title>Verify breadcrumbs functionality - publications</title>
+            </case>
+        </cases>
+    </section>
+    <section>
+        <name>Resource</name>
+        <cases>
+            <case>
+                <title>Verify Resource page is presented</title>
+            </case>
+            <case>
+                <title>Verify Resource filters</title>
+            </case>
+            <case>
+                <title>Verify Resource search</title>
+            </case>
+            <case>
+                <title>Verify Resource page pagination</title>
+            </case>
+            <case>
+                <title>Verify breadcrumbs functionality - resources</title>
+            </case>
+        </cases>
+    </section>
+    <section>
+        <name>Users</name>
+        <cases>
+            <case>
+                <title>Verify Users page is presented</title>
+            </case>
+            <case>
+                <title>Verify Users search</title>
+            </case>
+            <case>
+                <title>Verify Users page pagination</title>
+            </case>
+            <case>
+                <title>Verify disabled users list</title>
+            </case>
+            <case>
+                <title>Verify list of self-registered or manually added users</title>
+            </case>
+            <case>
+                <title>Verify add user functionality</title>
+            </case>
+            <case>
+                <title>Verify breadcrumbs functionality - users</title>
+            </case>
+        </cases>
+    </section>
+    <section>
+        <name>CRG</name>
+        <cases>
+            <case>
+                <title>Verify CRG page is presented</title>
+            </case>
+            <case>
+                <title>Verify CRG functionality</title>
+            </case>
+            <case>
+                <title>Verify 'Create new CRG' functionality</title>
+            </case>
+            <case>
+                <title>Verify breadcrumbs functionality - CRG</title>
+            </case>
+        </cases>
+    </section>
+    <section>
+        <name>Users Roles</name>
+        <cases>
+            <case>
+                <title>Verify User Roles page is presented</title>
+            </case>
+            <case>
+                <title>Verify User Role functionality</title>
+            </case>
+            <case>
+                <title>Verify 'Create New Role' functionality</title>
+            </case>
+            <case>
+                <title>Verify breadcrumbs functionality - user roles</title>
+            </case>
+        </cases>
+    </section>
+    <section>
+        <name>Announcements</name>
+        <cases>
+            <case>
+                <title>Verify Announcements page is presented</title>
+            </case>
+            <case>
+                <title>Verify breadcrumbs functionality - announcements</title>
+            </case>
+        </cases>
+    </section>
+    <section>
+        <name>CSH</name>
+        <cases>
+            <case>
+                <title>Verify CSH pages generation</title>
+            </case>
+            <case>
+                <title>Verify CSH pages functionality</title>
+            </case>
+            <case>
+                <title>Check that resourceids (from Admin) are valid - ST-8214</title>
+            </case>
+            <case>
+                <title>Create csh links that have bundle/topic and make sure they work ST-8214</title>
+            </case>
+        </cases>
+    </section>
+    <section>
+        <name>Busy Topic</name>
+        <cases>
+            <case>
+                <title>Verify css in Busy Topic - English</title>
+            </case>
+        </cases>
+    </section>
+    <section>
+        <name>Watchlist page functionality</name>
+        <cases>
+            <case>
+                <title>Verify entrance to watchlist page</title>
+            </case>
+            <case>
+                <title>Verify list is empty when not following anything</title>
+            </case>
+            <case>
+                <title>Verify list is not empty when the user is following something</title>
+            </case>
+            <case>
+                <title>Verify navigation to topics</title>
+            </case>
+            <case>
+                <title>Verify watchlist page search</title>
+            </case>
+            <case>
+                <title>Verify dropdown is functional</title>
+            </case>
+            <case>
+                <title>Verify pagination is functional - watchlist</title>
+            </case>
+            <case>
+                <title>Verify 'Unwatch selected topics' is functional</title>
+            </case>
+            <case>
+                <title>Verify 'Unwatch topics in page'</title>
+            </case>
+            <case>
+                <title>Verify 'Unwatch All'</title>
+            </case>
+        </cases>
+    </section>
+    <section>
+        <name>Adding watched content functionality</name>
+        <cases>
+            <case>
+                <title>Verify eye icon is functional</title>
+            </case>
+        </cases>
+    </section>
+    <section>
+        <name>Topic page</name>
+        <cases>
+            <case>
+                <title>Check nested TOC to make sure carats work, alighnment, links. ex -
+                    https://automationanywhere-dev.zoominsoftware.io/bundle/enterprise-v2019/page/enterprise-cloud/topics/aae-client/bot-creator/commands/cloud-string-operation-command.html
+                </title>
+            </case>
+            <case>
+                <title>Check nested TOC in mobile to make sure carats/alignment/links works</title>
+            </case>
+        </cases>
+    </section>
+    <section>
+        <name>Sub-category</name>
+        <cases>
+            <case>
+                <title>Verify logo when clicking on a sub-category</title>
+            </case>
+            <case>
+                <title>Verify language change in a sub-category</title>
+            </case>
+            <case>
+                <title>Verify sub-category button</title>
+            </case>
+        </cases>
+    </section>
+    <section>
+        <name>Indexing</name>
+        <cases>
+            <case>
+                <title>Verify indexing of new bundle upload (html and resource)</title>
+            </case>
+            <case>
+                <title>Verify indexing of existing bundle upload (html and resource)</title>
+            </case>
+            <case>
+                <title>Verify indexing of new language uploaded for existing sheaf (html and resource)</title>
+            </case>
+            <case>
+                <title>Verify manual bundle reindex (html and resource)</title>
+            </case>
+            <case>
+                <title>Verify reindex following updated classification map for existing bundle</title>
+            </case>
+            <case>
+                <title>Verify full site reindex</title>
+            </case>
+            <case>
+                <title>Verify manual bundle deletion (html and resource)</title>
+            </case>
+            <case>
+                <title>Verify reindex following subject scheme update</title>
+            </case>
+            <case>
+                <title>Verify multiple concurrent index operations</title>
+            </case>
+        </cases>
+    </section>
+    <section>
+        <name>home page</name>
+        <cases>
+            <case>
+                <title>Verify 'Library' button(authorized user)</title>
+            </case>
+            <case>
+                <title>Verify 'Library' button(unauthorized user)</title>
+            </case>
+            <case>
+                <title>Verify 'My content' button</title>
+            </case>
+            <case>
+                <title>Verify home button</title>
+            </case>
+            <case>
+                <title>Verify language change in home page</title>
+            </case>
+            <case>
+                <title>Verify profile click button when logged in</title>
+            </case>
+            <case>
+                <title>Verify 'Featured Content' arrows in the bottom of the home page</title>
+            </case>
+            <case>
+                <title>Verify 'Featured Content' is displayed when clicked on</title>
+            </case>
+            <case>
+                <title>Verify home page subtitle button when changing a language</title>
+            </case>
+            <case>
+                <title>Verify 'Library' button when changing a language</title>
+            </case>
+            <case>
+                <title>Verify 'Browse by product' buttons in the bottom of the home page</title>
+            </case>
+            <case>
+                <title>Verify the logo button</title>
+            </case>
+            <case>
+                <title>Verify the 'more sites' button</title>
+            </case>
+        </cases>
+    </section>
+    <section>
+        <name>workflows</name>
+        <cases>
+            <case>
+                <title>Verify language change in workflows map</title>
+            </case>
+        </cases>
+    </section>
+</sections>

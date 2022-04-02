@@ -1,0 +1,5732 @@
+ID,Title,Test plan assigned to,Priority,Section,Read/Write,Test BOTH logged in and not logged in? Y/N,Automated?,Steps,Review completed by (name),Prod tested by,Type,,
+YL,Confirm localized subject scheme works as expected.,,,localization,write,,,&quot;In /admin/localsubjectscheme, download the yaml file for a localized language.
+
+Make a small change that will be visible
+
+Save it with a new name, such as fr-test
+
+Upload it to the site 
+
+With the UI set to the language you are testing, open the filters.
+
+Confirm the change is visible.
+
+Revert the change by uploading the original file you&#x27;d downloaded. 
+
+Confirm the file reverted successfully&quot;,,,,,
+C5046,Verify tile icons on admin page,,Low,Admin,read,,,&quot;Open the website
+ 
+ Expected Result:
+ 
+ home page is presented
+ 
+ Click on the username on the top right
+ 
+ Expected Result:
+ 
+ Drop down is opened
+ 
+ Click on &#x27;Admin&#x27;
+ 
+ Expected Result:
+ 
+ Zoomin Admin page is presented
+ 
+ Verify all tiles have icons
+ 
+ Expected Result:
+ 
+ Each tile has its own icon&quot;,Amit,,Functional,,
+YL,Announcements - Verify announcement creation works as expected,,,Admin,read,,, ST-9437 - though on 8 october Tom said we&#x27;re rolling out UAB soon,,,,,
+YL,Test loading speed of site for latency,,,Admin,read,,,&quot;Navigate to the different pages on the site.
+
+Note any lags in loading speed.&quot;,,,,,
+YL,Confirm uploading the subject scheme functions as expected.,,,Admin,write,,,&quot;Download the current subject scheme.
+Re-upload it.
+Check /api/admin/reindex/status on the back end to ensure a reindex has been run or is in process.&quot;,,,,,
+YL,Confirm downloading subject scheme functions as expected,,,Admin,read,,,&quot;Download the current subject scheme. 
+Open it, and confirm it matches the site UI.&quot;,,,,,
+C4912,Verify the messages for each mandatory field,,Critical,Register,,,,&quot;Launch home and navigate to &#x27;Login&#x27; on the top right
+ 
+ 
+ 
+ Expected Result:
+ 
+ Login page is presented
+ 
+ 
+ 
+ Click &#x27;Sign up&#x27;
+ 
+ Expected Result:
+ 
+ &#x27;Create an Account&#x27; screen is presented 
+ 
+ Click &#x27;Register&#x27; with all the fields blank
+ 
+ Expected Result:
+ 
+ Messages are presented for each mandatory field
+ 
+ Fill one field and click &#x27;Register&#x27;
+ 
+ Expected Result:
+ 
+ Messages are presented for each mandatory field
+ 
+ Repeat step 4 until all mandatory field fulfilled
+ 
+ Expected Result:
+ 
+ Messages are presented for each mandatory field&quot;,,,Functional,,
+C4913,Verify registration with an existing email,,Critical,Register,,,,&quot;Launch home and navigate to &#x27;Login&#x27; on the top right
+ 
+ 
+ 
+ Expected Result:
+ 
+ Login page is presented
+ 
+ 
+ 
+ Click &#x27;Sign up&#x27;
+ 
+ Expected Result:
+ 
+ &#x27;Create an Account&#x27; screen is presented 
+ 
+ Enter an email that already has an account
+ 
+ Expected Result:
+ 
+ Error message indicating you already have got an account is presented&quot;,,,Functional,,
+C4914,Verify not identical confirm password is invalid,,Critical,Register,,,,&quot;Launch home and navigate to &#x27;Login&#x27; on the top right
+ 
+ 
+ 
+ Expected Result:
+ 
+ Login page is presented
+ 
+ 
+ 
+ Click &#x27;Sign up&#x27;
+ 
+ Expected Result:
+ 
+ &#x27;Create an Account&#x27; screen is presented 
+ 
+ Enter an email and two different passwords in the password fields and in the confirm password field
+ 
+ Expected Result:
+ 
+ &#x27;Passwords must match&#x27; messages is presented&quot;,,,Functional,,
+C4915,Verify creating a new account,,Critical,Register,,,,&quot;Launch home and navigate to &#x27;Login&#x27; on the top right
+ 
+ 
+ 
+ Expected Result:
+ 
+ Login page is presented
+ 
+ 
+ 
+ Click &#x27;Sign up&#x27;
+ 
+ Expected Result:
+ 
+ &#x27;Create an Account&#x27; screen is presented 
+ 
+ Add all your information and click on register
+ 
+ Expected Result:
+ 
+ &#x27;Create an Account&#x27; screen closes and you are back at home
+ 
+ Open your email 
+ 
+ Expected Result:
+ 
+ You have received an email 
+ 
+ In order to complete registration click on the activation link
+ 
+ Expected Result:
+ 
+ Login page is opened and you are able to login with your new account 
+ 
+ Open your email again
+ 
+ Expected Result:
+ 
+ A welcome email has been sent to your email&quot;,,,Functional,,
+YL,Confirm that uploading an invalid subject scheme is not possible.,,,Admin,write,,,&quot;Download the current subject scheme.
+Save a copy with a new name, such as testing-validity.
+Make a change to it that makes it invalid.
+Try to upload the invalid subject scheme.
+Confirm that it is not possible -- you should receive an error.&quot;,,,,,
+SF,Confirm the changelog is updated upon uploading new subject scheme.,,,Admin,write,,,,,,,,
+SF,Confirm uploading Metadata Mappings file functions as expected.,,,Admin,write,,,,,,,,
+SF,Confirm uploading invalid Metadata Mappings file is not possible.,,,Admin,write,,,,,,,,
+SF,Confirm changelog was updated upon uploading Metadata Mappings file.,,,Admin,write,,,,,,,,
+SF,Confirm it is possible to upload new robots.txt file.,,,Admin,write,,,,,,,,
+SF,Confirm it is possible to download current robots.txt file.,,,Admin,read,,,,,,,,
+SF,Confirm that it is not possible to upload an invalid robots.txt file.,,,Admin,write,,,,,,,,
+SF,Confirm changelog was updated upon uploading robots.txt file.,,,Admin,write,,,,,,,,
+SF,Check preview of uploaded Robots.txt,,,Admin,write,,,,,,,,
+SF,test upload of CSS,,,Admin,write,,,,,,,,
+SF,test download of CSS,,,Admin,read,,,,,,,,
+SF,test uploading invalid CSS,,,Admin,write,,,,,,,,
+SF,test changelog was updated upon uploading CSS,,,Admin,write,,,,,,,,
+SF,Confirm it is possible to upload of User Mappings file.,,,Admin,write,,,,,,,,
+SF,Confirm it is possible to download User Mappings file.,,,Admin,read,,,,,,,,
+SF,Confirm it is not possible to upload invalid User Mappings file.,,,Admin,write,,,,,,,,
+SF,Confirm changelog was updated upon uploading User Mappings file.,,,Admin,write,,,,,,,,
+SF,Confirm it is possible to export the ICU count.,,,Admin,read,,,,,,,,
+C5072,Verify Announcements page is presented,,Medium,Announcements,read,No,,&quot;Open the website
+ 
+ Expected Result:
+ 
+ home page is presented
+ 
+ Click on the username on the top right
+ 
+ Expected Result:
+ 
+ Drop down is opened
+ 
+ Click on &#x27;Admin&#x27;
+ 
+ Expected Result:
+ 
+ Zoomin Admin page is presented
+ 
+ Click on &#x27;Announcements&#x27; title
+ 
+ Expected Result:
+ 
+ Announcements page is presented, the page is aligned, the table looks good and all of the elements are visible in the screen&quot;,Or,Or,Functional,,
+C5073,Verify breadcrumbs functionality - announcements,,Low,Announcements,read,,,&quot;Open the website
+ 
+ Expected Result:
+ 
+ home page is presented
+ 
+ Click on the username on the top right
+ 
+ Expected Result:
+ 
+ Drop down is opened
+ 
+ Click on &#x27;Admin&#x27;
+ 
+ Expected Result:
+ 
+ Zoomin Admin page is presented
+ 
+ Click on &#x27;Announcements&#x27; title
+ 
+ Expected Result:
+ 
+ Announcements page is presented
+ 
+ Verify breadcrumbs are shown on the upper left side
+ 
+ Expected Result:
+ 
+ Breadcrumbs are shown
+ 
+ Click on &#x27;Admin&#x27; from the breadcrumbs
+ 
+ Expected Result:
+ 
+ Admin page is opened&quot;,,,Functional,,
+C6066,Verify css in Busy Topic - English,RS,Medium,Topic Page,read,Y,,&quot;Search for Zoomin samples bundle
+Navigate through all pages of the bundle with next/prev buttons
+Confirm all styling looks correct
+Confirm video links are working correctly
+Confirm all links on &quot;&quot;Links&quot;&quot; page work as expected&quot;,,,Other,,
+YL,,,,categories,write,,,&quot;Prereq: Have documented list of which outputclasses are supported.
+
+Open the website
+ 
+ Expected Result:
+ 
+ home page is presented
+ 
+ Click on the username on the top right
+ 
+ Expected Result:
+ 
+ Drop down is opened
+ 
+ Click on &#x27;Admin&#x27;
+ 
+ Expected Result:
+ 
+ Zoomin Admin page is presented
+ 
+ Verify all tiles have icons
+ 
+ Expected Result:
+ 
+ Each tile has its own icon&quot;,,,,,
+YL,Test uploading invalid categories file to confirm it gets an error,,,categories,write,,,&quot;Via Admin, upload a categories file that is invalid. Confirm you get an error upon trying to upload.
+
+Revert to the working, valid file.&quot;,,,,,
+SF,Confirm it is possible to upload categories file.,YL,,categories,write,,,&quot;Prerequisite: Login as Admin
+Navigate to Categories tile
+Click Download current categories XML file
+Click Choose a file...
+Navigate to default download location and select the categories XML file
+Click Upload
+Expected response: Popup or toaster confirming that the categories file has been uploaded successfully
+&quot;,,,,,
+SF,Confirm it is possible to download categories file.,YL,,categories,read,,,&quot;Prerequisite: Login as Admin
+Navigate to Categories tile
+Click Download current categories XML file
+Navigate to default download location
+Open file in XML editor and confirm it is populated
+&quot;,,,,,
+SF,Confirm changelog was updated upon uploading categories file.,,,categories,write,,,,,,,,
+YL,Confirm uploading localized categories functions properly.,,,categories,write,,,&quot;From /admin/localcategories download a localized categories yaml.
+Make a small change, and save the file with a new name, such as fr-cat-test
+Upload the new file to the site 
+Navigate to the tiles and ensure the new translation is there
+Revert by uploading the original file you&#x27;d downloaded.&quot;,,,,,
+YL,Confirm categories tiles work in all languages.,Mor,,categories,read,N,,&quot;Pre-condition: 
+1. Do the following test for each language
+2. Start point: portal home page
+Test Steps:
+1. Click on each category: Explore, Install, Migrate, Build, Digitize, Manage, Optimize, Integrate, Workflow
+expected result:
+1. English:
+1.1. Explore Category:
+1.1.1. The site with the suffix &quot;&quot;/category/explore&quot;&quot; is opened.
+1.1.2. The search section contain on the left &quot;&quot;Home &gt; Explore&quot;&quot; and under it &quot;&quot;Explore&quot;&quot; + the same svg as in the category in portal home page.
+1.2. Install Category:
+1.2.1. The site with the suffix &quot;&quot;/category/install&quot;&quot; is opened.
+1.2.2. The search section contain on the left &quot;&quot;Home &gt; Install&quot;&quot; and under it &quot;&quot;Install&quot;&quot; + the same svg as in the category in portal home page.
+1.3. Migrate Category:
+1.3.1. The site with the suffix &quot;&quot;/category/migrate&quot;&quot; is opened.
+1.3.2. The search section contain on the left &quot;&quot;Home &gt; Migrate&quot;&quot; and under it &quot;&quot;Migrate&quot;&quot; + the same svg as in the category in portal home page.
+1.4. Build Category:
+1.4.1. The site with the suffix &quot;&quot;/category/build&quot;&quot; is opened.
+1.4.2 The search section contain on the left &quot;&quot;Home &gt; Build&quot;&quot; and under it &quot;&quot;Build&quot;&quot; + the same svg as in the category in portal home page.
+1.5. Digitize Category:
+1.5.1. The site with the suffix &quot;&quot;/category/digitize&quot;&quot; is opened.
+1.5.2. The search section contain on the left &quot;&quot;Home &gt; Digitize&quot;&quot; and under it &quot;&quot;Digitize&quot;&quot; + the same svg as in the category in portal home page.
+1.6. Manage Category:
+1.6.1 The site with the suffix &quot;&quot;/category/manage&quot;&quot; is opened.
+1.6.2. The search section contain on the left &quot;&quot;Home &gt; Manage&quot;&quot; and under it &quot;&quot;Manage&quot;&quot; + the same svg as in the category in portal home page.
+1.7. Optimize Category:
+1.7.1. The site with the suffix &quot;&quot;/category/analyze&quot;&quot; is opened.
+1.7.2. The search section contain on the left &quot;&quot;Home &gt; Optimize&quot;&quot; and under it &quot;&quot;Optimize&quot;&quot; + the same svg as in the category in portal home page.
+1.8. Integrate Category:
+1.8.1. The site with the suffix &quot;&quot;/category/integrate&quot;&quot; is opened.
+1.8.2. The search section contain on the left &quot;&quot;Home &gt; Integrate&quot;&quot; and under it &quot;&quot;Integrate&quot;&quot; + the same svg as in the category in portal home page.
+1.9. Workflows Category:
+1.9.1. The site with the suffix &quot;&quot;/category/workflows&quot;&quot; is opened.
+1.9.2 . The search section contain on the left &quot;&quot;Home &gt; Workflows&quot;&quot; and under it &quot;&quot;Workflows&quot;&quot; + the same svg as in the category in portal home page.
+2. The rest of the languages:
+2.1. For each category the site with the suffix &quot;&quot;&lt;language&gt;/category/&lt;category&gt;&quot;&quot; is opened.
+2.1.1. The &lt;language&gt; can be:
+2.1.1.1. 简体中文/CHINESE -&gt; zh-CN
+2.1.1.2. 繁體中文/CHINESE -&gt; zh-TW
+2.1.1.3. DEUTSCH/GERMAN -&gt; de-DE
+2.1.1.4. ESPAÑOL (LATINOAMÉRICA) -&gt; es-ES
+2.1.1.5. FRANÇAIS/FRENCH -&gt; fr-FR
+2.1.1.6. 日本語/JAPANESE -&gt; ja-JP
+2.1.1.7. 한국어/KOREAN -&gt; ko-KR
+2.1.1.8. PORTUGUÊS (BRASIL) -&gt; pt-BR
+2.1.1.9. ITALIANO/ITALIAN -&gt; it-IT
+2.1.1.10. Pусский/RUSSIAN -&gt; ru-RU
+2.2. Before clicking on the categories, they all appear for each language.&quot;,,Noa,Functional and UI,,
+YL,Confirm workflows work in all languages.,Mor,,categories,read,N,,&quot;Pre-condition:
+1. Do the following test for each language
+2. Start point: 
+2.1. English: Test Steps: https://automationanywhere-dev.zoominsoftware.io/category/workflows
+2.2. Other languages: https://automationanywhere-dev.zoominsoftware.io/{language}/category/workflows
+Test Steps:
+1. For each link in &quot;&quot;installation and setup&quot;&quot;, &quot;&quot;Migration&quot;&quot; and &quot;&quot;Get Started&quot;&quot;:
+1.1. Click on it.
+1.2. Click on &quot;&quot;Workflow Map&quot;&quot;
+1.3. Click on &quot;&quot;Tiles list&quot;&quot;
+1.4. Click on &quot;&quot;Tiles list&quot;&quot;
+1.5. Click on &quot;&quot;Workflow Map&quot;&quot; button
+Expected result:
+1. The page that was opened is match the link we clicked
+2. The header is matched the link we opened
+3. The map switch to tiles list when we click on &quot;&quot;Tiles list&quot;&quot; button.
+4. The tiles list switch to map when we click on &quot;&quot;Workflow Map&quot;&quot; button.
+5. Nothing happen when we click on &quot;&quot;Tiles list&quot;&quot; button if we already on tiles list mode.
+6. Nothing happen when we click on &quot;&quot;Workflow Map&quot;&quot; button if we already on map mode.
+7. Map and Tiles list have the same sections.
+8. The number of sections is the same in all languages.
+9. For each language the words change to that language.&quot;,,Noa,,,
+YL,Ensure workflows function as expected - map view,Amit,,categories,read,,,&quot;Open the website
+
+Expected Result:home page is presented
+
+Click on the &#x27;Workflow&#x27; Category
+
+Expected Result: Workflow category page is opened
+
+Click on a Workflow Sub-category page
+
+Expected Result: the relevant workflow is presented
+
+
+
+ &quot;,,RS,,,
+YL,Ensure workflows function as expected - tiles view,Amit,,categories,read,,,&quot;Open the website
+
+Expected Result: home page is presented
+
+Click on the &#x27;Workflow&#x27; category
+
+Expected Result: the Workflow category page is opened
+
+Click on a Sub-category page
+
+Expected Result: A workflow(workflow ) map is opened
+
+Click on the tiles list button
+
+Expected Result: workflow is divided to A list
+
+Click on one of the topics of the list
+
+Expected Result:A popup of the topic with &#x27;Read Topic&#x27; and &#x27;Mark as done&#x27; is presented(popup doesn&#x27;t close)
+
+&quot;,,RS,,,
+&quot;MP, NA &amp; DS&quot;,Verify progress functionality in workflow,&quot;Mor, Noa &amp; Dori&quot;,Medium,categories,read,,,&quot;Open the website
+
+Expected Result:
+
+home page is presented
+
+Login the site
+ 
+Expected Result:
+ 
+Home page is opened and you are logged in
+
+Click on the &#x27;Workflows&#x27; category
+
+Expected Result:
+
+Workflow Category page is opened  
+
+Click on a sub-category button
+
+Expected Result:       
+
+Workflow Map(workflow) page is opened
+
+Click on a random Map button
+
+Expected Result:
+
+A popup is opened
+
+Click on the &#x27;Mark as done&#x27; button
+
+Expected Result: You are redirected to the next topic in the workflow. The previous step is now highlighted in grey with a checkmark at the left side. The placeholder symbol is positioned on the following step bellow.
+
+Refresh the page. Login into the same exact url and account on another computer.
+
+Expected Result: The progress is save on the workflow. On the second computer you can see that the same station is highlighted as in the first one.                                                                                            &quot;,,,,,
+YL,Ensure spacing and UI are correct with Tiles list view ,Mor,,categories,read,N,,&quot;For AA: (JIRA-&gt;Support-&gt;ST-11457)
+1. Start point: Test Steps: https://automationanywhere-dev.zoominsoftware.io/category/workflows
+2. Other languages: https://automationanywhere-dev.zoominsoftware.io/&lt;language&gt;/category/workflows
+Test Steps:
+1. For each link in &quot;&quot;installation and setup&quot;&quot;, &quot;&quot;Migration&quot;&quot; and &quot;&quot;Get Started&quot;&quot;:
+1.1. Click on it.
+1.2. Click on &quot;&quot;Tiles list&quot;&quot; button.
+1.3. Mark as done all tasks in one of the squares.
+1.4. Mark as undone one of the tasks you marked as done in the above step.
+1.4. Change to all languages.
+1.5. Click on &quot;&quot;Workflow Map&quot;&quot; button.
+1.6. Click on &quot;&quot;Tiles list&quot;&quot;
+Expected result: In all steps above the UI and the spaces are correct. There is no lack of spacing between each task.&quot;,,RS,,,
+AZ,Verify &#x27;Mark as done&#x27; button(Authorized user),AZ,,categories,read,,,&quot;Open the website
+
+Expected Result:
+
+home page is presented
+
+Login the site
+ 
+Expected Result:
+ 
+Home page is opened and you are logged in
+
+Click on the &#x27;Workflows&#x27; category
+
+Expected Result:
+
+Workflow Category page is opened  
+
+Click on a sub-category button
+
+Expected Result:       
+
+Workflow Map(workflow) page is opened
+
+Click on a random Map button
+
+Expected Result:
+
+A popup is opened
+
+Click on the &#x27;Mark as done&#x27; button
+
+Expected Result: The  workflow advances to the next topic. The previous step is now marked as done with a checkmark at the left side. The placeholder symbol is positioned on the following step below.
+
+Map place is marked                                                                                                 &quot;,Mor,,,,
+AZ,Verify &#x27;Mark as done&#x27; button(unauthorized user),AZ,,categories,read,,,&quot;Open the website
+
+Expected Result:
+
+home page is presented
+
+Login the site
+ 
+Expected Result:
+ 
+Home page is opened and you are logged in
+
+Click on the &#x27;Workflows&#x27; category
+
+Expected Result:
+
+Workflow Category page is opened  
+
+Click on a sub-category button
+
+Expected Result:       
+
+Workflow Map(workflow) page is opened
+
+Click on a random Map button
+
+Expected Result:
+
+A popup is opened
+
+Click on the &#x27;Mark as done&#x27; button
+
+Expected Result: You are redirected to the next topic in the workflow. The previous step is now highlighted in grey with a checkmark at the left side. The placeholder symbol is positioned on the following step bellow.
+
+Map place is marked                                                                                                 &quot;,Mor,,,,
+AZ,Verify &#x27;Mark as done&#x27; button(mobile user),AZ,,categories,read,,,&quot;Open the website
+
+Expected Result: home page is presented
+
+click on the &#x27;Workflows&#x27; category
+
+Expected Result: Workflow category page is opened
+
+Click on a random sub-category button
+
+Expected Result: random Workflow Map(workflow) is opened
+
+Click on a random map button
+
+Expected Result: A popup is opened
+
+Click on the &#x27;Mark as done&#x27; button
+
+Expected Result: map place is marked&quot;,,,,,
+AZ,Verify &#x27;Tiles list&#x27; button in workflow map,AZ,,categories,read,,,&quot;Open the website
+
+Expected Result:
+
+home page is presented 
+
+Click on the &#x27;Workflows&#x27; category
+
+Expected Result:
+
+Workflow Category page is opened  
+
+Click on a sub-category button
+
+Expected Result:     
+  
+Workflow Map(workflow) page is opened
+
+Click on the &#x27;Tiles list&#x27; button
+
+Expected Result:
+
+Map is divided to a list&quot;,Mor,,,,
+AZ,Verify logo when clicking on a sub-category,AZ,,categories,read,,,&quot;Open the website
+
+Expected Result:home page is presented
+
+Click on a category
+
+Expected Result:Sub-category page is presented and logo of AA is presented in the top left corner&quot;,Mor,Yehudit,,,
+AZ,Verify language change in a sub-category,AZ,,categories,read,,,&quot;Open the website
+
+Expected Result: home page is presented
+
+Click on a Category button from one of these options: &#x27;Explore&#x27;,Install&#x27;,Migrate&#x27;,&#x27;Build&#x27;,Digitize&#x27;,&#x27;Manage&#x27;,Optimize&#x27;,Integrate&#x27;
+
+Expected Result: Sub category page is opened
+for &#x27;Explore&#x27;:&#x27;Release Notes&#x27;,&#x27;Overview&#x27;,About this site&#x27;,Previous releases&#x27;,&#x27;Documentation Team Web&#x27;
+for Install:&#x27;Pre-installation&#x27;,&#x27;installation&#x27;,Post installation&#x27;,Validation&#x27;,By release version&#x27;&#x27;
+for Migrate:&#x27;Check migration readiness&#x27;,Plan and prepare&#x27;,Migrate&#x27;
+for Build:&#x27;Getting Started&#x27;,Build Your First Bots&#x27;,Build Advanced Bots&#x27;,&#x27;Visit Developer Portal&#x27;,Explore Bot Store&#x27;
+for Digitize:&#x27;Getting Started&#x27;,&#x27;Extract&#x27;,&#x27;Validate&#x27;
+for Manage:&#x27;Administration&#x27;,Management&#x27;,&#x27;AARI applications&#x27;
+for Optimize:&#x27;Optimize&#x27;,&#x27;Dashboards&#x27;
+for Integrate:&#x27;Salesforce&#x27;,&#x27;Genesys&#x27;,&#x27;Other integrations&#x27;
+
+Click on the language button in the top right corner
+
+Expected Result:sub category Items and buttons language are changed(words like Automation 360,IQ bots,Enterprise,Discovery Bots others that cannot be translated remain in English for all languages)&quot;,,Yehudit,,,
+AZ,Verify workflow map(workflow) arrows,AZ,,categories,read,,,&quot;Open the website
+
+Expected Result:
+
+home page is presented
+
+Click on the &#x27;Workflows&#x27; category
+
+Expected Result:
+
+Workflow Category page is opened
+
+Click on a sub-category button
+
+Expected Result:
+
+Workflow Map (workflow) page is opened
+
+Click on a station title
+
+Expected Result:
+
+A tile with the same title appears
+
+Click on ‘Read Topic’
+
+Expected Result:
+
+A topic page presenting the same title at the top is opened.
+More content is displayed in the article.
+
+Click on the  &#x27;&lt;&#x27; button
+
+Expected Result:
+
+You are redirected to the topic page of the previous step in the track. Notice that in the vertical workflow on the left side, the placeholder points on the previous step (one above).
+
+Click on the  ‘&gt;’ button
+
+You are redirected to the topic page of the next step in the track. Notice that in the workflow on the left side, the placeholder points on the following step (one below).&quot;,Mor,Yehudit,,,
+AZ,Verify sub-category button,AZ,,categories,read,,,&quot;Open the website
+
+Expected Result:home page is presented
+
+Click on one of the categories
+
+Expected Result:A sub-category page is opened
+
+Click on one of the sub-category topics
+
+Expected Result:you are redirected to this relevant sub-category topic page
+
+Click on a category
+
+Expected Result:Sub-category page is presented and logo of AA is presented in the top left corner&quot;,,,,,
+AZ,Verify &#x27;Read Topic&#x27; button,,,categories,read,,,&quot;Open the website
+
+Expected Result:
+
+home page is presented 
+
+Click on the &#x27;Workflows&#x27; category
+
+Expected Result:
+
+Workflow Category page is opened  
+
+Click on a sub-category button
+
+Expected Result:     
+  
+Workflow Map (workflow) page is opened
+
+Click on a station title
+
+Expected Result:
+
+A tile with the same title appears
+
+Click on ‘Read Topic’
+
+Expected Result:
+
+A topic page presenting the same title at the top is opened.
+More content is displayed in the article.&quot;,Mor,Noa,,,
+AZ,Verify language change in workflows map,,,categories,read,,,&quot;Open the website
+
+Expected Result:home page is presented
+
+Click on the workflow category
+
+Expected Result:workflow sub-category is opened
+
+Click on the language button at the top right corner
+
+Expected Result:A drop down of languages is opened
+
+Click on one of the languages
+
+Expected Result:the workflow sub-category is changed to the chosen language
+
+Click on one of the sub-category topics
+
+Expected Result:A workflow map(workflow) of this topic is presented in the chosen language
+
+Click on the tiles list button
+
+Expected Result: the tiles list is displayed in the chosen language as well&quot;,,Noa,,,
+C5248,Verify code blocks appearance,,Medium,Content,,,,&quot;Launch
+ https://automationanywhere-dev.zoominsoftware.io/bundle/enterprise-v11.3/page/enterprise/topics/bot-insight/user/bot-insight-api-details.html
+ 
+ Expected Result:
+ 
+ The topic page is presented
+ 
+ Make sure the code blocks appear as they should
+ 
+ Expected Result:
+ 
+ https://projects.invisionapp.com/d/main?origin=v7#/console/19763232/413819810/preview?scrollOffset=1880&quot;,,,Other,,
+C5064,Verify CRG page is presented,,Medium,CRG,,,,&quot;Open the website
+ 
+ Expected Result:
+ 
+ home page is presented
+ 
+ Click on the username on the top right
+ 
+ Expected Result:
+ 
+ Drop down is opened
+ 
+ Click on &#x27;Admin&#x27;
+ 
+ Expected Result:
+ 
+ Zoomin Admin page is presented
+ 
+ Click on &#x27;Content Role Groups&#x27; title
+ 
+ Expected Result:
+ 
+ CRG page is presented&quot;,,,Functional,,
+C5065,Verify CRG functionality,,Medium,CRG,,,,&quot;Open the website
+ 
+ Expected Result:
+ 
+ home page is presented
+ 
+ Click on the username on the top right
+ 
+ Expected Result:
+ 
+ Drop down is opened
+ 
+ Click on &#x27;Admin&#x27;
+ 
+ Expected Result:
+ 
+ Zoomin Admin page is presented
+ 
+ Click on &#x27;Content Role Groups&#x27; title
+ 
+ Expected Result:
+ 
+ CRG page is presented
+ 
+ Click on one of the Content Role Groups
+ 
+ Expected Result:
+ 
+ CRG page will open, title is : &quot;&quot;Content Role Group: X&quot;&quot;. Filters are on the left.
+ 
+ Verify the filters functionality
+ 
+ Expected Result:
+ 
+ Mark and unmark, open children filters and close - Do not change anything in the CRG ! Do not save.&quot;,,,Functional,,
+C5066,Verify &#x27;Create new CRG&#x27; functionality,,Medium,CRG,,,,&quot;Open the website
+ 
+ Expected Result:
+ 
+ home page is presented
+ 
+ Click on the username on the top right
+ 
+ Expected Result:
+ 
+ Drop down is opened
+ 
+ Click on &#x27;Admin&#x27;
+ 
+ Expected Result:
+ 
+ Zoomin Admin page is presented
+ 
+ Click on &#x27;Content Role Groups&#x27; title
+ 
+ Expected Result:
+ 
+ CRG page is presented
+ 
+ Click on the &#x27;Create new CRG&#x27; button
+ 
+ Expected Result:
+ 
+  &#x27;Create new CRG&#x27; page page will open, title is : &quot;&quot;Content Role Group: Define New Content Role Group&quot;&quot;. Filters are on the left.
+ 
+ Verify the filters functionality
+ 
+ Expected Result:
+ 
+ Mark and unmark, open children filters and close, type a name - Do not change anything in the CRG ! Do not save.&quot;,,,Functional,,
+C5067,Verify breadcrumbs functionality - CRG,,Low,CRG,,,,&quot;Open the website
+ 
+ Expected Result:
+ 
+ home page is presented
+ 
+ Click on the username on the top right
+ 
+ Expected Result:
+ 
+ Drop down is opened
+ 
+ Click on &#x27;Admin&#x27;
+ 
+ Expected Result:
+ 
+ Zoomin Admin page is presented
+ 
+ Click on &#x27;CRG&#x27; title
+ 
+ Expected Result:
+ 
+ CRG page is presented
+ 
+ Verify breadcrumbs are shown on the upper left side
+ 
+ Expected Result:
+ 
+ Breadcrumbs are shown
+ 
+ Click on &#x27;Admin&#x27; from the breadcrumbs
+ 
+ Expected Result:
+ 
+ Admin page is opened&quot;,Amit,Amit,Functional,,
+C8974,Verify CSH pages generation,,Medium,CSH,,,,&quot;Open the website
+ 
+ Expected Result:
+ 
+ home page is presented
+ 
+ Click on the username on the top right
+ 
+ Expected Result:
+ 
+ Drop down is opened
+ 
+ Click on &#x27;Admin&#x27;
+ 
+ Expected Result:
+ 
+ Zoomin Admin page is presented
+ 
+ Verify all tiles have icons
+ 
+ Expected Result:
+ 
+ Each tile has it&#x27;s own icon&quot;,,,Other,,
+C8975,Verify CSH pages functionality,,Medium,CSH,,,,&quot;Open the website
+ 
+ Expected Result:
+ 
+ home page is presented
+ 
+ Click on the username on the top right
+ 
+ Expected Result:
+ 
+ Drop down is opened
+ 
+ Click on &#x27;Admin&#x27;
+ 
+ Expected Result:
+ 
+ Zoomin Admin page is presented
+ 
+ Click on &#x27;Resource Ids CSV&#x27;
+ 
+ Expected Result:
+ 
+ The resource ids .CSV file is downloaded to your computer
+ 
+ Open the document
+ 
+ Expected Result:
+ 
+ test the CSH pages specified in the .CSV file. Enter the page - /csh?context=[ID] and verify you land in the corresponding topic page.&quot;,,,Other,,
+YL,Check that resourceids (from Admin) are valid - ST-8214,RS,,CSH,read,Y,,&quot;Prerequisite: Login with admin account
+Enter Admin
+Download Resource Ids csv
+Expected result: csv is downloaded
+Open csv and choose an id from last column that only exists once in the csv. Note url in same row
+Type &lt;site_url&gt;/csh?context=&lt;id&gt; in address bar
+Expected result: page specified by url in same row is displayed
+Open csv again and choose an id from last column that exists more than once in the csv
+Type &lt;site_url&gt;/csh?context=&lt;id&gt; in address bar
+Expected result: Did you mean page is displayed with all matching urls from csv&quot;,,Yehudit,,,
+YL,Create CSH links that have bundle/topic and ensure they work as expected,RS,,CSH,read,Y,,&quot; ST-8214
+Enter site
+Navigate to any topic, copy its filename (for ex. &quot;&quot;migration-reports.html&quot;&quot;) and its bundle name (for ex. &quot;&quot;enterprise-v2019&quot;&quot;)
+Navigate to a different page in site
+Enter /csh?topicname=&lt;filename copied with extension&gt; (for ex. /csh?topicname=migration-reports.html )
+Confirm the first page is loaded
+Navigate to a different page in site
+Enter /csh?topicname=&lt;filename copied without extension&gt;
+Confirm the first page is loaded again
+Enter /csh?pubname=&lt;bundle name copied&gt;
+Confirm a did-you-mean page is presented with all links from the bundle specified&quot;,,,,,
+YL,Confirm feedback emails are being sent.,RS,,emails,write,,,&quot;On a test site:
+Ask FE/DO where you can update settings (settings.yml/consul/etc)
+Update &quot;&quot;comment-email&quot;&quot; to your email
+Send feedback
+Confirm you got it&quot;,,,,,
+C5031,Verify feedback pop-up,,Medium,Feedback functionality,,,,&quot;Click on &#x27;Library&#x27; on the navbar
+ 
+ Expected Result:
+ 
+ Library page is presented
+ 
+ Click on the first item on the library page
+ 
+ Expected Result:
+ 
+ Publication page is presented 
+ 
+ Click on the send feedback icon at the bottom of the topic
+ 
+ Expected Result:
+ 
+ Feedback page is presented 
+ 
+ Click on the &#x27;X&#x27; sign
+ 
+ Expected Result:
+ 
+ Feedback page disappear&quot;,Amit,Amit,Functional,,
+C5032,Verify feedback with blank fields,,Medium,Feedback functionality,,,,&quot;Click on &#x27;Library&#x27; on the navbar
+ 
+ Expected Result:
+ 
+ Library page is presented
+ 
+ Click on the first item on the library page
+ 
+ Expected Result:
+ 
+ Publication page is presented 
+ 
+ Click on the comment icon on the right side
+ 
+ Expected Result:
+ 
+ Feedback page is presented 
+ 
+ Click on &#x27;send feedback&#x27; (leaving the feedback text box empty)
+ 
+ Expected Result:
+ 
+ &#x27;send feedback&#x27; button is invalid&quot;,,Amit,Functional,,
+C5033,Verify cancel feedback,,Medium,Feedback functionality,,,,&quot;Click on &#x27;Library&#x27; on the navbar
+ 
+ Expected Result:
+ 
+ Library page is presented
+ 
+ Click on the first item on the library page
+ 
+ Expected Result:
+ 
+ Publication page is presented 
+ 
+ Click on the feedback icon at the bottom
+ 
+ Expected Result:
+ 
+ Feedback page is presented 
+ 
+ Insert text under &#x27;Write your review&#x27;
+ 
+ Expected Result:
+ 
+ Default text in text box should disappear
+ 
+ Enter your email under &#x27;Your email&#x27;
+ 
+ Expected Result:
+ 
+ Default text in text box should disappear
+ 
+ Click on &#x27;Cancel&#x27;
+ 
+ Expected Result:
+ 
+ Feedback page is closed.
+ 
+ 
+ Move to the next topic, click on the comment icon
+ 
+ Expected Result:
+ 
+ The Feedback page will display the same value you insert before closing&quot;,,,Functional,,
+C5034,Verify send a feedback,,Medium,Feedback functionality,,,,&quot;Click on &#x27;Library&#x27; on the navbar
+ 
+ Expected Result:
+ 
+ Library page is presented
+ 
+ Click on the first item on the library page
+ 
+ Expected Result:
+ 
+ Publication page is presented 
+ 
+ Click on the comment icon on the bottom
+ 
+ Expected Result:
+ 
+ Feedback page is presented 
+ 
+ Insert text under &#x27;Write your review&#x27;
+ 
+ Expected Result:
+ 
+ Default text in text box should disappear
+ 
+ Enter your email under &#x27;Your email&#x27;
+ 
+ Expected Result:
+ 
+ Default text in text box should disappear
+ 
+ Click on &#x27;send feedback&#x27;
+ 
+ Expected Result:
+ 
+ Feedback page is closed.
+ Approval toaster will appear.
+ 
+ Move to the next topic
+ 
+ Expected Result:
+ 
+ New topic page is presented
+ 
+ Click on the comment icon on the right side
+ 
+ Expected Result:
+ 
+ Feedback page is presented with empty fields (not with the values of the feedback that was sent, besides email)&quot;,,,Functional,,
+C6073,Verify feedback filling out fields,,Medium,Feedback functionality,,,,,,,Other,,
+C4972,Verify opening of the filters menu,,Medium,Filters functionality,,,,&quot;Enter the site
+ 
+ Expected Result:
+ 
+ Lands in home page
+ 
+ Click on &#x27;Filters&#x27; in the search box
+ 
+ Expected Result:
+ 
+ Filters window will open 
+ 
+ Click again on &#x27;Filters&#x27; in the search box
+ 
+ Expected Result:
+ 
+ Filters window will now close&quot;,,,Functional,,
+C4973,Verify filters are clickable - filters functionality,,Medium,Filters functionality,,,,&quot;Enter the site
+ 
+ Expected Result:
+ 
+ Lands in home page
+ 
+ Click on &#x27;Filters&#x27; in the search box
+ 
+ Expected Result:
+ 
+ The filters menu will open
+ 
+ Click on several of the filters 
+ 
+ Expected Result:
+ 
+ The checkboxes will be checked
+ 
+ Click again on the same filters
+ 
+ Expected Result:
+ 
+ The checkboxes will be unchecked&quot;,,Amit,Functional,,
+C4975,Verify &#x27;Clear filters&#x27;,,Medium,Filters functionality,,,,&quot;Enter the site
+ 
+ Expected Result:
+ 
+ Lands in home page
+ 
+ Click on &#x27;Filters&#x27; in the search box
+ 
+ Expected Result:
+ 
+ The filters menu will open
+ 
+ Click on several of the filters 
+ 
+ Expected Result:
+ 
+ The checkboxes will be checked
+ 
+ Click on &#x27;Clear filters&#x27;
+ 
+ Expected Result:
+ 
+ All the checked filters will be now unchecked&quot;,,Amit,Functional,,
+C4976,Verify filters,,Medium,Filters functionality,,,,&quot;Enter the site
+ 
+ Expected Result:
+ 
+ Lands in home page
+ 
+ Click on &#x27;Filters&#x27; in the search box
+ 
+ Expected Result:
+ 
+ The filters menu will open
+ 
+ Click on several of the filters 
+ 
+ Expected Result:
+ 
+ The checkboxes will be checked
+ 
+ Click &#x27;Enter&#x27;
+ 
+ Expected Result:
+ 
+ You will be directed to search results page and you&#x27;ll see the specific filters you chose are shown on the left side checked and the relevant results appear
+ 
+ Click on &#x27;Home&#x27; in breadcrumbs
+ 
+ Expected Result:
+ 
+ You will be redirected to home page
+ 
+ Click on several of the filters 
+ 
+ Expected Result:
+ 
+ The checkboxes will be checked
+ 
+ Type anything in the search box and click &#x27;Enter&#x27;
+ 
+ Expected Result:
+ 
+ You will be directed to search results page and you&#x27;ll see the specific filters you chose are shown on the left side checked and the relevant results appear&quot;,,,Functional,,
+C4977,Verify filters on other pages,,Medium,Filters functionality,,,,&quot;Enter the site
+ 
+ Expected Result:
+ 
+ Lands in home page
+ 
+ Click on &#x27;Library&#x27; from nav bar
+ 
+ Expected Result:
+ 
+ You will be directed to bundle page
+ 
+ Click on &#x27;Filters&#x27; in the search box
+ 
+ Expected Result:
+ 
+ The filters menu will open
+ 
+ Click on several of the filters 
+ 
+ Expected Result:
+ 
+ The checkboxes will be checked
+ 
+ Type anything in the search box and click &#x27;Enter&#x27;
+ 
+ Expected Result:
+ 
+ You will be directed to search results page and you&#x27;ll see the specific filters you chose are shown on the left side checked and the relevant results appear
+ 
+ Click on &#x27;My docs&#x27; in nav bar
+ 
+ Expected Result:
+ 
+ You will be directed to My docs page
+ 
+ Click on &#x27;Filters&#x27; in the search box
+ 
+ Expected Result:
+ 
+ The filters menu will open
+ 
+ Click on several of the filters 
+ 
+ Expected Result:
+ 
+ The checkboxes will be checked
+ 
+ Type anything in the search box and click &#x27;Enter&#x27;
+ 
+ Expected Result:
+ 
+ You will be directed to search results page and you&#x27;ll see the specific filters you chose are shown on the left side checked and the relevant results appear&quot;,,,Functional,,
+C4921,Verify the footer items display,,Medium,Footer,,,,&quot;Launch the website
+ 
+ Expected Result:
+ 
+ Homepage is presented
+ 
+ Scroll down to the footer and observe the items
+ 
+ Expected Result:
+ 
+ Everything is aligned correctly according to design&quot;,Noa,Amit,Functional,,
+C4922,Verify footer links are clickable and opened in a new tab,,Medium,Footer,,,,&quot;Enter the site
+ 
+ Expected Result:
+ 
+ The site is opened
+ 
+ Click on one of the footer links
+ 
+ Expected Result:
+ 
+ The relevant page is opened in a new tab&quot;,Noa,Amit,Functional,,
+C4964,Verify home page appearance,,Medium,Home page,,,,&quot;Launch website
+ 
+ Expected Result:
+ 
+ Homepage is presented
+ 
+ Verify homepage according to design
+ 
+ Expected Result:
+ 
+ Homepage is presented according to design&quot;,,Amit,Functional,,
+C5246,Verify that home page is responsive,,Medium,Home page,,,,&quot;Launch website
+ 
+ Expected Result:
+ 
+ Homepage is presented
+ 
+ Decrease the screen size
+ 
+ Expected Result:
+ 
+ See that the categories&#x27; text is adjusted to the screen size as well&quot;,,,Functional,,
+C4965,Verify categories,,Medium,categories,,,,&quot;Launch website
+ 
+ Expected Result:
+ 
+ Homepage is presented
+ 
+ Hover over one of the categories
+ 
+ Expected Result:
+ 
+ The category is highlighted/shadowed
+ 
+ Click on one of the categories
+ 
+ Expected Result:
+ 
+ Category page will open. 
+ Verify the breadcrumbs are correct and all child categories are aligned
+ 
+ Click &#x27;Home&#x27; from breadcrumbs
+ 
+ Expected Result:
+ 
+ The page will be navigated back to home page&quot;,,,Functional,,
+C4966,Verify children categories,,Medium,categories,,,,&quot;Enter the site
+ 
+ Expected Result:
+ 
+ Landing on home page
+ 
+ Hover over one of the categories
+ 
+ Expected Result:
+ 
+ The category is highlighted/shadowed
+ 
+ Click on one of the categories
+ 
+ Expected Result:
+ 
+ Category page opens.
+ Verify the breadcrumbs are correct and all child categories are aligned
+ 
+ Click on one of the children categories
+ 
+ Expected Result:
+ 
+ Navigated to the relevant search results page
+ 
+ Click &#x27;Home&#x27; from breadcrumbs
+ 
+ Expected Result:
+ 
+ The page will be navigated back to home page&quot;,,,Functional,,
+AZ,Verify &#x27;Library&#x27; button(authorized user),,,home page,read,,,&quot;Open the website 
+
+Expected Result:home page is opened
+
+Login the site
+ 
+Expected Result:
+ 
+Home page is opened and you are logged in
+
+click on the &#x27;Library&#x27; page on the top menu 
+
+Expected Result: Library page is opened&quot;,same as row 185 (section top menu),,,,
+AZ,Verify &#x27;Library&#x27; button(unauthorized user),,,home page,read,,,&quot;Open the website
+
+Expected Result:home page is opened
+
+click on the &#x27;Library&#x27; page on the top menu
+
+Expected Result: Library page is opened&quot;,same as row 185 (section top menu),,,,
+AZ,Verify &#x27;My content&#x27; button,,,home page,read,Y,,&quot;Open the website
+
+Expected Result:home page is presented
+
+Login the site
+
+Expected Result: Home page is opened and you are logged in
+
+Click on the &#x27;My Content&#x27; button
+
+Expected Result: A drop down with &#x27;My Topics&#x27; and &#x27;Following&#x27; buttons is opened
+
+
+
+
+&quot;,same as row 186 (section top menu),,,,
+AZ,Verify home button,,,home page,read,N,,&quot;Open the website
+
+Expected Result:home page is presented
+
+Click on the home button
+
+expected Result:home page is presented
+
+
+&quot;,Mor,Noa,,,
+AZ,Verify &#x27;Featured Content&#x27; arrows in the bottom of the home page,,,home page,read,Y,,&quot;Open the website:
+
+Expected Result:the home page is presented
+
+Click on an arrow of the featured content in the bottom of the page
+
+Expected Result: the featured content is switched every time&quot;,Mor,Noa,,,
+AZ,Verify &#x27;Featured Content&#x27; is displayed when clicked on,,,home page,read,Y,,&quot;Open the website:
+
+Expected Result:the home page is presented
+
+Click on one of the Featured contents:
+1.Packages.actions and dependencies
+2.usa AARI on the web
+3.Citizen Developer User
+4.RFA Bots for Salesforce
+5.RFA Bots for Mule 4
+6.Get started with Automation 360 Cloud
+
+Expected Result:you are redirected to the page&quot;,Mor,Noa,,,
+AZ,Verify home page subtitle button when changing a language,,,home page,read,Y,,&quot;Open the website:
+
+Expected Result:home page is presented
+
+Click on a category button
+
+Expected Result:you are redirected to a sub-category page
+
+Click on the language button at the top right corner
+
+Expected Result:A drop down of languages is presented
+
+Click on certain language button
+
+Expected Result:the language is changed
+
+Click on the displayed home button subtitle in the certain language(under the main home button)
+
+Expected Result:you are redirected to the home page and the home page menu is in the displayed language
+&quot;,Mor,,,,
+AZ,Verify &#x27;Library&#x27; button when changing a language,,,home page,read,,,&quot;Open the website
+
+Expected Result: home page is opened
+
+Click on the language button at the top right corner
+
+Expected Result:A drop down of languages is opened
+
+Click and change the language to one of these options:
+1.Chinese((simplified)
+2.Chinese(traditional)
+3.German
+4.Spanish
+5.French
+6.Japanese
+7.Korean
+8.Portugese
+9.Italian
+10.Russian
+
+Expected Result: the language of the top menu and the library button is changed
+
+Click on the library button in the new displayed language
+
+Expected Result: you are redirected to the library page&quot;,Mor,Noa,,,
+AZ,Verify &#x27;Browse by product&#x27; buttons in the bottom of the home page,,,home page,read,Y,,&quot;Open the website
+
+Expected Result:home page is opened
+
+Click on one of the product buttons in the bottom of the home page
+
+Expected Result:you are redirected to one of the relevant product pages&quot;,Mor,Yehudit,,,
+AZ,Verify the logo button,,,home page,read,,,&quot;Open the website
+
+Expected Result:home page is presented
+
+Click on the logo on the top left corner
+
+Expected Result:you are redirected to this page: https://www.automationanywhere.com/&quot;,Mor,Noa,,,
+AZ,Verify the &#x27;more sites&#x27; button,,,home page,read,Y,,&quot;Open the website
+
+Expected Result: home page is presented
+
+Click on &#x27;more sites&#x27; in the top menu
+
+Expected Result: A drop down is opened
+
+Click on one of the opened options:&#x27;Training&#x27;,&#x27;Partner Portal&#x27;,&#x27;Bot Store&#x27;,&#x27;A-People Community&#x27;,&#x27;Developer Portal&#x27;
+
+Expected Result: you are redirected to the relevant page
+
+
+&quot;,same as rows 180-184 (section top menu),,,,
+RS,Verify indexing of new bundle upload (html and resource),RS,,Indexing,write,,,&quot;Prerequisite: Login with admin account
+Upload a new html bundle to site
+Upload a new resource (pdf) bundle to the site
+Go to /api/admin/reindex/status and confirm the reindexes are complete/ refresh until they complete
+Search for some text from the new html bundle
+Confirm it appears in search results page
+Confirm clicking on the search result opens the page
+Search for some text from the pdf in the new resource bundle
+Confirm it appears in search results page
+Confirm clicking on the search result opens the pdf page
+&quot;,,,,,
+RS,Verify indexing of existing bundle upload (html and resource),RS,,Indexing,write,,,&quot;Prerequisite: Login with admin account 
+Download an existing html bundle from admin&gt;publications page
+Change a title in the bundle, rezip and reupload with the same name as previously
+Download an existing resource bundle from admin&gt;resources page
+Change its title in filelist.xml, rezip and reupload with the same name as previously
+Go to /api/admin/reindex/status and confirm the reindexes are complete/ refresh until they complete 
+Search for the modified title from the html bundle 
+Confirm it appears in search results page 
+Confirm clicking on the search result opens the page 
+Search for the modified title from the resource bundle 
+Confirm it appears in search results page 
+Confirm clicking on the search result opens the pdf page&quot;,,,,,
+RS,Verify indexing of new language uploaded for existing sheaf (html and resource),,,Indexing,write,,,,,,,,
+RS,Verify manual bundle reindex (html and resource),,,Indexing,write,,,,,,,,
+RS,Verify reindex following updated classification map for existing bundle,,,Indexing,write,,,,,,,,
+RS,Verify full site reindex,,,Indexing,write,,,&quot;Perform a full site reindex to ensure the indexing is functioning properly. Based on previous site reindexes, monitor the amount of time it takes to complete.&quot;,,,,,
+RS,Verify manual bundle deletion (html and resource),,,Indexing,write,,,&quot;Prerequisite: Login with admin account, upload test html and resource bundles
+Navigate to Admin&gt;Publications
+Locate test html bundle and delete
+Navigate to Admin&gt;Resources
+Locate test resource bundle and delete
+Navigate to /api/admin/reindex/status
+Confirm reindex operations are complete / refresh until they complete
+Check the resources and publications page to ensure the bundles no longer appear there.
+Search for the test html bundle
+Confirm it does not display in search results
+Search for the test resource bundle
+Confirm it does not display in search results&quot;,,,,,
+RS,Verify reindex following subject scheme update,,,Indexing,write,,,,,,,,
+RS,Verify multiple concurrent index operations,,,Indexing,write,,,,,,,,
+C4987,Verify entrance to bundle page,,Medium,Library,,,,&quot;Enter the site
+ 
+ Expected Result:
+ 
+ Lands in home page
+ 
+ Click on &#x27;Library&#x27; from the nav bar
+ 
+ Expected Result:
+ 
+ Library page is opened&quot;,,Amit,Functional,,
+C4988,Verify search functionality in bundle page,,Medium,Library,,,,&quot;Enter the site
+ 
+ Expected Result:
+ 
+ Lands in home page
+ 
+ Click on &#x27;Library&#x27; from nav bar
+ 
+ Expected Result:
+ 
+ Redirected to &#x27;Library&#x27; page
+ 
+ Type a term in search box that will get results
+ 
+ Expected Result:
+ 
+ The relevant publications will appear in the list
+ 
+ Type a term in search box that won&#x27;t get any results
+ 
+ Expected Result:
+ 
+ &#x27;No results&#x27; will appear&quot;,,Amit,Functional,,
+C4989,Verify filters functionality in bundle page,,Medium,Library,,,,&quot;Enter the site
+ 
+ Expected Result:
+ 
+ Lands in home page
+ 
+ Click on &#x27;Library&#x27; from nav bar
+ 
+ Expected Result:
+ 
+ Redirected to &#x27;Library&#x27; page
+ 
+ Mark a few filters and search
+ 
+ Expected Result:
+ 
+ The relevant results will appear
+ 
+ Click &#x27;Clear filters&#x27;
+ 
+ Expected Result:
+ 
+ The filters will be cleared and no filter will be marked.
+ The results will change as well.
+
+Mark a filter which has no results
+
+Expected Result:
+
+No results will be shown
+
+Mark a combination of filters (from different sections in taxonomy) which have results on their own but not combined
+
+No results will be shown&quot;,Amit,Amit,Functional,,
+C4990,Verify &#x27;PDF Download&#x27; functionality from bundle page,,Medium,Library,,,,&quot;Enter the site
+ 
+ Expected Result:
+ 
+ Lands in home page
+ 
+ Click on &#x27;Library&#x27; from nav bar
+ 
+ Expected Result:
+ 
+ Redirected to &#x27;Library&#x27; page
+ 
+ Click on &#x27;Download PDF&#x27;
+ 
+ Expected Result:
+ 
+ A relevant message will appear and the PDF will be downloaded
+ 
+ Verify the PDF includes the entire bundle
+ 
+ Expected Result:
+ 
+ TRUE&quot;,,,Functional,,
+C4991,Verify pagination functionality in bundle page,,Medium,Library,,,,&quot;Enter the site
+ 
+ Expected Result:
+ 
+ Lands in home page
+ 
+ Click on &#x27;Library&#x27; from nav bar
+ 
+ Expected Result:
+ 
+ Redirected to &#x27;Library&#x27; page
+ 
+ Click on the number of results per page drop down
+ 
+ Expected Result:
+ 
+ Drop-down will open and close when click again
+ 
+ Change the number of results per page to 20
+ 
+ Expected Result:
+ 
+ Correct number of results presented per page
+ 
+ Change the number of results per page to 50
+ 
+ Expected Result:
+ 
+ Correct number of results presented per page
+ 
+ Verify the current page you&#x27;re in is marked
+ 
+ Expected Result:
+ 
+ TRUE
+ 
+ Click the &#x27;Next&#x27;/&#x27;Last/&#x27;Previous&#x27;/&#x27;First&#x27; 
+ 
+ Expected Result:
+ 
+ The page will redirect to the next/last/first/previous page.
+ 
+ Click on different page number 
+ 
+ Expected Result:
+ 
+ The page will redirect to selected page.&quot;,,,Functional,,
+C6072,Verify download time pdf,,Medium,Library,,,,,,,Other,,
+RS,Verify sort order on bundle page (library),RS,,Library,read,,,&quot;Enter the site
+
+Navigate to Library page
+Check that the default sort order is correct. For example:
+Check &quot;&quot;Updated&quot;&quot; date of bundles
+Confirm they are sorted in descending order
+
+If sort order is supposed to be alphabetical - check that bundle titles are in descending alphabetical order&quot;,,Noa,,,
+RS,Verify bundle clustering on library page,,,Library,read,,,Need to find customer using this feature to write test plan,,,,,
+YL,Change languages and make sure all work - need to access content to make sure content exists in all languages,YL,,Localization,read,Y,,&quot;For AA - this bundle exists in all languages https://automationanywhere-staging.zoominsoftware.io/bundle/enterprise-v2019/page/enterprise-cloud/topics/deployment-planning/on-prem-install/cloud-prerequisites-control-room.html
+
+Go to the page listed here, or another page from the enterprise-v2019 bundle
+
+Change language to Chinese
+Confirm the content is in Chinese
+Confirm the TOC is in Chinese
+Repeat for every language
+Expected behavior:
+All languages work in the language expected&quot;,,RS,,,
+YL,Confirm that uploading of HTML has not been negatively impacted,,,Localization,write,,,&quot;On dev &amp; staging, before a new release goes to production, PINT or another individual who has access to uploading content should upload an HTML bundle to the environment.
+
+The bundle should include a representative sample of metadata and tagging to closely mimic a typical upload for that customer.  
+
+After uploading, confirm the content is visible on the portal.
+
+Upon deployment to production - conduct the test again.&quot;,,,,,
+C4906,Verify login with invalid credentials,,High,Login,read,,,&quot;Launch home and navigate to &#x27;Login&#x27; on the top right
+ 
+ 
+ 
+ Expected Result:
+ 
+ Login page is presented 
+ 
+ 
+ Enter a valid email address and an invalid password
+ 
+ Expected Result:
+ 
+ Error message will appear underneath the password box
+ 
+ Enter an invalid email address 
+ 
+ Expected Result:
+ 
+ Error message will appear underneath the email box&quot;,,,Functional,,
+C4907,Verify login with blank fields,,High,Login,read,,,&quot;Launch home and navigate to &#x27;Login&#x27; on the top right
+ 
+ 
+ 
+ Expected Result:
+ 
+ Login page is presented 
+ 
+ 
+ Enter a valid email address, leave the password field empty and click on the login button
+ 
+ Expected Result:
+ 
+ Error message will appear underneath the password box
+ 
+ Delete the email address, enter a valid password and click on the login button
+ 
+ Expected Result:
+ 
+ Error message will appear underneath the email box&quot;,,,Functional,,
+C4908,Verify login password field display,,Low,Login,read,,,&quot;Launch home and navigate to &#x27;Login&#x27; on the top right 
+ 
+ Expected Result:
+ 
+ Login page is presented 
+ 
+ Insert your password
+ 
+ Expected Result:
+ 
+ The data in the password field is either visible as asterisk or bullet signs&quot;,,,Functional,,
+C4909,Verify &#x27;Forgot Password&#x27; functionality,,Critical,Login,read,,,&quot;Launch home and navigate to &#x27;Login&#x27; on the top right
+ 
+ 
+ 
+ Expected Result:
+ 
+ Login page is presented 
+ 
+ Click &#x27;forgot password?&#x27;
+ 
+ Expected Result:
+ 
+ Forgot password screen is presented
+ 
+ Enter your email and hit &#x27;send password recovery&#x27;
+ 
+ Expected Result:
+ 
+ An email is sent to your inbox 
+ 
+ Open your email and set a new password 
+ 
+ Expected Result:
+ 
+ New password is set successfully 
+ 
+ Login with your new password
+ 
+ Expected Result:
+ 
+ Login is successful&quot;,,,Functional,,
+C4910,Verify login with valid credentials,,Critical,Login,read,,,&quot;Launch home and navigate to &#x27;Login&#x27; on the top right 
+ 
+ Expected Result:
+ 
+ Login page is presented 
+ 
+ Login with valid credentials
+ 
+ Expected Result:
+ 
+ You are logged in. You are getting back to the homepage and at the top right &#x27;Login&#x27; has changed to the username that is logged in.&quot;,Amit,Amit,Functional,,
+C4911,Verify logout,,Medium,Login,read,,,&quot;Click on the username at the top right 
+ 
+ Expected Result:
+ 
+ Dropdown menu is opening
+ 
+ Select &#x27;logout&#x27; 
+ 
+ Expected Result:
+ 
+ You are logged out. Instead of the username &#x27;Login&#x27; is shown&quot;,Mor,Amit,Other,,
+C4999,Verify collection menu,,Medium,MyDocs,,,,&quot;Click on My Topics
+ 
+ Expected Result:
+ 
+ My Topics page is presented
+ 
+ Click on the collection menu of any collection.
+ 
+ Expected Result:
+ 
+ The options menu should open
+ 
+ Click on the collection name again 
+ 
+ Expected Result:
+ 
+ The options menu should close&quot;,,,Functional,,
+C5000,Verify save PDF functionality - no topic presented,,Medium,MyDocs,,,,&quot;Click on My Topics
+ 
+ Expected Result:
+ 
+ My Topics page is presented
+ 
+ Click on the collection menu of any collection.
+ 
+ Expected Result:
+ 
+ The options menu should open
+ 
+ Click on &#x27;Save PDF&#x27;
+ 
+ Expected Result:
+ 
+ Approval toaster is presented.
+ PDF with the collection name will be downloaded.
+ 
+ Open the downloaded file
+ 
+ Expected Result:
+ 
+ PDF includes the entire collection&quot;,,,Functional,,
+C5001,Verify save PDF functionality - topic presented,,Medium,MyDocs,,,,&quot;Click on My Topics
+ 
+ Expected Result:
+ 
+ My Topics page is presented
+ 
+ Click on any collection
+ 
+ Expected Result:
+ 
+ Collection topic is presented
+ 
+ Click on any topic
+ 
+ Expected Result:
+ 
+ Topic is presented
+ 
+ Click on the collection menu
+ 
+ Expected Result:
+ 
+ The options menu should open
+ 
+ Click on &#x27;Save PDF&#x27;
+ 
+ Expected Result:
+ 
+ Approval toaster is presented.
+ PDF with the collection name will be downloaded.
+ 
+ Open the downloaded file
+ 
+ Expected Result:
+ 
+ PDF includes the entire collection&quot;,,,Functional,,
+C5002,Verify share collection window,,Medium,MyDocs,,,,&quot;Click on My Topics
+ 
+ Expected Result:
+ 
+ My Topics page is presented
+ 
+ Click on any collection menu
+ 
+ Expected Result:
+ 
+ The options menu should open
+ 
+ Click on &#x27;Share&#x27;
+ 
+ Expected Result:
+ 
+ Share page is presented
+ 
+ Click on &#x27;X&#x27;
+ 
+ Expected Result:
+ 
+ Collection page is closed&quot;,,,Functional,,
+C5003,Verify share collection,,Medium,MyDocs,,,,&quot;Click on My Topics
+ 
+ Expected Result:
+ 
+ My Topics page is presented
+ 
+ Click on any collection menu
+ 
+ Expected Result:
+ 
+ The options menu should open
+ 
+ Click on &#x27;Share&#x27;
+ 
+ Expected Result:
+ 
+ Share page is presented
+ 
+ Enter an email and click &#x27;Enter&#x27;
+ 
+ Expected Result:
+ 
+ The email will be added to the list with the status &#x27;pending&#x27;
+ 
+ Add a message and click &#x27;Share collection&#x27;
+ 
+ Expected Result:
+ 
+ The collection will be shared, the collection page is closed
+ 
+ Enter the shared mails inbox and verify that an email about the shared collection was received
+ 
+ Expected Result:
+ 
+ The email will contain the message that was sent when sharing the collection&quot;,,,Functional,,
+C5004,Verify change default collection,,Medium,MyDocs,,,,&quot;Click on My Topics
+ 
+ Expected Result:
+ 
+ My Topics page is presented
+ 
+ Click on the collection menu of any collection.
+ 
+ Expected Result:
+ 
+ The options menu should open
+ 
+ Click on &#x27;Set as default&#x27;
+ 
+ Expected Result:
+ 
+ Collection will be set as default, collection name will be bold
+ 
+ Click on the collection menu of the default collection
+ 
+ Expected Result:
+ 
+ Set as default option should be greyed out.
+ 
+ Click on &#x27;Library&#x27;
+ 
+ Expected Result:
+ 
+ Library page is presented
+ 
+ Click on the first item
+ 
+ Expected Result:
+ 
+ Publication page is presented
+ 
+ Click on &#x27;Add to My Topics&#x27;
+ 
+ Expected Result:
+ 
+ Add to My Topics is presented with the default collection name&quot;,,,Functional,,
+C5005,&quot;Verify rename with invalid credentials(note,changing with invalid credentials)&quot;,,Medium,MyDocs,,,,&quot;Click on My Topics
+ 
+ Expected Result:
+ 
+ My Topics page is presented
+ 
+ Click on the collection menu of any collection.
+ 
+ Expected Result:
+ 
+ The options menu should open
+ 
+ Click on &#x27;Rename&#x27;
+ 
+ Expected Result:
+ 
+ Collection name will appear in edit mode
+ 
+ Write a name that includes special characters and press ENTER
+ 
+ Expected Result:
+ 
+ Validation error message is presented&quot;,Amit(changing with invalid credentials),Amit(changing with invalid credentials),Functional,,
+C5006,Verify duplicate collection name is invalid,,Medium,MyDocs,,,,&quot;Click on My Topics
+ 
+ Expected Result:
+ 
+ My Topics page is presented
+ 
+ Click on the collection menu of any collection.
+ 
+ Expected Result:
+ 
+ The options menu should open
+ 
+ Click on &#x27;Rename&#x27;
+ 
+ Expected Result:
+ 
+ Collection name will appear in edit mode
+ 
+ Insert a name that already exists and press ENTER
+ 
+ Expected Result:
+ 
+ Validation error message is presented that collection name already exists&quot;,,Amit,Functional,,
+C5007,Verify rename collection,,Medium,MyDocs,,,,&quot;Click on My Topics
+ 
+ Expected Result:
+ 
+ My Topics page is presented
+ 
+ Click on the collection menu of any collection.
+ 
+ Expected Result:
+ 
+ The options menu should open
+ 
+ Click on &#x27;Rename&#x27;
+ 
+ Expected Result:
+ 
+ Collection name will appear in edit mode
+ 
+ Insert a new name and press ENTER
+ 
+ Expected Result:
+ 
+ The collection&#x27;s name will change to the new name given
+ 
+ Click on &#x27;Rename&#x27;
+ 
+ Expected Result:
+ 
+ Collection name will appear in edit mode
+
+ Insert a new name that is already exists and press ENTER
+
+ Expected Result:
+
+ &#x27;There is already a collection with this name&#x27; pop-up message will appear
+
+Click on &#x27;Rename&#x27;
+ 
+ Expected Result:
+ 
+ Collection name will appear in edit mode
+ 
+ Click &#x27;X&#x27; 
+ 
+ Expected Result:
+ 
+ Edit mode disappear and the name stay the same&quot;,Amit,Mor,Functional,,
+C5008,Verify delete collection,,Medium,MyDocs,,,,&quot;Click on My Topics
+ 
+ Expected Result:
+ 
+ My Topics page is presented
+ 
+ Click on the collection menu of any collection.
+ 
+ Expected Result:
+ 
+ The options menu should open
+ 
+ Click on &#x27;Delete&#x27;
+ 
+ Expected Result:
+ 
+ &#x27;Are you sure&#x27; pop-up message will appear 
+ 
+ Click on &#x27;Cancel&#x27;
+ 
+ Expected Result:
+ 
+ Message is closed, collection appear in the list
+ 
+ Click on &#x27;Delete&#x27;
+ 
+ Expected Result:
+ 
+ &#x27;Are you sure&#x27; pop-up message will appear
+ 
+ Click on &#x27;Yes, Delete&#x27;
+ 
+ Expected Result:
+ 
+ Collection name is deleted from the list&quot;,Amit,Mor,Functional,,
+C5009,Verify delete default collection,,Medium,MyDocs,,,,&quot;Click on My Topics
+ 
+ Expected Result:
+ 
+ My Topics page is presented
+ 
+ Click on the collection menu of the default collection.
+ 
+ Expected Result:
+ 
+ The options menu should open
+ 
+ Click on &#x27;Delete&#x27;
+ 
+ Expected Result:
+ 
+ &#x27;Are you sure&#x27; pop-up message will appear 
+ 
+ Click on &#x27;Yes, Delete&#x27;
+ 
+ Expected Result:
+ 
+ Collection name is deleted from the list.
+ The first collection is set to default.&quot;,Amit,Mor,Functional,,
+C5010,Verify create new collection window,,Medium,MyDocs,,,,&quot;Click on My Topics
+ 
+ Expected Result:
+ 
+ My Topics page is presented
+ 
+ Click on the &#x27;+ create a new collection&#x27; button.
+ 
+ Expected Result:
+ 
+ Create New Collection page is presented
+ 
+ Click on &#x27;X&#x27;
+ 
+ Expected Result:
+ 
+ Create New Collection page is closed&quot;,Amit,Mor,Functional,,
+C5011,Verify create new collection,,Medium,MyDocs,,,,&quot;Click on My Topics
+ 
+ Expected Result:
+ 
+ My Topics page is presented
+ 
+ Click on the &#x27;+ create a new collection&#x27; button.
+ 
+ Expected Result:
+ 
+ Create New Collection window is presented
+ 
+ Insert a collection name
+ 
+ Expected Result:
+ 
+ Default text in text box should disappear
+ 
+ Click on &#x27;Create&#x27;
+ 
+ Expected Result:
+ 
+ Create New Collection window is closed
+ 
+ Search for the collection name
+ 
+ Expected Result:
+ 
+ Collection name is presented in the list&quot;,Amit,Mor,Functional,,
+C5012,Verify set as default new collection,,Medium,MyDocs,,,,&quot;Click on My Topics
+ 
+ Expected Result:
+ 
+ My Topics page is presented
+ 
+ Click on the &#x27;+ create a new collection&#x27; button.
+ 
+ Expected Result:
+ 
+ Create New Collection window is presented
+ 
+ Insert a collection name
+ 
+ Expected Result:
+ 
+ Default text in text box should disappear
+ 
+ Mark checkbox &#x27;Set as my default collection&#x27; 
+ 
+ Expected Result:
+ 
+ The checkbox is marked
+ 
+ Click on &#x27;Create&#x27;
+ 
+ Expected Result:
+ 
+ Create New Collection window is closed
+ 
+ Search for the collection name
+ 
+ Expected Result:
+ 
+ Collection name is presented in the list.
+ Collection appears as default&quot;,,Mor,Functional,,
+C7398,Verify dropdown menu on click,,Low,MyDocs,,,,&quot;click on &#x27;Publications&#x27; on the top navbar
+ 
+ Expected Result:
+ 
+ Publications page is presented
+ 
+ Click on the first item on the Publications page
+ 
+ Expected Result:
+ 
+ Topic page is presented 
+ 
+ Click on the &#x27;Add to My Topics&#x27; icon on the right side
+ 
+ Expected Result:
+ 
+ A Dropdown menu will appear showing the options:
+ 1. Selected topic and subtopics.
+ 2. All content
+ ![](index.php?/attachments/get/167)
+ 
+ 
+ The Add to My Topics window appears.
+ Click on the dropdown and choose a collection, or select Create new collection and type a new name.
+ ![](index.php?/attachments/get/168)
+ Click Add to My Topics.
+ 
+ Expected Result:
+ 
+ An approval announcement shows up - &#x27;Successfully added to My Topics.
+ 
+ Click somewhere out of the dropdown menu
+ 
+ Expected Result:
+ 
+ The dropdown menu will disappear&quot;,,,Functional,,
+C7399,Verify default collection name in dropdown row,,Low,MyDocs,,,,&quot;Click on &#x27;My Topics&#x27; on the navbar, check for the default collection name - the one with a star icon next to it
+ ![](index.php?/attachments/get/244)
+ - &quot;&quot;Default collection&quot;&quot;
+ 
+ 
+ Expected Result:
+ 
+ My Topics page is presented
+ 
+ click on &#x27;Publications&#x27; on the top navbar
+ 
+ Expected Result:
+ 
+ Publications page is presented
+ 
+ Click on the first item
+ 
+ Expected Result:
+ 
+ Topic page is presented 
+ 
+ Click on the &#x27;Add to My Topics&#x27; icon on the right side
+ 
+ Expected Result:
+ 
+ A Dropdown menu will appear
+ 
+ Click on one of the options - &#x27;Selected topic and subtopics&#x27; or &#x27;All content&#x27;
+ 
+ Expected Result:
+ 
+ Add to My Topics page is presented.
+ The same collection&#x27;s name will appear on the drop-down row under &#x27;Choose Collection&#x27;:
+ ![](index.php?/attachments/get/245)&quot;,,,Functional,,
+C7400,Verify approval announcement text,,Low,MyDocs,,,,&quot;Click on &#x27;My Topics&#x27; on the navbar, check for the default collection name
+ 
+ Expected Result:
+ 
+ My Topics page is presented
+ 
+ click on &#x27;Publications&#x27; on the top navbar
+ 
+ Expected Result:
+ 
+ Publications page is presented
+ 
+ Check for the first item
+ 
+ Expected Result:
+ 
+ Topic page is presented 
+ 
+ Click on the &#x27;Add to My Topics&#x27; icon on the right side
+ 
+ Expected Result:
+ 
+ A Dropdown menu will appear
+ 
+ Click on one of the options - &#x27;Selected topic and subtopics&#x27; or &#x27;All content&#x27;
+ 
+ Expected Result:
+ 
+ Add to My Topics popup is presented.
+ The default collection&#x27;s name will appear on the drop-down row.
+ 
+ Click on &#x27;Add to My Topics&#x27;
+ 
+ Expected Result:
+ 
+ The approval announcement - &#x27;Successfully added to My Topics&#x27; appears. Popup automatically closes.&quot;,,,Functional,,
+C7401,Verify choose collection,,Medium,MyDocs,,,,&quot;click on &#x27;Publications&#x27; on the top navbar
+ 
+ Expected Result:
+ 
+ Publications page is presented
+ 
+ Click on the first item on the Publications page
+ 
+ Expected Result:
+ 
+ Topic page is presented
+ 
+ Click on My Topics icon (star icon) on the right side
+ 
+ Expected Result:
+ 
+ A Dropdown menu will appear
+ 
+ Click on one of the options - &#x27;Selected topic and subtopics&#x27; or &#x27;All content&#x27;
+ 
+ Expected Result:
+ 
+ Add to My Topics page is presented
+ 
+ Click on the names of the collection dropdown/arrow indicator
+ 
+ Expected Result:
+ 
+ The list of My Topics collection expands:
+ ![](index.php?/attachments/get/246)
+ 
+ 
+ Click again there
+ 
+ Expected Result:
+ 
+ Dropdown collapsed&quot;,,,Functional,,
+C7402,Verify create new collection blank field name,,Medium,MyDocs,,,,&quot;click on &#x27;Publications&#x27; on the top navbar
+ 
+ Expected Result:
+ 
+ Publications page is presented
+ 
+ Click on the first item on the Publications page
+ 
+ Expected Result:
+ 
+ Topic page is presented
+ 
+ Click on Add to My Topics icon on the right side
+ 
+ Expected Result:
+ 
+ A Dropdown menu will appear
+ 
+ Click on one of the options - &#x27;Selected topic and subtopics&#x27; or &#x27;All content&#x27;
+ 
+ Expected Result:
+ 
+ Add to My Topics page is presented
+ 
+ Click &#x27;Add to My Topics&#x27;
+ 
+ Expected Result:
+ 
+ &#x27;You must specify a collection name&#x27; error message appears:
+ ![](index.php?/attachments/get/169)&quot;,,,Functional,,
+C7403,Verify create new collection,,Medium,MyDocs,,,,&quot;click on &#x27;Publications&#x27; on the top navbar
+ 
+ Expected Result:
+ 
+ Publications page is presented
+ 
+ Click on the first item on the Publications page
+ 
+ Expected Result:
+ 
+ Topic page is presented
+ 
+ Click on My Topics icon (star icon) on the right side
+ 
+ Expected Result:
+ 
+ A Dropdown menu will appear
+ 
+ Click on one of the options - &#x27;Selected topic and subtopics&#x27; or &#x27;All content&#x27;
+ 
+ Expected Result:
+ 
+ Add to My Topics window is presented
+ 
+ Choose &#x27;Create New Collection&#x27; and enter a name
+ 
+ Expected Result:
+ 
+ Default text in text box should disappear
+ 
+ Click &#x27;Add to My Topics&#x27;
+ 
+ Expected Result:
+ 
+ Add to My Topics window disappears, approval announcement appears
+ 
+ click on &#x27;My Topics&#x27; on the top navbar, search for the new collection created
+ 
+ Expected Result:
+ 
+ Collection name appears in the collection list and it&#x27;s not default&quot;,,,Functional,,
+C7404,Verify set as default collection,,Medium,MyDocs,,,,&quot;click on &#x27;Publications&#x27; on the top navbar
+ 
+ Expected Result:
+ 
+ Publications page is presented
+ 
+ Click on the first item on the Publications page
+ 
+ Expected Result:
+ 
+ Topic page is presented
+ 
+ Click on My Topics icon (star icon) on the right side
+ 
+ Expected Result:
+ 
+ A Dropdown menu will appear
+ 
+ Click on one of the options - &#x27;Selected topic and subtopics&#x27; or &#x27;All content&#x27;
+ 
+ Expected Result:
+ 
+ Add to My Topics page is presented
+ 
+ Choose &#x27;Create New Collection&#x27; and enter a name
+ 
+ Expected Result:
+ 
+ Default text in text box should disappear
+ 
+ Mark checkbox &#x27;Set as my default collection&#x27; 
+ 
+ Expected Result:
+ 
+ The checkbox is marked
+ 
+ Click &#x27;Add to My Topics&#x27;
+ 
+ Expected Result:
+ 
+ Add to My Topics page disappear, approval announcement appears
+ 
+ click on &#x27;My Topics&#x27; on the top navbar, search for the new collection created
+ 
+ Expected Result:
+ 
+ Collection name appears in the collection list.
+ Collection appears as default&quot;,,,Functional,,
+C7405,Verify adding topic and subtopics,,Medium,MyDocs,,,,&quot;click on &#x27;Publications&#x27; on the top navbar
+ 
+ Expected Result:
+ 
+ Publications page is presented
+ 
+ Click on the first item on the Publications page
+ 
+ Expected Result:
+ 
+ Topic page is presented
+ 
+ Click on My Topics icon (star icon) on the right side
+ 
+ Expected Result:
+ 
+ A Dropdown menu will appear
+ 
+ Click on &#x27;Add topic and subtopics&#x27;
+ 
+ Expected Result:
+ 
+ Add to My Topics window is presented
+ 
+ Remember the collection name under &#x27;Choose Collection&#x27; and click on &#x27;Add to My Topics&#x27;
+ 
+ Expected Result:
+ 
+ Add to My Topics window is closed.
+ A pop-up should message appear on the right side of the screen.
+ 
+ Click on &#x27;My Topics&#x27; on the navbar
+ 
+ Expected Result:
+ 
+ My Topics page is presented
+ 
+ Search for the collection name from step 5 and click on the name
+ 
+ Expected Result:
+ 
+ The name of the topic that was add appears under the collection
+ 
+ Click on the topic that was added 
+ 
+ Expected Result:
+ 
+ Verify the topic looks as expected&quot;,,,Functional,,
+C7406,Verify add the topic that&#x27;s already added to the same MyDocs,,Medium,MyDocs,,,,&quot;click on &#x27;Publications&#x27; on the top navbar
+ 
+ Expected Result:
+ 
+ Publications page is presented
+ 
+ Click on the first item on the Publications page
+ 
+ Expected Result:
+ 
+ Topic page is presented
+ 
+ Click on My Topics icon (star icon) on the right side
+ 
+ Expected Result:
+ 
+ A Dropdown menu will appear
+ 
+ Click on &#x27;Selected topic and subtopics&#x27;
+ 
+ Expected Result:
+ 
+ Add to My Topics window is presented
+ 
+ Click on &#x27;Add to My Topics&#x27;
+ 
+ Expected Result:
+ 
+ Add to My Topics window is closed.
+ A pop-up should message appear on the screen.
+ 
+ Click on My Topics icon (star icon) on the right side
+ 
+ Expected Result:
+ 
+ A Dropdown menu will appear
+ 
+ Click on &#x27;All content&#x27;
+ 
+ Expected Result:
+ 
+ Add to My Topics window is presented
+ 
+ Click on &#x27;Add to My Topics&#x27;
+ 
+ Expected Result:
+ 
+ Pop-up - &#x27;Topic already added to selected collection&#x27;
+ Add to My Topics window remains open
+ ![](index.php?/attachments/get/171)
+ 
+ 
+ Click on &#x27;Cancel&#x27;
+ 
+ Expected Result:
+ 
+ Add to My Topics page is closed
+ 
+ Click on &#x27;My Topics&#x27; on the navbar
+ 
+ Expected Result:
+ 
+ My Topics page is presented
+ 
+ Search for the collection name that the publication was added to
+ 
+ Expected Result:
+ 
+ The name of the publication that was added appears under the collection only once&quot;,,,Functional,,
+C7407,Verify adding entire publication,,Medium,MyDocs,,,,&quot;click on &#x27;Publications&#x27; on the top navbar
+ 
+ Expected Result:
+ 
+ Publications page is presented
+ 
+ Click on the first item on the Publications page
+ 
+ Expected Result:
+ 
+ Topic page is presented
+ 
+ Click on My Topics icon (star icon) on the right side
+ 
+ Expected Result:
+ 
+ A Dropdown menu will appear
+ 
+ Click on &#x27;add all content&#x27;
+ 
+ Expected Result:
+ 
+ Add to My Topics window is presented
+ 
+ Remember the collection name under &#x27;Choose Collection&#x27; and click on &#x27;Add to My Topics&#x27;
+ 
+ Expected Result:
+ 
+ Add to My Topics page is closed.
+ A pop-up should message appear on the right side of the screen.
+ 
+ Click on &#x27;My Topics&#x27; on the navbar
+ 
+ Expected Result:
+ 
+ My Topics page is presented
+ 
+ Search for the collection name from step 5 and click on the name
+ 
+ Expected Result:
+ 
+ The name of the publication that contains the topic that the publication was added from appears under the collection
+ 
+ Click on the publication that was added
+ 
+ Expected Result:
+ 
+ Verify the publication looks as expected, and includes all its content&quot;,,,Functional,,
+C4994,Verify uncheck topic,,Medium,MyDocs,,,,&quot;Click on My Topics
+ 
+ Expected Result:
+ 
+ My Topics page is presented
+ 
+ Click on a collection name
+ 
+ Expected Result:
+ 
+ All topic will appear
+ 
+ Check a topic
+ 
+ Expected Result:
+ 
+ Checkbox will be checked.
+ &#x27;Delete&#x27; and &#x27;Save&#x27; button should appear.
+ 
+ 
+ Uncheck a topic
+ 
+ Expected Result:
+ 
+ Checkbox will be unchecked.
+ &#x27;Delete&#x27; and &#x27;Save&#x27; button should disappear.&quot;,,,Functional,,
+C4995,Verify save selected topics from collection,,Medium,MyDocs,,,,&quot;Click on My Topics
+ 
+ Expected Result:
+ 
+ My Topics page is presented
+ 
+ Click on a collection name
+ 
+ Expected Result:
+ 
+ All topic will appear
+ 
+ Check a few topics checkboxes
+ 
+ Expected Result:
+ 
+ Checkbox will be checked.
+ &#x27;Delete&#x27; and &#x27;Save&#x27; button should appear
+ 
+ Click on &#x27;Save&#x27;
+ 
+ Expected Result:
+ 
+ Approval toaster is presented.
+ PDF with the collection name will be downloaded.
+ 
+ Open the downloaded file
+ 
+ Expected Result:
+ 
+ PDF includes the checked topics&quot;,,,Functional,,
+C4996,Verify delete selected topics from collection display,,Medium,MyDocs,,,,&quot;Click on My Topics
+ 
+ Expected Result:
+ 
+ My Topics page is presented
+ 
+ Click on a collection name
+ 
+ Expected Result:
+ 
+ All topic will appear
+ 
+ Check a few topics checkboxes
+ 
+ Expected Result:
+ 
+ Checkbox will be checked.
+ &#x27;Delete&#x27; and &#x27;Save&#x27; button should appear
+ 
+ Click on &#x27;Delete&#x27;
+ 
+ Expected Result:
+ 
+ &#x27;Are you sure&#x27; pop-up message will appear
+ 
+ Click on &#x27;Cancel&#x27;
+ 
+ Expected Result:
+ 
+ Message is closed, topics appear in the list
+ 
+ Click on &#x27;Delete&#x27;
+ 
+ Expected Result:
+ 
+ &#x27;Are you sure&#x27; pop-up message will appear
+ 
+ Click on &#x27;Yes, Delete&#x27;
+ 
+ Expected Result:
+ 
+ Checked topics name is deleted from the list&quot;,,,Functional,,
+C6070,Verify delete selected topics from MyDocs,,Medium,MyDocs,,,,&quot;Click on My Topics
+ 
+ Expected Result:
+ 
+ My Topics page is presented
+ 
+ Click on a collection name
+ 
+ Expected Result:
+ 
+ All topic will appear
+ 
+ Check a few topics checkboxes
+ 
+ Expected Result:
+ 
+ Checkbox will be checked.
+ &#x27;Delete&#x27; and &#x27;Save&#x27; button should appear
+ 
+ Click on &#x27;Delete&#x27;
+ 
+ Expected Result:
+ 
+ &#x27;Are you sure&#x27; pop-up message will appear
+ 
+ Click on &#x27;Cancel&#x27;
+ 
+ Expected Result:
+ 
+ Message is closed, topics appear in the list
+ 
+ Click on &#x27;Delete&#x27;
+ 
+ Expected Result:
+ 
+ &#x27;Are you sure&#x27; pop-up message will appear
+ 
+ Click on &#x27;Yes, Delete&#x27;
+ 
+ Expected Result:
+ 
+ Checked topics name is deleted from the list&quot;,,,Functional,,
+C4997,Verify open a topic,,Medium,MyDocs,,,,&quot;Click on My Topics
+ 
+ Expected Result:
+ 
+ My Topics page is presented
+ 
+ Click on a collection name
+ 
+ Expected Result:
+ 
+ All topic will appear
+ 
+ Click on one topic
+ 
+ Expected Result:
+ 
+ Topic page is presented&quot;,,,Functional,,
+C4998,Verify open a linked topic,,Medium,MyDocs,,,,&quot;Click on My Topics
+ 
+ Expected Result:
+ 
+ My Topics page is presented
+ 
+ Click on a collection name
+ 
+ Expected Result:
+ 
+ All topic will appear
+ 
+ Find a topic that has a link to another topic
+ 
+ Expected Result:
+ 
+ Topic page is presented
+ 
+ Click on link to another Topic
+ 
+ Expected Result:
+ 
+ Topic page is presented
+ 
+ Click on &#x27;Add to My Topics&#x27;
+ 
+ Expected Result:
+ 
+ A Dropdown menu will appear
+ 
+ Click on one of the options
+ 
+ Expected Result:
+ 
+ Add to My Topics page is presented.
+ 
+ Click on &#x27;Create&#x27;
+ 
+ Expected Result:
+ 
+ Approval toaster is presented
+ 
+ 
+ Click on &#x27;My Topics&#x27; in the navbar
+ 
+ Expected Result:
+ 
+ My Topics page is presented
+ 
+ Click on the collection the topic was added to.
+ 
+ Expected Result:
+ 
+ Collection contains the topic added&quot;,,,Functional,,
+C6069,Verify toaster messages on MyTopics,,Medium,MyDocs,,,,,,,Other,,
+YL,Confirm MyDocs works as expected with localized bundles.,Noa,,MyDocs,read,N,,&quot;Repeat for each language
+
+Change to another language 
+ 
+Expected Result:
+ 
+All menu items are in that language 
+
+Click on &#x27;My Topics&#x27;
+ 
+Expected Result:
+ 
+My Topics page is presented
+
+Click on &#x27;Library&#x27; on the top navbar
+
+Expected Result: 
+
+Library page is presented 
+
+Click on the first item 
+
+Expected Result: 
+
+Topic page is presented 
+
+Click on My Topics icon (star icon) on the right side
+
+Expected Result: A Dropdown menu will appear 
+
+Click on &#x27;Add Topics and all subtopics&#x27; (first option) 
+
+Expected Result: 
+
+Add to My Topics window is presented 
+
+Choose &#x27;Create New Collection&#x27; (second option) and enter a name 
+
+Expected Result: Default text in text box should disappear 
+
+Click &#x27;Add to My Topics&#x27; 
+
+Expected Result: Add to My Topics window disappears, 
+
+approval toaster appears 
+
+click on &#x27;My Topics&#x27; on the top navbar, search for the new collection created 
+
+Expected Result: 
+
+Collection name appears in the collection list and it&#x27;s not default&quot;,Or,Amit,,,
+RS,Verify topics I added to MyDocs (new and default collections) display afterwards,RS,,MyDocs,read,N,,&quot;Prerequisite: Log into site
+Navigate to a topic and click star icon to add to My Topics
+In popup to choose collection - do not change from preselected default collection
+Click Add to My Topics
+ Navigate to second topic and click star icon to add to My Topics
+In popup to choose collection - change selection to choose a different collection than the default
+Navigate to third topic and click star icon to add to My Topics
+In popup to choose collection - change to create a new collection and enter a field.
+Click Add to My Topics
+Navigate to My Topics 
+Enter default collection - confirm the first topic is there
+Enter the other previous collection - confirm the second topic is there
+Enter the newly-created collection - confirm the third topic is there
+&quot;,Yehudit,Noa,,,
+RS,Verify entering My Topics with no permission errors,RS,,MyDocs,read,N,,&quot;Prerequisite: Login to site
+Navigate to My Topics in top menu
+Expected result: My Topics loads correctly&quot;,,Yehudit,,,
+RS,Verify entering My Topics as public user redirects to login,RS,,MyDocs,read,N,,&quot;Can only confirm this in prod (public user is not supported in staging)
+Enter site in incognito window, do not login
+Navigate to My Topics in top menu
+Expected result: redirects to login page&quot;,,Yehudit,,,
+YL124,Verify sharing collection works,RS,,MyDocs,read,N,,&quot;Prerequisite: Login to site
+Navigate to My Topics in top menu
+Expand menu (3 dots) next to one of your collections 
+Click Share Collection
+Enter email address of existing user with permissions to content and click Add
+Click Share Collection
+Expected result:
+a. Specified email appears on right under &quot;&quot;Share with&quot;&quot; title with &quot;&quot;Pending&quot;&quot; label
+b. Email message on shared collection is sent to specified email&quot;,,Yehudit,,,
+YL125,Verify sharing collection with non-user works,RS,,MyDocs,read,N,,&quot;Prerequisite: Login to site
+Navigate to My Topics in top menu
+Expand menu (3 dots) next to one of your collections 
+Click Share Collection
+Enter email address of non-user and click Add
+Click Share Collection
+Expected result:
+a. Specified email appears on right under &quot;&quot;Share with&quot;&quot; title with &quot;&quot;Pending&quot;&quot; label
+b. Email message on shared collection is sent to specified email&quot;,,Yehudit,,,
+YL126,Verify receiving collection works with permissions for content,RS,,MyDocs,read,N,,&quot;Prerequisite: Perform test YL124
+Confirm email is received&quot;,,Yehudit,,,
+YL127,Verify receiving collection works without permissions for content,RS,,MyDocs,read,N,,&quot;Prerequisite: Perform test YL125
+Confirm email is received&quot;,,Yehudit,,,
+YL,Verify accepting a shared collection works as a non-authenticated user (test plan should say it doesn&#x27;t work or needs to be logged in?),RS,,MyDocs,read,N,,&quot;Prerequisite: Perform test YL127
+Click Accept and View button in email
+Expected result: Redirected to login page&quot;,,Yehudit,,,
+YL,Verify accepting a shared collection works as an authenticated user,RS,,MyDocs,read,N,,&quot;Prerequisites: Perform test YL126, login to browser as user who received email
+Click Accept and View button in email
+Expected result: collection is displayed in site&quot;,,Yehudit,,,
+NA,Verify view topic in collection,Noa,,MyDocs,read,N,,&quot;Click on &#x27;My Topics&#x27;
+
+Expected Result:
+
+My Topics page is presented
+
+Click on a Collection
+
+Expected Result:
+
+topics drop down is opened
+
+Click on a topic 
+
+Expected Result:
+
+Topic is presented&quot;,Or,Mor,,,
+NA,Verify Download PDF for checked topics in collection,Noa,,MyDocs,read,N,,&quot;Click on &#x27;My Topics&#x27;
+
+Expected Result:
+
+My Topics page is presented
+
+Click on a Collection
+
+Expected Result:
+
+topics drop down is opened
+
+Select a few random topics and Click &#x27;Download PDF&#x27;
+
+Expected Result:
+
+&#x27;Your PDF is being Generated&#x27; message window popup
+
+Wait for download to end
+
+Expected Result:
+
+&#x27;Your has been downloaded successfully&#x27; message window popup
+and files are downloaded
+
+Verify PDF
+
+Expected Result:
+all the selected topics were merged to one PDF &quot;,Or,Mor,,,
+NA,Verify Delete for checked topics in collection,Noa,,MyDocs,read,N,,&quot;Click on &#x27;My Topics&#x27;
+
+Expected Result:
+
+My Topics page is presented
+
+Click on a Collection
+
+Expected Result:
+
+topics drop down is opened
+
+Select a topic and Click &#x27;Delete&#x27;
+
+Expected Result:
+
+the selected topic was deleted 
+
+Select a few topics and Click &#x27;Delete&#x27;
+
+Expected Result:
+
+all the selected topics were deleted &quot;,Or,Mor,,,
+NA,Verify Shared with me ,Noa,,MyDocs,read,N,,&quot;Share topic with user  
+
+Click on &#x27;My Topics&#x27;
+
+Expected Result:
+
+My Topics page is presented
+
+Click on &#x27;Shared With Me&#x27;
+
+Expected Result:
+
+shared topic is presented&quot;,&quot;Mor, Dori and Noa&quot;,Yehudit,,,
+NA,Verify Find Collection,Noa,,MyDocs,read,N,,&quot;pre-condition: logged in
+Click on &#x27;My Topics&#x27;
+
+Expected Result:
+
+My Topics page is presented
+
+Search for a collection in &#x27;Find Collection&#x27; box
+
+Expected Result:
+
+only the relevant collections are presented&quot;,Mor,Amit,,,
+NA,Verify Collection name cannot be an empty string,Noa,,MyDocs,read,N,,&quot;pre-condition: logged in
+Click on &#x27;My Topics&#x27;
+
+Expected Result:
+
+My Topics page is presented
+
+Click on &#x27;Create new collection&#x27;
+
+Expected Result:
+
+&#x27;Create a Collection&#x27; window is opened
+
+Click on &#x27;Add To My Topics&#x27;
+
+Expected Result:
+
+a notification pops up &#x27;Please fill in this field&#x27;&quot;,Mor,Amit,,,
+NA,Verify &#x27;My Topics&#x27; access only to logged in users ,Noa,,MyDocs,read,N,,&quot;Click on &#x27;My Topics&#x27; as unlogged user
+ 
+Expected Result: 
+
+Redirected to Login page&quot;,Amit,Mor,,,
+C4992,Verify search for existing collection,,Medium,MyDocs,,,,&quot;Click on My Topics
+ 
+ Expected Result:
+ 
+ My Topics page is presented
+ 
+ Insert existing collection name into the search box on the left menu
+ 
+ Expected Result:
+ 
+ Default text in text box should disappear, related collection names appear in the result
+ 
+ Click on &#x27;X&#x27; 
+ 
+ Expected Result:
+ 
+ All collections presented&quot;,Amit,,Functional,,
+C4993,Verify search for non-existing collection,,Medium,MyDocs,,,,&quot;Click on My Topics
+ 
+ Expected Result:
+ 
+ My Topics page is presented
+ 
+ Insert non-existing collection name
+ 
+ Expected Result:
+ 
+ The relevant error message appears
+ 
+ Click on &#x27;X&#x27; 
+ 
+ Expected Result:
+ 
+ All collections presented&quot;,,,Functional,,
+C5027,Verify dropdown menu on click - PDF download,,Low,PDF Download,,,,&quot;Click on &#x27;Library&#x27; on the navbar
+ 
+ Expected Result:
+ 
+ Library page is presented
+ 
+ Click on the first item on the library page
+ 
+ Expected Result:
+ 
+ Publication page is presented 
+ 
+ Click on the PDF icon on the right side
+ 
+ Expected Result:
+ 
+ A Dropdown menu will appear
+ 
+ Click somewhere out of the dropdown menu
+ 
+ Expected Result:
+ 
+ The dropdown menu will collapse&quot;,,Amit,Functional,,
+C5028,Verify save selected topic,,Critical,PDF Download,,,,&quot;Click on &#x27;Library&#x27; on the navbar
+ 
+ Expected Result:
+ 
+ Library page is presented
+ 
+ Click on the first item on the library page
+ 
+ Expected Result:
+ 
+ Publication page is presented 
+ 
+ Click on the PDF icon on the right side
+ 
+ Expected Result:
+ 
+ A Dropdown menu will appear
+ 
+ Click on &#x27;Save selected topic&#x27;
+ 
+ Expected Result:
+ 
+ A pop-up should message appear on the right side of the screen, a PDF with the name of the publication should be downloaded to the computer.
+ 
+ Open the PDF
+ 
+ Expected Result:
+ 
+ The first page presents the publication name in the website style - logo and design.
+ The rest of the content contains only the topic that was downloaded.
+ Make sure the content appears as expected.&quot;,,,Functional,,
+C5029,Verify save selected topic and subtopics,,Critical,PDF Download,,,,&quot;Click on &#x27;Library&#x27; on the navbar
+ 
+ Expected Result:
+ 
+ Library page is presented
+ 
+ Click on the first item on the library page
+ 
+ Expected Result:
+ 
+ Publication page is presented 
+ 
+ Click on the PDF icon on the right side
+ 
+ Expected Result:
+ 
+ A Dropdown menu will appear
+ 
+ Click on &#x27;Save selected topic and subtopics&#x27;
+ 
+ Expected Result:
+ 
+ A pop-up should message appear on the right side of the screen, a PDF with the name of the publication should be downloaded to the computer.
+ 
+ Open the PDF
+ 
+ Expected Result:
+ 
+ The first page presents the publication name in the website style - logo and design.
+ There is a table of content.
+ The rest of the content contains only the topic and its subtopics that were downloaded.
+ Make sure the content appears as expected.&quot;,,,Functional,,
+C5030,Verify save all topic,,Critical,PDF Download,,,,&quot;Click on &#x27;Library&#x27; on the navbar
+ 
+ Expected Result:
+ 
+ Library page is presented
+ 
+ Click on the first item on the library page
+ 
+ Expected Result:
+ 
+ Publication page is presented 
+ 
+ Click on the PDF icon on the right side
+ 
+ Expected Result:
+ 
+ A Dropdown menu will appear
+ 
+ Click on &#x27;Save all topic&#x27;
+ 
+ Expected Result:
+ 
+ A pop-up message should appear on the right side of the screen, a PDF with the name of the publication should be downloaded to the computer.
+ 
+ Open the PDF
+ 
+ Expected Result:
+ 
+ The first page presents the publication name in the website style - logo and design.
+ There is a table of content.
+ The rest of the content all the publication.
+ Make sure the content appears as expected.&quot;,,,Functional,,
+C7364,Verify total pages,,Medium,PDF Download,,,,&quot;Download Single Topic PDF
+ 
+ Expected Result:
+ 
+ Single Topic PDF is downloaded
+ 
+ Download Topic and Subtopic PDF
+ 
+ Expected Result:
+ 
+ Topic and Subtopic PDF is downloaded
+ 
+ Download All Topics PDF
+ 
+ Expected Result:
+ 
+ All Topics PDF is downloaded
+ 
+ Compare total number of pages 
+ 
+ Expected Result:
+ 
+ All topics has the most pages, topic and subtopic in the middle and single topic the least&quot;,,,Other,,
+RS,Verify that pre-processed PDFs can be uploaded and are available for downloading from topic pages and library (if applicable),*,,PDF Download,write,,,&quot;Go into Admin &gt; Publications
+
+Upload a pre-processed pdf to a test bundle
+
+Go into Library page
+
+Find the test bundle updated in previous step
+
+Download PDF
+
+Confirm downloaded pdf is the test one that was uploaded
+
+Go into topic page in the bundle
+
+Click Download as PDF &gt; Save all topics
+
+Confirm downloaded pdf is the test one that was uploaded&quot;,,,,,
+C5047,Verify publications page is presented,,Low,Publications,,,,&quot;Open the website
+ 
+ Expected Result:
+ 
+ home page is presented
+ 
+ Click on the username on the top right
+ 
+ Expected Result:
+ 
+ Drop down is opened
+ 
+ Click on &#x27;Admin&#x27;
+ 
+ Expected Result:
+ 
+ Zoomin Admin page is presented
+ 
+ Click on &#x27;Publications&#x27; title
+ 
+ Expected Result:
+ 
+ Publications page is presented&quot;,,,Functional,,
+C5048,Verify publications filters,,Low,Publications,,,,&quot;Open the website
+ 
+ Expected Result:
+ 
+ home page is presented
+ 
+ Click on the username on the top right
+ 
+ Expected Result:
+ 
+ Drop down is opened
+ 
+ Click on &#x27;Admin&#x27;
+ 
+ Expected Result:
+ 
+ Zoomin Admin page is presented
+ 
+ Click on &#x27;Publications&#x27; title
+ 
+ Expected Result:
+ 
+ Publications page is presented
+ 
+ Mark a few filters from the left filters bar
+ 
+ Expected Result:
+ 
+ The number of results varies depending on the filters marked
+ 
+ Click on &#x27;Clear filters&#x27;
+ 
+ Expected Result:
+ 
+ No filter is marked, all results are presented&quot;,,,Functional,,
+C5049,Verify publications search,,Low,Publications,,,,&quot;Open the website
+ 
+ Expected Result:
+ 
+ home page is presented
+ 
+ Click on the username on the top right
+ 
+ Expected Result:
+ 
+ Drop down is opened
+ 
+ Click on &#x27;Admin&#x27;
+ 
+ Expected Result:
+ 
+ Zoomin Admin page is presented
+ 
+ Click on &#x27;Publications&#x27; title
+ 
+ Expected Result:
+ 
+ Publications page is presented
+ 
+ Type &#x27;user&#x27; in the search bar
+ 
+ Expected Result:
+ 
+ Verify typing works properly
+ 
+ Click the magnify glass icon
+ 
+ Expected Result:
+ 
+ Search is performed. The number of results varies depending on the search, only relevant results are shown.&quot;,,,Functional,,
+C5050,Verify publications page pagination,,Low,Publications,,,,&quot;Open the website
+ 
+ Expected Result:
+ 
+ home page is presented
+ 
+ Click on the username on the top right
+ 
+ Expected Result:
+ 
+ Drop down is opened
+ 
+ Click on &#x27;Admin&#x27;
+ 
+ Expected Result:
+ 
+ Zoomin Admin page is presented
+ 
+ Click on &#x27;Publications&#x27; title
+ 
+ Expected Result:
+ 
+ Publications page is presented
+ 
+ Scroll to the bottom of the publications list
+ 
+ Expected Result:
+ 
+ Pagination bar is presented
+ 
+ Click on page number 2
+ 
+ Expected Result:
+ 
+ The page is changed and opened when scrolled up. When scrolling down- page number 2 is highlighted
+ 
+ Click on &#x27;next&#x27; arrow
+ 
+ Expected Result:
+ 
+ The page is changed and opened when scrolled up. When scrolling down- page number 3 is highlighted
+ 
+ Click on &#x27;previous&#x27; arrow
+ 
+ Expected Result:
+ 
+ The page is changed and opened when scrolled up. When scrolling down- page number 2 is highlighted
+ 
+ Click on the &#x27;show X results per page&#x27; dropdown
+ 
+ Expected Result:
+ 
+ Drop down is opened, &#x27;10&#x27; is marked
+ 
+ From the &#x27;show X results per page&#x27; dropdown, choose &#x27;20&#x27;
+ 
+ Expected Result:
+ 
+ The page is changed and opened when scrolled up, scroll bar is smaller, 20 results are presented on the page
+ 
+ From the &#x27;show X results per page&#x27; dropdown, choose &#x27;50&#x27;
+ 
+ Expected Result:
+ 
+ The page is changed and opened when scrolled up, scroll bar is smaller, 50 results are presented on the page&quot;,Amit,,Functional,,
+C5051,Verify breadcrumbs functionality - publications,,Low,Publications,,,,&quot;Open the website
+ 
+ Expected Result:
+ 
+ home page is presented
+ 
+ Click on the username on the top right
+ 
+ Expected Result:
+ 
+ Drop down is opened
+ 
+ Click on &#x27;Admin&#x27;
+ 
+ Expected Result:
+ 
+ Zoomin Admin page is presented
+ 
+ Click on &#x27;Publications&#x27; title
+ 
+ Expected Result:
+ 
+ Publications page is presented
+ 
+ Verify breadcrumbs are shown on the upper left side
+ 
+ Expected Result:
+ 
+ Breadcrumbs are shown
+ 
+ Click on &#x27;Admin&#x27; from the breadcrumbs
+ 
+ Expected Result:
+ 
+ Admin page is opened&quot;,Amit,,Functional,,
+C5052,Verify Resource page is presented,,Low,Resource,,,,&quot;Open the website
+ 
+ Expected Result:
+ 
+ home page is presented
+ 
+ Click on the username on the top right
+ 
+ Expected Result:
+ 
+ Drop down is opened
+ 
+ Click on &#x27;Admin&#x27;
+ 
+ Expected Result:
+ 
+ Zoomin Admin page is presented
+ 
+ Click on &#x27;Resource&#x27; title
+ 
+ Expected Result:
+ 
+ Resource page is presented&quot;,Amit,,Functional,,
+C5053,Verify Resource filters,,Low,Resource,,,,&quot;Open the website
+ 
+ Expected Result:
+ 
+ home page is presented
+ 
+ Click on the username on the top right
+ 
+ Expected Result:
+ 
+ Drop down is opened
+ 
+ Click on &#x27;Admin&#x27;
+ 
+ Expected Result:
+ 
+ Zoomin Admin page is presented
+ 
+ Click on &#x27;Resource&#x27; title
+ 
+ Expected Result:
+ 
+ Resource page is presented
+ 
+ Mark a few filters from the left filters bar
+ 
+ Expected Result:
+ 
+ The number of results varies depending on the filters marked
+ 
+ Click on &#x27;Clear filters&#x27;
+ 
+ Expected Result:
+ 
+ No filter is marked, all results are presented&quot;,,,Functional,,
+C5054,Verify Resource search,,Low,Resource,,,,&quot;Open the website
+ 
+ Expected Result:
+ 
+ home page is presented
+ 
+ Click on the username on the top right
+ 
+ Expected Result:
+ 
+ Drop down is opened
+ 
+ Click on &#x27;Admin&#x27;
+ 
+ Expected Result:
+ 
+ Zoomin Admin page is presented
+ 
+ Click on &#x27;Resource &#x27; title
+ 
+ Expected Result:
+ 
+ Resource page is presented
+ 
+ Type &#x27;user&#x27; in the search bar
+ 
+ Expected Result:
+ 
+ Verify typing works properly
+ 
+ Click the magnify glass icon
+ 
+ Expected Result:
+ 
+ Search is performed. The number of results varies depending on the search, only relevant results are shown.&quot;,,,Functional,,
+C5055,Verify Resource page pagination,,Low,Resource,,,,&quot;Open the website
+ 
+ Expected Result:
+ 
+ home page is presented
+ 
+ Click on the username on the top right
+ 
+ Expected Result:
+ 
+ Drop down is opened
+ 
+ Click on &#x27;Admin&#x27;
+ 
+ Expected Result:
+ 
+ Zoomin Admin page is presented
+ 
+ Click on &#x27;Resource&#x27; title
+ 
+ Expected Result:
+ 
+ Resource page is presented
+ 
+ Scroll to the bottom of the Resources list
+ 
+ Expected Result:
+ 
+ Pagination bar is presented
+ 
+ Click on page number 2
+ 
+ Expected Result:
+ 
+ The page is changed and opened when scrolled up. When scrolling down- page number 2 is highlighted
+ 
+ Click on &#x27;next&#x27; arrow
+ 
+ Expected Result:
+ 
+ The page is changed and opened when scrolled up. When scrolling down- page number 3 is highlighted
+ 
+ Click on &#x27;previous&#x27; arrow
+ 
+ Expected Result:
+ 
+ The page is changed and opened when scrolled up. When scrolling down- page number 2 is highlighted
+ 
+ Click on the &#x27;show X results per page&#x27; dropdown
+ 
+ Expected Result:
+ 
+ Drop down is opened, &#x27;10&#x27; is marked
+ 
+ From the &#x27;show X results per page&#x27; dropdown, choose &#x27;20&#x27;
+ 
+ Expected Result:
+ 
+ The page is changed and opened when scrolled up, scroll bar is smaller, 20 results are presented on the page
+ 
+ From the &#x27;show X results per page&#x27; dropdown, choose &#x27;50&#x27;
+ 
+ Expected Result:
+ 
+ The page is changed and opened when scrolled up, scroll bar is smaller, 50 results are presented on the page&quot;,,,Functional,,
+C5056,Verify breadcrumbs functionality - resources,,Low,Resource,,,,&quot;Open the website
+ 
+ Expected Result:
+ 
+ home page is presented
+ 
+ Click on the username on the top right
+ 
+ Expected Result:
+ 
+ Drop down is opened
+ 
+ Click on &#x27;Admin&#x27;
+ 
+ Expected Result:
+ 
+ Zoomin Admin page is presented
+ 
+ Click on &#x27;Resource&#x27; title
+ 
+ Expected Result:
+ 
+ Resource page is presented
+ 
+ Verify breadcrumbs are shown on the upper left side
+ 
+ Expected Result:
+ 
+ Breadcrumbs are shown
+ 
+ Click on &#x27;Admin&#x27; from the breadcrumbs
+ 
+ Expected Result:
+ 
+ Admin page is opened&quot;,,,Functional,,
+C4967,Verify searching with clicking on &#x27;Enter&#x27;,,Medium,Search,,,,&quot;Enter the site
+ 
+ Expected Result:
+ 
+ Lands in home page
+ 
+ Type any term in the search box and click enter
+ 
+ Expected Result:
+ 
+ Search results page displayed, should be relevant to search keyword&quot;,,,Functional,,
+C4968,Verify search when clicking on magnifying glass,,Medium,Search,,,,&quot;Launch website
+ 
+ Expected Result:
+ 
+ Homepage is presented
+ 
+ Type any term in the search box and click on the magnifying glass
+ 
+ Expected Result:
+ 
+ Search results page displayed and the results are relevant to the search keyword&quot;,Amit,Amit,Functional,,
+C4969,Verify autosuggestion display,,Medium,Search,,,,&quot;Enter the site
+ 
+ Expected Result:
+ 
+ Lands in home page
+ 
+ Start typing word in text box and verify autosuggestions appear
+ 
+ Expected Result:
+ 
+ The relevant suggestion is highlighted - one at a time.&quot;,Amit,Amit,Functional,,
+C4970,Verify autosuggestion,,Medium,Search,,,,&quot;Enter the site
+ 
+ Expected Result:
+ 
+ Lands in home page
+ 
+ Hover over the auto suggest options 
+ 
+ Expected Result:
+ 
+ The relevant suggestion is highlighted - one at a time.
+ 
+ Go up and down the auto suggest using the arrows of the keyboard
+ 
+ Expected Result:
+ 
+ The relevant suggest is highlighted
+ 
+ Click &#x27;enter&#x27; (using keyboard) on one of the auto suggestions
+ 
+ Expected Result:
+ 
+ The selected topic page will open
+ 
+ Click (using the mouse) on one of the auto suggestions
+ 
+ Expected Result:
+ 
+ The selected topic page will open&quot;,,,Functional,,
+C4971,Verify search functionality on other pages,,Medium,Search,,,,&quot;Enter the site
+ 
+ Expected Result:
+ 
+ Lands in home page
+ 
+ Click on &#x27;Library&#x27; in nav bar
+ 
+ Expected Result:
+ 
+ Redirected to bundle page
+ 
+ Search for anything in the main search box and click &#x27;Enter&#x27;
+ 
+ Expected Result:
+ 
+ Redirected to search results page
+ 
+ Click on &#x27;MY docs&#x27; in nav bar
+ 
+ Expected Result:
+ 
+ Redirected to My docs page
+ 
+ Search for anything in the main search box and click &#x27;Enter&#x27;
+ 
+ Expected Result:
+ 
+ Redirected to search results page&quot;,,,Functional,,
+C5247,Verify search in all languages localization,Noa,Medium,Search,,Y,,&quot;Repeat for each language 
+
+Enter the site
+ 
+Expected Result: 
+
+Lands in home page 
+
+Change to another language 
+ 
+Expected Result:
+ 
+All menu items are in that language 
+
+Type any term in the search box
+
+Expected Result: 
+
+Search results page displayed
+Results are from relevant language&quot;,RS,Noa,Other,,
+YL,Confirm filters work in both main search and filter dropdown from search box,Noa,,Search preferences,read,N,,&quot; Click on &#x27;Filters&#x27; in the search box
+ 
+ Expected Result:
+ 
+ Filters window will open 
+
+ Click on several of the filters 
+ 
+ Expected Result:
+ 
+ The checkboxes will be checked
+ 
+ Click &#x27;Enter&#x27;
+ 
+ Expected Result:
+ 
+ You will be directed to search results page and you&#x27;ll see the specific filters you chose are shown on the left side checked and the relevant results appear
+
+Deselect filters from the side bar.
+Expected result: Those filters are also deselected from the filters in the search box&quot;,Amit,Yehudit,,,
+OCA,Confirm search preferences button in user menu works as expected.,Or,,Search preferences,read,N,,&quot;Log into the site
+ 
+ Expected Result:
+ 
+ Home page is opened and you are logged in
+ 
+ Click on the user menu
+ 
+ Expected Result:
+ 
+ A dropdown is opened
+ 
+ Click on &#x27;Search Preferences&#x27; from the dropdown
+ 
+ Expected Result:
+ 
+ Search Preferences page is opened&quot;,Noa,Or,,,
+OCA,Verify that updating preferences works as expected.,Or,,Search preferences,read,N,,&quot;Log into the site
+Expected Result:
+Home page is opened and you are logged in
+Click on the user menu 
+Expected Result:
+A dropdown is opened
+Click on &#x27;Search Preferences&#x27; from the dropdown
+Expected Result:
+Search Preferences page is opened
+Click on one of the filters
+Click on update preferences
+Approval message pops and says &#x27;Search Preferences are updated&#x27;
+Navigate to another page and then back to Search Preferences page
+Confirm previously checked filters are still checked&quot;,Noa,Or,,,
+OCA,&quot;Verify arrows functionality, on search preferences page&quot;,Or,,Search preferences,read,N,,&quot;Prerequisite: Logged into site
+ Click on &#x27;Search Preferences&#x27; from the dropdown
+ Expected Result:
+ Search Preferences page is opened
+ Click on one of the arrows 
+ Expected Result:
+ Some text is being show or disappear &quot;,Noa,Or,,,
+OCA,Verify check box functionality on search preferences page,Or,,Search preferences,read,N,,&quot;Prerequisite: Logged into site
+Click on &#x27;Search Preferences&#x27; from the dropdown
+Expected Result:
+Search Preferences page is opened
+Click on one of the filters
+Expected Result:
+text box should be mark with a &quot;&quot;V&quot;&quot;&quot;,Noa,Or,,,
+OCA,&quot;Verify that free text &quot;&quot;find&quot;&quot; is working properly on search preferences page.&quot;,Or,,Search preferences,read,N,,&quot;Log into the site
+Expected Result:
+Home page is opened and you are logged in
+Click on the user menu
+Expected Result:
+A dropdown is opened
+Click on &#x27;Search Preferences&#x27; from the dropdown
+Expected Result:
+Search Preferences page is opened
+Start typing inside the check box
+Expected Result:
+only the relevant filters are shown&quot;,Noa,Or,,,
+RS,Verify that search preferences affect the search results.,RS,,Search preferences,read,N,,&quot;Run a search before updating preferences
+Note the results, which labels are included but not at the first result
+Add one of those labels to your preferences and save
+Run the same search as above
+Note the results - they should have changed with your preferred label higher up than before&quot;,Noa,Or,,,
+YL,Confirm search preferences work as expected with localized bundles.,Or,,Search preferences,read,N,,&quot;Repeat for each language
+
+Change to another language 
+ 
+Expected Result:
+ 
+All menu items are in that language 
+
+Log into the site
+ 
+ Expected Result:
+ 
+ Home page is opened and you are logged in
+ 
+ Click on the user menu
+ 
+ Expected Result:
+ 
+ A dropdown is opened
+ 
+ Click on &#x27;Search Preferences&#x27; from the dropdown
+ 
+ Expected Result:
+ 
+ Search Preferences page is opened&quot;,,,,,
+C5013,Verify entrance to search preferences page,,Medium,Search Preferences,,,,&quot;Login the site
+ 
+ Expected Result:
+ 
+ Home page is opened and you are logged in
+ 
+ Click on the user menu
+ 
+ Expected Result:
+ 
+ A dropdown is opened
+ 
+ Click on &#x27;Search Preferences&#x27; from the dropdown
+ 
+ Expected Result:
+ 
+ Search Preferences page is opened&quot;,,,Functional,,
+C5014,Verify filters are clickable - search preferences,,Medium,Search Preferences,,,,&quot;Login the site
+ 
+ Expected Result:
+ 
+ Home page is opened and you are logged in
+ 
+ Click on the user menu
+ 
+ Expected Result:
+ 
+ A dropdown is opened
+ 
+ Click on &#x27;Search Preferences&#x27; from the dropdown
+ 
+ Expected Result:
+ 
+ Search Preferences page is opened
+ 
+ Click on one of the filters
+ 
+ Expected Result:
+ 
+ The slider changes to active/inactive 
+ 
+ Approval message pops and says &#x27;Search Preferences are changed&#x27;
+ 
+ Expected Result:
+ 
+ TRUE&quot;,,,Functional,,
+C5015,Verify &#x27;Select all&#x27; and &#x27;Clear all&#x27;,,Medium,Search Preferences,,,,&quot;Login the site
+ 
+ Expected Result:
+ 
+ Home page is opened and you are logged in
+ 
+ Click on the user menu
+ 
+ Expected Result:
+ 
+ A dropdown is opened
+ 
+ Click on &#x27;Search Preferences&#x27; from the dropdown
+ 
+ Expected Result:
+ 
+ Search Preferences page is opened
+ 
+ Click on &#x27;Select all&#x27;
+ 
+ Expected Result:
+ 
+ All search filters are selected and an approval message will appear
+ 
+ Click on &#x27;Clear all&#x27;
+ 
+ Expected Result:
+ 
+ All search filters are unselected and an approval message will appear&quot;,Amit,Amit,Functional,,
+C5016,Verify &#x27;Personalize my results&#x27;,,Medium,Search Preferences,,,,&quot;Search for anything
+ 
+ Expected Result:
+ 
+ Search results page is opened
+ 
+ Verify &#x27;Personalized my results&#x27; slider is marked as default
+ 
+ Expected Result:
+ 
+ TRUE
+ 
+ Turn off the &#x27;Personalized my results&#x27; slider
+ 
+ Expected Result:
+ 
+ The list of search results will be sorted and adjusted differently&quot;,Amit,,Functional,,
+C5017,Verify &#x27;i&#x27; functionality,,Medium,Search Preferences,,,,&quot;Search for anything
+ 
+ Expected Result:
+ 
+ Search results page is opened
+ 
+ Hover over the &#x27;i&#x27; icon
+ 
+ Expected Result:
+ 
+ A tooltip will open&quot;,Amit,,Functional,,
+C5018,Verify &#x27;Edit preferences&#x27;,,Medium,Search Preferences,,,,&quot;Search for anything
+ 
+ Expected Result:
+ 
+ Search results page is opened
+ 
+ Click on &#x27;Edit preferences&#x27;
+ 
+ Expected Result:
+ 
+ The search preferences page will be opened&quot;,Amit,,Functional,,
+C4978,Verify regular results page,,Medium,Search results,,,,&quot;Enter the site
+ 
+ Expected Result:
+ 
+ Lands in home page
+ 
+ Type anything in the search box that will get results and click enter
+ 
+ Expected Result:
+ 
+ Search results page will appear&quot;,Amit,,Functional,,
+C4979,Verify no results page,,Medium,Search results,,,,&quot;Enter the site
+ 
+ Expected Result:
+ 
+ Lands in home page
+ 
+ Type something in the search box that would not get any results.
+ 
+ Expected Result:
+ 
+ &#x27;No Results found&#x27; message will appear.&quot;,Amit,,Functional,,
+C4980,Verify filters are clickable - search results page,,Medium,Search results,,,,&quot;Enter the site
+ 
+ Expected Result:
+ 
+ Lands in home page
+ 
+ Search for anything that will get results
+ 
+ Expected Result:
+ 
+ Search results page will appear
+ 
+ Click on several of the filters on the left side
+ 
+ Expected Result:
+ 
+ The checkbox will be checked
+ 
+ Click again on the same filters
+ 
+ Expected Result:
+ 
+ The checkbox will be unchecked&quot;,Amit,,Functional,,
+C4981,Verify filters are functional - search results page,,Medium,Search results,,,,&quot;Enter the site
+ 
+ Expected Result:
+ 
+ Lands in home page
+ 
+ Search for anything that will get results
+ 
+ Expected Result:
+ 
+ Search results page will appear
+ 
+ Click on one of the filters
+ 
+ Expected Result:
+ 
+ The checkbox will be checked and the relevant results will appear
+ 
+ Click again on the same filter
+ 
+ Expected Result:
+ 
+ The checkbox will be unchecked and the results will reset
+ 
+ Click on several filters
+ 
+ Expected Result:
+ 
+ The checkboxes will be checked and the relevant results will appear&quot;,Amit,,Functional,,
+C4982,Verify &#x27;Clear filters&#x27; - search results page,,Medium,Search results,,,,&quot;Enter the site
+ 
+ Expected Result:
+ 
+ Lands in home page
+ 
+ Search for anything that will get results
+ 
+ Expected Result:
+ 
+ Search results page will appear
+ 
+ Click on one of the filters
+ 
+ Expected Result:
+ 
+ The checkbox will be checked and the relevant results will appear
+ 
+ Click on &#x27;Clear filters&#x27;
+ 
+ Expected Result:
+ 
+ The checked filters will be now unchecked and the results will reset&quot;,,,Functional,,
+C4983,Verify search results sorting,,Medium,Search results,,,,&quot;Enter the site
+ 
+ Expected Result:
+ 
+ Lands in home page
+ 
+ Click on the results sorting dropdown
+ 
+ Expected Result:
+ 
+ The sorting dropdown is opened
+ 
+ Change the results sorting
+ 
+ Expected Result:
+ 
+ The results are changed as expected&quot;,,,Functional,,
+C4984,Verify search results sorting,,Medium,Search results,,,,&quot;Enter the site
+ 
+ Expected Result:
+ 
+ Lands in home page
+ 
+ Click on the number of results per page dropdown
+ 
+ Expected Result:
+ 
+ The dropdown is opened
+ 
+ Change the number of results per page to 20
+ 
+ Expected Result:
+ 
+ The results page shows now 20 results
+ 
+ Change the number of results per page to 50
+ 
+ Expected Result:
+ 
+ The results page shows now 50 results&quot;,,,Functional,,
+C4985,Verify pagination - search results page,,Medium,Search results,,,,&quot;Enter the site
+ 
+ Expected Result:
+ 
+ Lands in home page
+ 
+ Search for anything
+ 
+ Expected Result:
+ 
+ Redirected to search results page
+ 
+ Verify the current page you&#x27;re in is marked
+ 
+ Expected Result:
+ 
+ TRUE
+ 
+ Click the &#x27;Next&#x27;/&#x27;Last/&#x27;Previous&#x27;/&#x27;First&#x27; 
+ 
+ Expected Result:
+ 
+ The page will redirect to the next/last/first/previous page.
+ 
+ Click on different page number 
+ 
+ Expected Result:
+ 
+ The page will redirect to selected page.&quot;,,,Functional,,
+C4986,Verify number of results per page appearance,,Medium,Search results,,,,&quot;Enter the site
+ 
+ Expected Result:
+ 
+ Lands in home page
+ 
+ Verify total number of search results is displayed on page
+ 
+ Expected Result:
+ 
+ The number is correct
+ 
+ Change results to 20
+ 
+ Expected Result:
+ 
+ Number will change to 20, at most 20 results will be displayed - current result will be bold in dropdown
+ 
+ Change results to 50
+ 
+ Expected Result:
+ 
+ Number will change to 50, at most 50 results will be displayed - current result will be bold in dropdown
+ 
+ Change results to 10
+ 
+ Expected Result:
+ 
+ Number will change to 10, at most 10 results will be displayed - current result will be bold in dropdown&quot;,,,Functional,,
+RS,Verify did-you-mean functionality for search,,,Search results,read,,,&quot;Enter the site
+Type something in the search bar with a typo (for example, migrate instead of migrate)
+Expected results:
+Did-you-mean search results are displayed&quot;,,Noa,,,
+,Verify search clustering in search results,,,search results,read,,,&quot;This applies for customers who are using clustering.
+
+In Admin &gt; Search Configuration &gt; Search Clustering
+
+Check to see whether clustering is activated
+If no, testing is not necessary
+If yes, on a regular search results page, see whether they have the UI configured for search clustering (also in:). 
+If no, testing is not necessary.
+If yes, perform a search for a term that would be found in multiple publications or facets
+Check the also in:
+Confirm that the clustering is working as expected according to the configuration&quot;,,,,,
+YL,SEO: Make sure SEO titles and descriptions are picked up from categories - ST-8132 and ST-8134,RS,,SEO,read,,,&quot;Prerequisite: login with admin account
+Go to Admin&gt;Categories and download categories.xml
+Open xml and locate nodes with seotitle and/or seodescription attributes
+Navigate to home page
+Navigate to category tile located in previous step and click on it to enter page
+Hover over browser tab: confirm seotitle value displays as page title
+Inspect element anywhere on page
+Scroll to bottom of &lt;head&gt; section in html source
+Confirm there is a meta description tag with seodescription as content: &lt;meta name=&quot;&quot;description&quot;&quot; content=&lt;seodescription&gt; /&gt;&quot;,,,,,
+YL,SEO: Page latency - check loading speed - ST-9966,,,SEO,read,,,,,,,,
+YL,Confirm sitemaps are working as expected,,,SEO,,Y,,&quot;From both incognito, not logged in, and as a logged-in user, go to (URL).sitemap.xml
+
+Expected result: Sitemap or URLs to sitemaps that contain thousands of URLs&quot;,,,,,
+C8967,Verify SSR functionality,,Medium,SSR,,N,,&quot;Enter the site
+ 
+ Expected Result:
+ 
+ Landing on home page
+ 
+ Go to a topic page
+ 
+ Expected Result:
+ 
+ topic page is presented, displaying the content
+ 
+ Right-click on the page and select &#x27;View Source&#x27;
+ 
+ Expected Result:
+ 
+ A new page is opened where you can see the entire HTML tree of the topic page.
+ 
+ open the console and disable Javascript. Then refresh the page
+ 
+ 
+ Expected Result:
+ 
+ The topic page reappears and loading all its content as before. 
+ 
+ Copy the page&#x27;s URL and send it to yourself in Slack.
+ 
+ Expected Result:
+ 
+ Slack turns your link to a preview thumbnail:Â ![](index.php?/attachments/get/b9e64df2-d856-4f5f-8fe2-d1e17f982661)Â Â Â 
+ 
+ You can also check SSR in the browser. Set your user agent in Chrome to &#x27;Googlebot&#x27; and refresh the topic page.![](index.php?/attachments/get/2a6aa0e9-9b92-4cf3-af7a-1d777ddf1062)Â Â 
+ 
+ Expected Result:
+ 
+ topic page is presented, displaying all the content&quot;,,,Other,,
+YL,How to check SSR? It&#x27;s mentioned in ST-11393,Dori,,SSR,read,,,Explained in https://zoomin-software.atlassian.net/wiki/spaces/RND/pages/2368176173/How+SSR+Server+Side+Rendering+Works+in+Our+React+Application,,,,,
+YL,SEO: Create Self Referential Canonical Tags with SSR ex: https://zoomin-software.atlassian.net/browse/ST-11177,Dori,,SSR,read,,,&quot;Enter the site
+ 
+ Expected Result:
+ 
+ Landing on home page
+ 
+ Go to a topic page
+ 
+ Expected Result:
+ 
+ topic page is presented, displaying the content
+ 
+ Right-click on the page and select &#x27;View Source&#x27;
+ 
+ Expected Result:
+ 
+ A new page is opened where you can see the entire HTML tree of the topic page.
+ 
+Verify that the HTML head consists of a canonical relative link.
+ 
+ Expected Result:
+ 
+ There is a &lt;link&gt; element that implements canonical tag for their SEO. &quot;,,RS,,,
+C4916,Verify the top menu languages items display,,Medium,Top Menu,read,,,&quot;Launch the website
+ 
+ Expected Result:
+ 
+ Homepage is presented
+ 
+ Click on the globe icon at the top right corner
+ 
+ Expected Result:
+ 
+ Menu appears below enlisting these languages:
+
+English
+Simplified Chinese
+Taiwanese Chinese
+French
+German
+Japanese
+Korean
+Spanish
+Russian
+Portuguese
+Italian&quot;,Mor,Amit,Functional,home page,
+C8965,Verify languages functionality,,Medium,Top Menu,read,,,&quot;Confirm that when changing languages using the dropdown language selector, the language of the UI changes to the appropriate language.&quot;,,,Other,home page,
+C4917,Verify logo functionality on homepage,,High,Top Menu,,,,&quot;Click on logo at the top left
+ 
+ Expected Result:
+ 
+ AUtomation Anywhere site is opening&quot;,Amit,Amit,Functional,,
+C4918,Verify homepage button,,High,Top Menu,,,,&quot;Click on homepage button at the top left
+ 
+ Expected Result:
+ 
+ You are going to the AA homepage&quot;,,,Functional,,
+C4920,Verify menu items functionality,,High,Top Menu,,,,&quot;Open the website 
+ 
+ Expected Result:
+ 
+ Home page is presented 
+ 
+ Click on &#x27;Library&#x27;
+ 
+ Expected Result:
+ 
+ Library page is presented
+ 
+ Click on &#x27;Watchlist&#x27;
+ 
+ Expected Result:
+ 
+ Watchlist page is presented
+ 
+ Click on &#x27;My Topics&#x27;
+ 
+ Expected Result:
+ 
+ My Topics page is presented
+ 
+ Click on user name
+ 
+ Expected Result:
+ 
+ Dropdown menu will appear&quot;,,,Functional,,
+C6068,Verify menu items display,,Medium,Top Menu,,,,,,,Other,,
+C8966,Verify &#x27;More Sites&#x27;,,Medium,Top Menu,,,,&quot;Open the website 
+ 
+ Expected Result:
+ 
+ Home page is presented 
+ 
+ Click on &#x27;More Sites&#x27;
+ 
+ Expected Result:
+ 
+ ![](index.php?/attachments/get/8c9b712d-d694-4f39-8972-ad86572c794f)Â Menu opens up below with these items:
+ - Training
+ - Partner Portal
+ - Bot Store
+ - A-People Community
+ - Developer PortalÂ Â 
+ 
+ Click on each one of the items
+ 
+ Expected Result:
+ 
+ a new tab opens up, redirecting to the relevant URL&quot;,Noa,Amit,Other,,
+Mor,&quot;Verify the &quot;&quot;Training&quot;&quot; button in &quot;&quot;MORE SITES&quot;&quot; drop-down menu at the top center link to RPA Training &amp; Certification page.&quot;,Mor,,Top Menu,read,N,,&quot;Pre-condition: None
+Test Steps:
+1. Click on &quot;&quot;Training&quot;&quot; button in &quot;&quot;MORE SITES&quot;&quot; drop-down menu.
+Expected result: The site &quot;&quot;https://university.automationanywhere.com/&quot;&quot; is opened.&quot;,Or,Noa,Functional,,
+Mor,&quot;Verify the &quot;&quot;Partner Portal&quot;&quot; button in &quot;&quot;MORE SITES&quot;&quot; drop-down menu at the top center link to Partners page.&quot;,Mor,,Top Menu,read,N,,&quot;Pre-condition: None
+Test Steps:
+1. Click on &quot;&quot;Partner Portal&quot;&quot; button in &quot;&quot;MORE SITES&quot;&quot; drop-down menu.
+Expected result: The site &quot;&quot;https://www.automationanywhere.com/resources/partners&quot;&quot; is opened.&quot;,Or,Noa,Functional,,
+Mor,&quot;Verify the &quot;&quot;Bot Store&quot;&quot; button in &quot;&quot;MORE SITES&quot;&quot; drop-down menu at the top center link to Bot Store page.&quot;,Mor,,Top Menu,read,N,,&quot;Pre-condition: None
+Test Steps:
+1. Click on &quot;&quot;Bot Store&quot;&quot; button in &quot;&quot;MORE SITES&quot;&quot; drop-down menu.
+Expected result: The site &quot;&quot;https://botstore.automationanywhere.com&quot;&quot; is opened.&quot;,Noa,Noa,Functional,,
+Mor,&quot;Verify the &quot;&quot;A-People Community&quot;&quot; button in &quot;&quot;MORE SITES&quot;&quot; drop-down menu at the top center link to Apeople page.&quot;,Mor,,Top Menu,read,N,,&quot;Pre-condition: None
+Test Steps:
+1. Click on &quot;&quot;A-People Community&quot;&quot; button in &quot;&quot;MORE SITES&quot;&quot; drop-down menu.
+Expected result: The site &quot;&quot;https://apeople.automationanywhere.com/s/?language=en_US&quot;&quot; is opened.&quot;,Noa,Noa,Functional,,
+Mor,&quot;Verify the &quot;&quot;Developer Portal&quot;&quot; button in &quot;&quot;MORE SITES&quot;&quot; drop-down menu at the top center link to Developer page.&quot;,Mor,,Top Menu,read,N,,&quot;Pre-condition: None
+Test Steps:
+1. Click on &quot;&quot;Developer Portal&quot;&quot; button in &quot;&quot;MORE SITES&quot;&quot; drop-down menu.
+Expected result: The site &quot;&quot;https://developer.automationanywhere.com&quot;&quot; is opened.&quot;,Noa,Noa,Functional,,
+Mor,&quot;Verify the &quot;&quot;LIBRARY&quot;&quot; button at the top center link to the library page.&quot;,Mor,,Top Menu,read,N,,&quot;Pre-condition: None
+Test Steps:
+1. Click on &quot;&quot;Library&quot;&quot; button.
+Expected result: The site &quot;&quot;https://automationanywhere-dev.zoominsoftware.io/bundle&quot;&quot; is opened.&quot;,Noa,Noa,Functional,,
+Mor,&quot;Verify the &quot;&quot;MY CONTENT&quot;&quot; button at the top center open and close drop down menu with items.&quot;,Mor,,Top Menu,read,N,,&quot;Pre-condition: None
+Test Steps:
+1. Click on &quot;&quot;MY CONTENT&quot;&quot; drop-down menu when it&#x27;s closed.
+2. Click on &quot;&quot;MY CONTENT&quot;&quot; drop-down menu when it&#x27;s open.
+Expected result: 
+1. The drop-down menu will open if it was closed or will close if it was open.
+2. The opening and closing animation will be done smoothly.&quot;,Amit,Mor,UI,The opening and closing animation of the scroll menu doesn&#x27;t work properly and stuck for 0.5 seconds on the first scrolling option ,
+Mor,&quot;Verify the &quot;&quot;My Topics&quot;&quot; button in &quot;&quot;MY CONTENT&quot;&quot; drop-down menu at the top center link to login page when not logged in.&quot;,Mor,,Top Menu,read,N,,&quot;Pre-condition: not logged in
+Test Steps:
+1. Click on &quot;&quot;MY CONTENT&quot;&quot; drop-down menu.
+2. Click on the element &quot;&quot;My Topics&quot;&quot;.
+Expected result: 
+In dev: The site &quot;&quot;https://automationanywhere-dev.zoominsoftware.io/auth/login&quot;&quot; is opened.
+In prod: Redirect to sso login page&quot;,,Yehudit,Functional,,
+Mor,&quot;Verify the &quot;&quot;Following&quot;&quot; button in &quot;&quot;MY CONTENT&quot;&quot; drop-down menu at the top center link to login page when not logged in.&quot;,Mor,,Top Menu,read,N,,&quot;Pre-condition: not logged in
+Test Steps:
+1. Click on &quot;&quot;MY CONTENT&quot;&quot; drop-down menu.
+2. Click on the element &quot;&quot;Following&quot;&quot;.
+Expected result: 
+1. The site &quot;&quot;https://automationanywhere-dev.zoominsoftware.io/auth/login&quot;&quot; is opened.
+In prod: Redirect to sso login page&quot;,,Yehudit,Functional,,
+Mor,&quot;Verify the &quot;&quot;My Topics&quot;&quot; button in &quot;&quot;MY CONTENT&quot;&quot; drop-down menu at the top center link to My Topic page after logged in.&quot;,Mor,,Top Menu,read,N,,&quot;Pre-condition: logged in
+Test Steps:
+1. Click on &quot;&quot;MY CONTENT&quot;&quot; drop-down menu.
+2. Click on the element &quot;&quot;My Topics&quot;&quot;.
+Expected result: 
+1. The site &quot;&quot;https://automationanywhere-dev.zoominsoftware.io/MyDocs&quot;&quot; is opened.&quot;,,Mor,Functional,,
+Mor,&quot;Verify the &quot;&quot;Following&quot;&quot; button in &quot;&quot;MY CONTENT&quot;&quot; drop-down menu at the top center link to Following topics and subjects page after logged in.&quot;,Mor,,Top Menu,read,N,,&quot;Pre-condition: logged in
+Test Steps:
+1. Click on &quot;&quot;MY CONTENT&quot;&quot; drop-down menu.
+2. Click on the element &quot;&quot;Following&quot;&quot;.
+Expected result: 
+1. The site &quot;&quot;https://automationanywhere-dev.zoominsoftware.io/managewatches/0&quot;&quot; is opened.&quot;,,Mor,Functional,,
+Mor,&quot;Verify the &quot;&quot;Get Community Edition- FREE&quot;&quot; button is at the top right link to the Community-Edition page when not logged in.&quot;,Mor,,Top Menu,read,N,,&quot;Pre-condition: not logged in
+Test Steps:
+1. Click on &quot;&quot;Get Community Edition- FREE&quot;&quot; button.
+Expected result: 
+1. The button does exist.
+2. The site &quot;&quot;https://www.automationanywhere.com/products/enterprise/community-edition&quot;&quot; is opened.&quot;,,Mor,Functional,,
+Mor,&quot;Verify the &quot;&quot;Get Community Edition- FREE&quot;&quot; button at the top right is not there after logged in.&quot;,Mor,,Top Menu,read,N,,&quot;Pre-condition: logged in
+Test Steps:
+Expected result: The button &quot;&quot;Get Community Edition- FREE&quot;&quot; does not exist.&quot;,,Mor,UI,Maybe I wrong but I expect that if someone logged in then he has the product and doesn&#x27;t need to see this button.,
+Mor,&quot;Verify the &quot;&quot;LOG IN&quot;&quot; button at the top right link to log in page when not logged in.&quot;,Mor,,Top Menu,read,N,,&quot;Pre-condition: not logged in
+Test Steps:
+1. Click on &quot;&quot;LOGIN&quot;&quot; button.
+Expected result: 
+1. The site &quot;&quot;https://automationanywhere-dev.zoominsoftware.io/auth/login&quot;&quot; is opened.&quot;,,Mor,Functional,,
+Mor,&quot;Verify the &quot;&quot;User&quot;&quot; button at the top right open and close drop down menu after logged in.&quot;,Mor,,Top Menu,read,N,,&quot;Pre-condition: logged in
+Test Steps:
+1. Click on &quot;&quot;USER&quot;&quot; (your name) button (drop-down menu).
+2. Click on it again.
+Expected result: 
+1. The drop-down menu opens after the first click.
+2. The drop-down menu closes after the second click.&quot;,,Mor,UI,&quot;The opening and closing animation of the scroll menu doesn&#x27;t work properly and stuck for 0.5 seconds on the first scrolling option. In addition, all the words should be capitalized.&quot;,
+Mor,&quot;Verify the &quot;&quot;Admin&quot;&quot; button in &quot;&quot;User&quot;&quot; drop-down menu at the top right link to admin page after logged in as admin.&quot;,Mor,,Top Menu,read,N,,&quot;Pre-condition: logged in as Admin
+Test Steps:
+1. Click on &quot;&quot;User&quot;&quot; drop-down menu.
+2. Click on the element &quot;&quot;Admin&quot;&quot;.
+Expected result: 
+1. The site &quot;&quot;https://automationanywhere-dev.zoominsoftware.io/admin&quot;&quot; is opened.&quot;,,Mor,Functional,,
+Mor,&quot;Verify the &quot;&quot;Search preference&quot;&quot; button in &quot;&quot;User&quot;&quot; drop-down menu at the top right link to admin page after logged in.&quot;,Mor,,Top Menu,read,N,,&quot;Pre-condition: logged in
+Test Steps:
+1. Click on &quot;&quot;User&quot;&quot; drop-down menu.
+2. Click on the element &quot;&quot;Search preference&quot;&quot;.
+Expected result: 
+1. The site &quot;&quot;https://automationanywhere-dev.zoominsoftware.io/searchpreferences&quot;&quot; is opened.&quot;,,Mor,Functional,,
+Mor,&quot;Verify the &quot;&quot;Forgot password&quot;&quot; button in &quot;&quot;User&quot;&quot; drop-down menu at the top right link to admin page after logged in.&quot;,Mor,,Top Menu,read,N,,&quot;Pre-condition: logged in
+Test Steps:
+1. Click on &quot;&quot;User&quot;&quot; drop-down menu.
+2. Click on the element &quot;&quot;Forgot password&quot;&quot;.
+Expected result: 
+1. The site &quot;&quot;https://www.automationanywhere.com/sso-faq&quot;&quot; is opened.&quot;,Amit,Noa,Functional,,
+Mor,&quot;Verify the &quot;&quot;Contact us&quot;&quot; button in &quot;&quot;User&quot;&quot; drop-down menu at the top right link to admin page after logged in.&quot;,Mor,,Top Menu,read,N,,&quot;Pre-condition: logged in
+Test Steps:
+1. Click on &quot;&quot;User&quot;&quot; drop-down menu.
+2. Click on the element &quot;&quot;Contact us&quot;&quot;.
+Expected result: 
+1. The site &quot;&quot;https://www.automationanywhere.com/contact-us&quot;&quot; is opened.&quot;,Amit,Mor,Functional,,
+Mor,&quot;Verify the &quot;&quot;Services &amp; support&quot;&quot; button in &quot;&quot;User&quot;&quot; drop-down menu at the top right link to admin page after logged in.&quot;,Mor,,Top Menu,read,N,,&quot;Pre-condition: logged in
+Test Steps:
+1. Click on &quot;&quot;User&quot;&quot; drop-down menu.
+2. Click on the element &quot;&quot;Services &amp; support&quot;&quot;.
+Expected result: 
+1. The site &quot;&quot;https://apeople.automationanywhere.com/s/?language=en_US&quot;&quot; is opened.&quot;,Amit,Mor,Functional,,
+Mor,&quot;Verify the &quot;&quot;Log out&quot;&quot; button in &quot;&quot;User&quot;&quot; drop-down menu at the top right link to admin page after logged in. &quot;,Mor,,Top Menu,read,N,,&quot;Pre-condition: logged in
+Test Steps:
+1. Click on &quot;&quot;User&quot;&quot; drop-down menu.
+2. Click on the element &quot;&quot;Log out&quot;&quot;.
+Expected result: 
+1. The user is logged out&quot;,Amit,Mor,Functional,,
+C7347,Verify eye icon is functional,,Medium,Topic Page,read,,,&quot;Login into the site
+ 
+ Expected Result:
+ 
+ Home page is opened and you are logged in
+ 
+ Search for anything 
+ 
+ Expected Result:
+ 
+ You will be directed to search results page 
+ 
+ Click on any topic
+ 
+ Expected Result:
+ 
+ You will be directed to the relevant topic page
+ 
+ Hover over the eye icon
+ 
+ Expected Result:
+ 
+ A tooltip that says &#x27;Watch topic&#x27; will appear
+ 
+ Click on the eye icon
+ 
+ Expected Result:
+ 
+ The icon will change to a different icon
+ 
+ Hover again over the eye icon
+ 
+ Expected Result:
+ 
+ A tooltip that says &#x27;Unwatch topic&#x27; will appear
+ 
+ Click on &#x27;Watchlist&#x27; from the top navbar.
+ 
+ Expected Result:
+ 
+ You will be directed to watchlist page
+ 
+ Verify the topic you just watched appears in the list
+ 
+ Expected Result:
+ 
+ The same topic appears in the list (after you expand its collection), with an &#x27;Unwatch&#x27; icon to its right side.&quot;,Or,Or,Functional,,
+C5019,Verify all content appears as expected in the topic page,,Low,Topic Page,,,,&quot;Click on &#x27;Library&#x27; on the navbar
+ 
+ Expected Result:
+ 
+ Library page is presented
+ 
+ Click on the first item on the library page
+ 
+ Expected Result:
+ 
+ Publication page is presented 
+ 
+ Click on one of the topics
+ 
+ Expected Result:
+ 
+ Topic page is presented.
+ Topic page contains : Topic header, Text, published date, images, tables (if exist)&quot;,,,Functional,,
+C5020,Verify breadcrumbs functionality - topic page,,Low,Topic Page,,,,&quot;Click on &#x27;Library&#x27; on the navbar
+ 
+ Expected Result:
+ 
+ Library page is presented
+ 
+ Click on the first item on the library page
+ 
+ Expected Result:
+ 
+ Publication page is presented 
+ 
+ Click on one of the topics
+ 
+ Expected Result:
+ 
+ Topic page is presented. 
+ Breadcrumbs include the title name last
+ 
+ Click on the publication name in the breadcrumbs
+ 
+ Expected Result:
+ 
+ The relevant topic page will open.&quot;,Amit,Amit,Functional,,
+C5021,Verify navigate to topic page by insert URL of specific topic,,Low,Topic Page,,,,&quot;Click on &#x27;Library&#x27; on the navbar
+ 
+ Expected Result:
+ 
+ Library page is presented
+ 
+ Click on the first item on the library page
+ 
+ Expected Result:
+ 
+ Publication page is presented 
+ 
+ Click on one of the topics
+ 
+ Expected Result:
+ 
+ Topic page is presented
+ 
+ Copy URL
+ 
+ Expected Result:
+ 
+ URL is copied
+ 
+ Open a new tab
+ 
+ Expected Result:
+ 
+ New tab is opened
+ 
+ Paste copied URL
+ 
+ Expected Result:
+ 
+ The same topic page from step 3 is presented&quot;,,,Functional,,
+C5026,Verify TOC,,Low,Topic Page,,,,&quot;Click on &#x27;Library&#x27; on the navbar
+ 
+ Expected Result:
+ 
+ Library page is presented
+ 
+ Click on the first item on the library page
+ 
+ Expected Result:
+ 
+ Publication page is presented 
+ 
+ Click on the &#x27;Hide&#x27; TOC on the left side
+ 
+ Expected Result:
+ 
+ The TOC is hidden and the topic&#x27;s content has moved to the left
+ 
+ Click on the &#x27;Show&#x27; TOC on the left side
+ 
+ Expected Result:
+ 
+ The TOC is shown again and the topic&#x27;s content has moved to the right
+ 
+ Click on &#x27;expand&#x27; on one of the topics on the TOC
+ 
+ Expected Result:
+ 
+ All TOC content expanded and the arrow is &#x27;v&#x27;
+ 
+ Click on &#x27;collapse&#x27; on the same topics on the TOC
+ 
+ Expected Result:
+ 
+ All TOC content collapsed and the arrow is &#x27;&gt;&#x27;
+ 
+ Click on the &#x27;&gt;&#x27; sign
+ 
+ Expected Result:
+ 
+ All TOC content expanded and the arrow is &#x27;v&#x27;
+ 
+ Click on the &#x27;V&#x27; sign
+ 
+ Expected Result:
+ 
+ All TOC content collapsed and the arrow is &#x27;&gt;&#x27;&quot;,,,Functional,,
+YL,Verify mini-toc works as expected,Noa,,Topic Page,read,,,&quot;A mini-toc will only be present if the customer has configured content in such a way that one exists. Therefore, to test this, ensure there is a topic that does have a mini-toc. For example:  - example: https://docs.automationanywhere.com/bundle/enterprise-v2019/page/enterprise-cloud/topics/deployment-planning/on-prem-install/cloud-prerequisites-control-room.html 
+ 
+To test:
+
+Navigate to the topic.
+
+ Confirm &quot;&quot;On this page&quot;&quot; list of links appears to the right side of the topic article
+
+ Confirm list of links matches subheadings in page content
+
+ Click on links - confirm the content scrolls to the correct sections &quot;,RS,RS,,,
+YL,Verify related links work as expected,Amit,,Topic Page,read,,,&quot;For customers using related links:
+
+Navigate to a topic that should have related links. Ex:  - example: https://docs.automationanywhere.com/bundle/enterprise-v2019/page/enterprise-cloud/topics/deplnt-planning/on-prem-install/cloud-prerequisites-control-room.html
+
+Click on one of the &#x27;Related Content&#x27; links on the right side of the page
+ 
+Expected Result:You are redirected to the relevant link page
+
+Test in multiple languages to confirm localization is not impacted.&quot;,,RS,,,
+RS,Verify glossary popups work as expected,Or,,Topic Page,read,Y,,&quot;For customers who have glossary entries, ensure they are working as expected. For example, AA has glossary popups, and they do not want the page in the table of contents) - example: https://docs.automationanywhere.com/bundle/enterprise-v11.3/page/enterprise/topics/aae-architecture-implementation/client-overview.html
+
+Click on the link
+
+Expected Result: you are redirected to the relevant page
+
+Click on the glossary words (marks like links, but dotted line under it)
+
+Expected Result: A popup with the definition should pop up. 
+Ensure the glossary words do not appear in the table of contents&quot;,,Noa,,,
+C5249,Verify tab&#x27;s name,,Low,Topic Page,,,,&quot;Click on &#x27;Library&#x27; on the navbar
+ 
+ Expected Result:
+ 
+ Library page is presented
+ 
+ Click on the first item on the library page
+ 
+ Expected Result:
+ 
+ Publication page is presented 
+ 
+ Verify what the browser&#x27;s tab says
+ 
+ Expected Result:
+ 
+ The text in the browser&#x27;s tab will be the name of the topic&quot;,,,Functional,,
+C6071,Verify tooltips display,Noa,Medium,Topic Page,,Y,,&quot;Click on &#x27;Library&#x27;
+
+Expected Result:
+
+Library page is presented
+ 
+Click on the first item 
+ 
+Expected Result:
+ 
+Topic page is presented 
+
+Verify tooltips display
+
+Expected Result:
+ 
+True
+
+Verify prev icon
+
+Expected Result:
+ 
+True
+
+Verify next icon 
+
+Expected Result:
+ 
+True
+
+Verify &#x27;Add to My Topics&#x27; icon 
+
+Expected Result:
+ 
+True
+
+Verify &#x27;Follow&#x27; eye-icon
+
+Expected Result:
+ 
+True
+
+Verify &#x27;Download as PDF&#x27; icon
+
+Expected Result:
+ 
+True&quot;,Mor,Noa,Other,,
+YL,Verify CSS in busy topic - localized languages,RS,,Topic Page,read,Y,,What are we checking? the content is all still in english,,,,,
+YL,Verify CSS in busy topic in mobile - all languages,,,Topic Page,read,,,,,,,,
+YL,&quot;Check nested TOC to make sure carats work, alignment, links. ex - https://automationanywhere-dev.zoominsoftware.io/bundle/enterprise-v2019/page/enterprise-cloud/topics/aae-client/bot-creator/commands/cloud-string-operation-command.html&quot;,RS,,Topic page,read,Y,,&quot;Navigate to Library page and locate a bundle with multiple levels of nested TOC. You can confirm this by presence of carat symbols (&gt;) in TOC
+Open and close carats at various levels
+Expected result: TOC sections expand/collapse as expected
+Click on TOC links at various levels 
+Expected result: All pages load as expected
+Expand several sections at different levels and scroll up and down
+Expected result: nested sections are logically aligned with each other so that each level of nesting is indented more its outer levels
+Navigate to a page nested multiple levels
+Expected result: The page title + titles of all its ancestors are highlighted in the TOC&quot;,,Noa,,,
+RS,Check nested TOC in mobile to make sure carats/alignment/links works,RS,,Topic page,read,,,,,Noa,,,
+YL,&quot;Ensure tags show as expected in search results, in the library, and on topic pages as relevant. &quot;,Noa,,UI,read,Y,,&quot;Conduct any search
+On the search results page, verify the tags are present. (Note: AA calls these &quot;&quot;chiclets&quot;&quot; in their vocabulary.)
+
+Click on &#x27;Library&#x27; 
+Verify tags are present
+
+Click on any item, to navigate to a topic page.
+Verify tags are present.&quot;,Or,RS,,,
+YL,Verify tags in all localized languages,Noa,,UI,read,Y,,&quot;In a non-English UI:
+Conduct any search
+On the search results page, verify the tags are present. (Note: AA calls these &quot;&quot;chiclets&quot;&quot; in their vocabulary.)
+
+Click on &#x27;Library&#x27; 
+Verify tags are present
+
+Click on any item, to navigate to a topic page.
+Verify tags are present.
+Confirm for each language.&quot;,Or,Noa,,,
+,Confirm that uploading of a resource bundle has not been negatively impacted,,,Uploading,write,,,&quot;On dev &amp; staging, before a new release goes to production, PINT or another individual who has access to uploading content should upload a resource bundle to the environment.
+
+The bundle should include a representative sample of metadata and tagging to closely mimic a typical upload for that customer.  
+
+After uploading, confirm the content is visible on the portal.
+
+Upon deployment to production, conduct the test again.&quot;,,,,,
+YL,Confirm uploading localized bundles is working as expected. Upload content in multiple languages - single upload pkg for each bundle,,,Uploading,write,,,&quot;For every language a customer supports, ensure that uploading content does not overwrite other languages. For example, Avaya had an issue occur wherein uploading in one language overwrites another language. https://zoomin-software.atlassian.net/browse/ST-12716
+
+To test this, upload content in the different language codes, one at a time, and confirm the previous languages are still functioning properly on the site.&quot;,,,,,
+C5068,Verify User Roles page is presented,,Medium,User Roles,,,,&quot;Open the website
+ 
+ Expected Result:
+ 
+ home page is presented
+ 
+ Click on the username on the top right
+ 
+ Expected Result:
+ 
+ Drop down is opened
+ 
+ Click on &#x27;Admin&#x27;
+ 
+ Expected Result:
+ 
+ Zoomin Admin page is presented
+ 
+ Click on &#x27;User Roles&#x27; title
+ 
+ Expected Result:
+ 
+ User Roles page is presented&quot;,Amit,Amit,Functional,,
+C5069,Verify User Role functionality,,Medium,User Roles,,No,,&quot;Open the website
+ 
+ Expected Result:
+ 
+ home page is presented
+ 
+ Click on the username on the top right
+ 
+ Expected Result:
+ 
+ Drop down is opened
+ 
+ Click on &#x27;Admin&#x27;
+ 
+ Expected Result:
+ 
+ Zoomin Admin page is presented
+ 
+ Click on &#x27;User Roles&#x27; title
+ 
+ Expected Result:
+ 
+ User Roles page is presented
+ 
+ Click on one of the User Roles
+ 
+ Expected Result:
+ 
+ User Role page will open, title is : &quot;&quot;Edit User Role&quot;&quot;.&quot;,Or,Or,Functional,,
+C5070,Verify &#x27;Create New Role&#x27; functionality,,Medium,User Roles,,No,,&quot;Open the website
+ 
+ Expected Result:
+ 
+ home page is presented
+ 
+ Click on the username on the top right
+ 
+ Expected Result:
+ 
+ Drop down is opened
+ 
+ Click on &#x27;Admin&#x27;
+ 
+ Expected Result:
+ 
+ Zoomin Admin page is presented
+ 
+ Click on &#x27;User Roles&#x27; title
+ 
+ Expected Result:
+ 
+ User Roles page is presented
+ 
+ Click on the &#x27;Create New Role&#x27; button
+ 
+ Expected Result:
+ 
+ &#x27;Create New Role&#x27; page page will open, title is : &quot;&quot;Create New User Role&quot;&quot;. 
+ 
+ Verify the filters functionality
+ 
+ Expected Result:
+ 
+ Mark and unmark, type a name - Do not change anything! Do not save.&quot;,Or,Or,Functional,,
+C5071,Verify breadcrumbs functionality - user roles,,Low,User Roles,,,,&quot;Open the website
+ 
+ Expected Result:
+ 
+ home page is presented
+ 
+ Click on the username on the top right
+ 
+ Expected Result:
+ 
+ Drop down is opened
+ 
+ Click on &#x27;Admin&#x27;
+ 
+ Expected Result:
+ 
+ Zoomin Admin page is presented
+ 
+ Click on &#x27;User Roles&#x27; title
+ 
+ Expected Result:
+ 
+ Users Roles page is presented
+ 
+ Verify breadcrumbs are shown on the upper left side
+ 
+ Expected Result:
+ 
+ Breadcrumbs are shown
+ 
+ Click on &#x27;Admin&#x27; from the breadcrumbs
+ 
+ Expected Result:
+ 
+ Admin page is opened&quot;,Amit,Amit,Functional,,
+C5057,Verify Users page is presented,,Medium,Users,,,,&quot;Open the website
+ 
+ Expected Result:
+ 
+ home page is presented
+ 
+ Click on the username on the top right
+ 
+ Expected Result:
+ 
+ Drop down is opened
+ 
+ Click on &#x27;Admin&#x27;
+ 
+ Expected Result:
+ 
+ Zoomin Admin page is presented
+ 
+ Click on &#x27;Users&#x27; title
+ 
+ Expected Result:
+ 
+ Users page is presented&quot;,Amit,Amit,Functional,,&quot;Weird design, from first glance you can&#x27;t know what is difference between this button to Automation Anywhere logo button (near it). (Mor)&quot;
+C5058,Verify Users search,,Low,Users,,,,&quot;Open the website
+ 
+ Expected Result:
+ 
+ home page is presented
+ 
+ Click on the username on the top right
+ 
+ Expected Result:
+ 
+ Drop down is opened
+ 
+ Click on &#x27;Admin&#x27;
+ 
+ Expected Result:
+ 
+ Zoomin Admin page is presented
+ 
+ Click on &#x27;Users &#x27; title
+ 
+ Expected Result:
+ 
+ Users page is presented
+ 
+ Type your username in the search bar
+ 
+ Expected Result:
+ 
+ Verify typing works properly
+ 
+ Click the magnify glass icon
+ 
+ Expected Result:
+ 
+ Search is performed. The number of results varies depending on the search, only relevant users are shown.
+ 
+ Type username that doesn&#x27;t exist
+ 
+ Expected Result:
+ 
+ No user will appear in the table&quot;,Amit,Amit,Functional,,
+C5059,Verify Users page pagination,,Low,Users,,,,&quot;Open the website
+ 
+ Expected Result:
+ 
+ home page is presented
+ 
+ Click on the username on the top right
+ 
+ Expected Result:
+ 
+ Drop down is opened
+ 
+ Click on &#x27;Admin&#x27;
+ 
+ Expected Result:
+ 
+ Zoomin Admin page is presented
+ 
+ Click on &#x27;Users&#x27; title
+ 
+ Expected Result:
+ 
+ Users page is presented
+ 
+ Scroll to the bottom of the Users list
+ 
+ Expected Result:
+ 
+ Pagination bar is presented
+ 
+ Click on page number 2
+ 
+ Expected Result:
+ 
+ The page is changed and opened when scrolled up. When scrolling down- page number 2 is highlighted
+ 
+ Click on &#x27;next&#x27; arrow
+ 
+ Expected Result:
+ 
+ The page is changed and opened when scrolled up. When scrolling down- page number 3 is highlighted
+ 
+ Click on &#x27;previous&#x27; arrow
+ 
+ Expected Result:
+ 
+ The page is changed and opened when scrolled up. When scrolling down- page number 2 is highlighted
+ 
+ Click on the &#x27;show X results per page&#x27; dropdown
+ 
+ Expected Result:
+ 
+ Drop down is opened, &#x27;10&#x27; is marked
+ 
+ From the &#x27;show X results per page&#x27; dropdown, choose &#x27;20&#x27;
+ 
+ Expected Result:
+ 
+ The page is changed and opened when scrolled up, scroll bar is smaller, 20 results are presented on the page
+ 
+ From the &#x27;show X results per page&#x27; dropdown, choose &#x27;50&#x27;
+ 
+ Expected Result:
+ 
+ The page is changed and opened when scrolled up, scroll bar is smaller, 50 results are presented on the page&quot;,,,Functional,,
+C5060,Verify disabled users list,,Medium,Users,,,,&quot;Open the website
+ 
+ Expected Result:
+ 
+ home page is presented
+ 
+ Click on the username on the top right
+ 
+ Expected Result:
+ 
+ Drop down is opened
+ 
+ Click on &#x27;Admin&#x27;
+ 
+ Expected Result:
+ 
+ Zoomin Admin page is presented
+ 
+ Click on &#x27;Users&#x27; title
+ 
+ Expected Result:
+ 
+ Users page is presented
+ 
+ Mark &#x27;show only disabled users&#x27; checkbox
+ 
+ Expected Result:
+ 
+ checkbox is marked. Disabled users table is automatically presented. The list is mostly empty&quot;,,,Functional,,
+C5061,Verify list of self-registered or manually added users,,Low,Users,,,,&quot;Open the website
+ 
+ Expected Result:
+ 
+ home page is presented
+ 
+ Click on the username on the top right
+ 
+ Expected Result:
+ 
+ Drop down is opened
+ 
+ Click on &#x27;Admin&#x27;
+ 
+ Expected Result:
+ 
+ Zoomin Admin page is presented
+ 
+ Click on &#x27;Users&#x27; title
+ 
+ Expected Result:
+ 
+ Users page is presented
+ 
+ Click on &#x27;Show list of self-registered or manually added users&#x27; link at the left 
+ 
+ Expected Result:
+ 
+ New table is shown. Title is &#x27;User Registration Management&#x27;. Only self-registered or manually added users are presented, page is aligned, the table looks good and all of the elements are visible in the screen&quot;,,,Functional,,
+C5062,Verify add user functionality,,Medium,Users,,,,&quot;Open the website
+ 
+ Expected Result:
+ 
+ 
+ home page is presented
+ 
+ Click on the username on the top right
+ 
+ Expected Result:
+ 
+ Drop down is opened
+ 
+ Click on &#x27;Admin&#x27;
+ 
+ Expected Result:
+ 
+ Zoomin Admin page is presented
+ 
+ Click on &#x27;Users&#x27; title
+ 
+ Expected Result:
+ 
+ Users page is presented
+ 
+ Click on &#x27;View list of self-registered or manually added users&#x27; 
+ 
+ Expected Result:
+ 
+ self-registered users page is presented
+ 
+ Click on &#x27;Add user&#x27; button
+ 
+ Expected Result:
+ 
+ Add user pop up is presented and looks as expected&quot;,,,Functional,,
+C5063,Verify breadcrumbs functionality - users,,Low,Users,,,,&quot;Open the website
+ 
+ Expected Result:
+ 
+ home page is presented
+ 
+ Click on the username on the top right
+ 
+ Expected Result:
+ 
+ Drop down is opened
+ 
+ Click on &#x27;Admin&#x27;
+ 
+ Expected Result:
+ 
+ Zoomin Admin page is presented
+ 
+ Click on &#x27;Users&#x27; title
+ 
+ Expected Result:
+ 
+ Users page is presented
+ 
+ Verify breadcrumbs are shown on the upper left side
+ 
+ Expected Result:
+ 
+ Breadcrumbs are shown
+ 
+ Click on &#x27;Admin&#x27; from the breadcrumbs
+ 
+ Expected Result:
+ 
+ Admin page is opened&quot;,,,Functional,,
+OCA,&quot;Verify that in the watchlist, &quot;&quot;unfollow all&quot;&quot; works as expected.&quot;,Or,,watchlist,read,N,,&quot;Log into the site
+Expected Result:
+Home page is opened and you are logged in
+Click My Contant ,&#x27;Following&#x27; on the top navbar.
+ Expected Result:
+ You are redirected to Following page
+ Make sure you are  following some topic.
+Click on Unfollow all
+ Expected Result:
+ verify that the list is empty.&quot;,Noa,Or,,,
+OCA,&quot;Verify &quot;&quot;eye&quot;&quot; icon works (add/remove item from watchlist)&quot;,Or,,watchlist,read,N,,&quot;Log into the site
+Expected Result:
+Home page is opened and you are logged in
+Search for anything
+Expected Result:
+You will be directed to search results page
+Click on any topic
+Expected Result:
+You will be directed to the relevant topic page
+Hover over the eye icon
+Expected Result:
+A tooltip that says &#x27;Follow&#x27; will appear
+Click on the eye icon
+Expected Result:
+The icon will change to a different icon
+Hover again over the eye icon
+Expected Result:
+A tooltip that says &#x27;Unfollow&#x27; will appear
+Click on &#x27;Following&#x27; from the top navbar.
+Expected Result:
+You will be directed to watchlist page
+Verify the topic you just watched appears in the list
+Expected Result:
+The same topic appears in the list (after you expand its collection), with an &#x27;Unfollow&#x27; icon to its right side.&quot;,Noa,Or,,,
+OCA,&quot;Verify that in the watchlist, &quot;&quot;Enable notifications&quot;&quot; toggle moves and change its color&quot;,Or,,watchlist,read,N,,&quot;Log into the site
+Expected Result:
+Home page is opened and you are logged in
+Click on My Contant ,&#x27;Following&#x27; on the top navbar.
+Expected Result:
+You are redirected to Following page
+&quot;&quot;Enable notification&quot;&quot; toggle
+Expected Result:
+The toggle change its color and moving from left to right&quot;,Noa,Or,,,
+OCA,&quot;Verify that in the watchlist, &quot;&quot;Subjects you are following&quot;&quot; section  &quot;&quot;Expand all&quot;&quot; button, expend all the titles on the table below (product, version task)&quot;,Or,,watchlist,read,N,,&quot;Log into the site
+Expected Result:
+Home page is opened and you are logged in
+Click on My Contant ,&#x27;Following&#x27; on the top navbar.
+Expected Result:
+You are redirected to Following page
+Make sure the table of product version and task is collapsed 
+Click on Expand all link
+Expected Result:
+all rows should be shown &quot;,Amit,Or,,,
+OCA,&quot;Verify that in the watchlist, &quot;&quot;Subjects you are following&quot;&quot; section  &quot;&quot;Collapse all&quot;&quot; button, collapse all the titles on the table below (product, version task)&quot;,Or,,watchlist,read,N,,&quot;Log into the site
+Expected Result:
+Home page is opened and you are logged in
+Click on My Contant ,&#x27;Following&#x27; on the top navbar.
+Expected Result:
+You are redirected to Following page
+Make sure the table of product version and task is expend
+Click on Collapse all link
+Expected Result:
+all rows should be hidden&quot;,Amit,Or,,,
+NA,&quot;Verify &quot;&quot;unfollow all in page&quot;&quot; on following &quot;,Noa,,watchlist,read,N,,&quot;Log into the site
+
+Expected Result:
+
+Home page is opened and you are logged in
+
+Click My Contant ,&#x27;Following&#x27; on the top navbar
+
+ Expected Result:
+
+ You are redirected to Following page
+
+ Make sure you are  following at least 25+ topics (so there will be more than one page)
+
+Click on &#x27;Unfollow all in page&#x27;
+
+Expected Result:
+
+all topics from that page are gone&quot;,Or,Yehudit,,,
+C7337,Verify entrance to watchlist page,,Medium,watchlist,,,,&quot;On the home page, click &#x27;Watchlist&#x27; on the top navbar.
+ 
+ 
+ Expected Result:
+ 
+ You are redirected to watchlist page:
+ ![](index.php?/attachments/get/185)&quot;,Mor,Or,Functional,,
+C7338,Verify list is empty when not following anything,,Medium,watchlist,,,,&quot;On the home page, click &#x27;Watchlist&#x27; on the top navbar.
+ 
+ Expected Result:
+ 
+ You are redirected to Watchlist page
+ 
+ Make sure you are not following any topic.
+ 
+ Expected Result:
+ 
+ verify that the list is empty.&quot;,Mor,Or,Functional,,
+C7339,Verify list is not empty when the user is following something,,Medium,watchlist,,,,&quot;On the home page, click &#x27;Watchlist&#x27; on the top navbar.
+ 
+ Expected Result:
+ 
+ You are redirected to Watchlist page
+ 
+ Make sure that you are following some topic
+ 
+ Expected Result:
+ 
+ Verify that the list contains the topics you follow:
+ ![](index.php?/attachments/get/186)&quot;,Mor,Or,Functional,,
+C7340,Verify navigation to topics,,Medium,watchlist,,,,&quot;On the home page, click &#x27;Watchlist&#x27; on the top navbar.
+ 
+ Expected Result:
+ 
+ You are redirected to Watchlist page
+ 
+ Expand a collection by clicking on it
+ 
+ Expected Result:
+ 
+ A list of the children topics opens up.
+ 
+ Click on one of the followed topics
+ 
+ Expected Result:
+ 
+ You are redirected to the relevant topic page&quot;,Mor,Or,Functional,,
+C7341,Verify watchlist page search,,Medium,watchlist,,,,&quot;On the home page, click &#x27;Watchlist&#x27; on the top navbar.
+ 
+ Expected Result:
+ 
+ You are redirected to Watchlist page
+ 
+ Search for a topic that exists in the list
+ 
+ Expected Result:
+ 
+ Only the relevant topic/s will appear in the list
+ 
+ Click on the &#x27;x&#x27; in the search bar
+ 
+ Expected Result:
+ 
+ The text will be deleted
+ 
+ Search for a topic that does not exists in the list
+ 
+ Expected Result:
+ 
+ Nothing will appear in the list&quot;,Mor,Or,Functional,,
+C7342,Verify dropdown is functional,,Medium,watchlist,,,,&quot;On the home page, click &#x27;Watchlist&#x27; on the top navbar.
+ 
+ Expected Result:
+ 
+ You are redirected to Watchlist page
+ 
+ Click on the arrow in the action dropdown
+ 
+ Expected Result:
+ 
+ The dropdown is opened
+ 
+ Hover over the different options in the dropdown
+ 
+ Expected Result:
+ 
+ Every option will be highlighted one each time
+ 
+ Click again on the arrow of the dropdown
+ 
+ Expected Result:
+ 
+ The dropdown will be closed
+ 
+ Open the dropdown again and click somewhere outside of it
+ 
+ Expected Result:
+ 
+ The dropdown collapses&quot;,Mor,Or,Functional,,
+C7343,Verify pagination is functional - watchlist,,Medium,watchlist,,,,&quot;Login the site
+ 
+ Expected Result:
+ 
+ Home page is opened and you are logged in
+ 
+ On the home page, click &#x27;Watchlist&#x27; on the top navbar.
+ 
+ Expected Result:
+ 
+ You are redirected to watchlist page
+ 
+ Click &#x27;Next
+ 
+ Expected Result:
+ 
+ You will be directed to the next followed topics page
+ 
+ Click on &#x27;Previous&#x27;
+ 
+ Expected Result:
+ 
+ You will be directed to the previous followed topics page
+ 
+ Click on a different page number
+ 
+ Expected Result:
+ 
+ You will be directed to the relevant page&quot;,Amit,Or,Functional,,
+C7344,Verify &#x27;Unwatch selected topics&#x27; is functional,,Medium,watchlist,,,,&quot;On the home page, click &#x27;Watchlist&#x27; on the top navbar.
+ 
+ Expected Result:
+ 
+ You are redirected to Watchlist page.
+ The default text of the dropdown next to &#x27;Apply&#x27; button is &#x27;Unwatch selected content.
+ 
+ Expand some collection and remember its name. 
+ 
+ Expected Result:
+ 
+ The children topics list opens up under the collection. Each topic has a &#x27;Watching&#x27; eye-icon to their right side
+ 
+ Select topic(s) by clicking on the checkbox to the left side and remember their name
+ 
+ Expected Result:
+ 
+ The topics are marked:
+ ![](index.php?/attachments/get/188)
+ 
+ 
+ Click on the &#x27;Apply&#x27; button
+ 
+ Expected Result:
+ 
+ The eye-icon next to each topic(s) will now change to &#x27;Watch&#x27;
+ 
+ Refresh the page
+ 
+ Expected Result:
+ 
+ The same topic(s) disappear from the expanded collection.&quot;,Or,Or,Functional,,
+C7345,Verify &#x27;Unwatch topics in page&#x27;,,Medium,watchlist,,,,&quot;On the home page, click &#x27;Watchlist&#x27; on the top navbar.
+ 
+ Expected Result:
+ 
+ You are redirected to Watchlist page.
+ The default text of the dropdown next to &#x27;Apply&#x27; button is &#x27;Unwatch selected content.
+ 
+ Click on the dropdown and select &#x27;Unwatch topics in page&#x27;.
+ 
+ Expected Result:
+ 
+ The text of the dropdown will change to &#x27;Unwatch topics in page&#x27;
+ 
+ Click on the &#x27;Apply&#x27; button
+ 
+ Expected Result:
+ 
+ The eye-icon next to each topic will now change to &#x27;Watch&#x27;
+ 
+ Refresh the page
+ 
+ Expected Result:
+ 
+ All collections in the page will disappear from the Watchlist.&quot;,Or,Or,Other,,
+C7346,Verify &#x27;Unwatch All&#x27;,,Medium,watchlist,,,,&quot;On the home page, click &#x27;Watchlist&#x27; on the top navbar.
+ 
+ Expected Result:
+ 
+ You are redirected to Watchlist page.
+ The default text of the dropdown next to &#x27;Apply&#x27; button is &#x27;Unwatch selected content.
+ 
+ Click on the dropdown and select &#x27;Unwatch All&#x27;.
+ 
+ Expected Result:
+ 
+ The text of the dropdown will change to &#x27;Unwatch All&#x27;
+ 
+ Click on the &#x27;Apply&#x27; button
+ 
+ Expected Result:
+ 
+ The eye-icon next to each topic will now change to &#x27;Watch&#x27;
+ 
+ Refresh the page
+ 
+ Expected Result:
+ 
+ All collections will disappear from the Watchlist.&quot;,Or,Or,Other,,
+C8968,Verify workflow display,,Medium,workflow,,,,&quot;Open the website
+ 
+ Expected Result:
+ 
+ Homepage is presented
+ 
+ Go to a topic that displays a workflow map - https://docs.automationanywhere.com/category/install-control-room-on-premises
+ 
+ 
+ Expected Result:
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Topic page is presented
+ 
+ 
+ 
+ Look at the content, to check the structure of the map. 
+  
+ 
+ Expected Result:
+ 
+ Look at the content. Check that the flow is distributed in many steps, and they are shown as points on the track.
+ 
+ Find the first step of the track on the left side
+ 
+ Expected Result:
+ 
+ There is a position marker shown at the first step.
+ 
+ Look at the last step of the track on the right side
+ 
+ Expected Result:
+ 
+ There is a flag icon shown at the last step.&quot;,,,Other,,
+C8969,Verify workflow buttons,,Medium,workflow,,,,&quot;Open the website
+ 
+ Expected Result:
+ 
+ Homepage is presented
+ 
+ Go to a topic that displays a workflow map - https://docs.automationanywhere.com/category/install-control-room-on-premises
+ 
+ 
+ Expected Result:
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Topic page is presented
+ 
+ 
+ 
+  Look at the selected button above the map. 
+ 
+ Expected Result:
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ The button &#x27;Workflow&#x27; is selected and highlighted by default.
+ 
+ Hover over this button
+ 
+ Expected Result:
+ 
+ 
+ 
+ The color of the button changes
+ 
+ Click on &#x27;Tiles list&#x27;
+ 
+ Expected Result:
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ The steps are now presented in tables corresponding to different groups in the previous trail.
+ 
+ Click again on &#x27;Workflow&#x27;
+ 
+ Expected Result:
+ 
+ 
+ 
+ 
+ 
+ The display changes again to the trail appearance.&quot;,,,Other,,
+C8970,Verify workflow steps functionality,,Medium,workflow,,,,&quot;Open the website
+ 
+ Expected Result:
+ 
+ Homepage is presented
+ 
+ Go to a topic that displays a workflow map - https://docs.automationanywhere.com/category/install-control-room-on-premises
+ 
+ 
+ Expected Result:
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Topic page is presented
+ 
+ 
+ 
+ Hover over the text of an internal step
+ 
+ Expected Result:
+ 
+ The text changes to an underlined link
+ 
+ Click on the text
+ 
+ Expected Result:
+ 
+ 
+ 
+ 
+ 
+ A menu opens up on the side. Its title is the same text of the step. Below there are the options &#x27;Read Topic&#x27; and &#x27;Mark as done&#x27;. 
+  
+ 
+ Click on Read Topic
+ 
+ Expected Result:
+ 
+ 
+ 
+ 
+ 
+ You are presented the topic page titled the same as the text you clicked. Above the title there are shown three buttons to navigate in the workflow map. On the left the previous workflow is displayed vertically. 
+ 
+ Click on &#x27;Mark as done and continue workflow&#x27;
+ 
+ Expected Result:
+ 
+ 
+ 
+ 
+ 
+ You are redirected to the next topic in the workflow. The previous step is now marked as done with a checkmark at the left side. The placeholder symbol is positioned on the following step bellow.&quot;,,,Other,,
+C8971,Verify &#x27;previous step&#x27; in topic page of workflow,,Medium,workflow,,,,&quot;Open the website
+ 
+ Expected Result:
+ 
+ Homepage is presented
+ 
+ Go to a topic that displays a workflow map - https://docs.automationanywhere.com/category/install-control-room-on-premises
+ 
+ 
+ Expected Result:
+ 
+ Topic page is presented
+ 
+ 
+ 
+ Hover over the text of an internal step
+ 
+ Expected Result:
+ 
+ The text changes to an underlined link
+ 
+ Click on the text
+ 
+ Expected Result:
+ 
+ 
+ 
+ 
+ 
+ A menu opens up on the side. Its title is the same text of the step. Below there are the options &#x27;Read Topic&#x27; and &#x27;Mark as done&#x27;.
+ 
+ Click on Read Topic
+ 
+ Expected Result:
+ 
+ You are presented the topic page titled the same as the text you clicked..Above the title there are shown three buttons to navigate in the workflow map.On the left the previous workflow is displayed vertically.
+ 
+ 
+ 
+ Hover over the &#x27;&amp;gt;&#x27; button
+ 
+ Expected Result:
+ 
+ 
+ 
+ The color of the button changes
+ 
+ Click on this button
+ 
+ Expected Result:
+ 
+ You are redirected to the topic page of the previous step in the track. Notice that in the vertical workflow on the left side, the placeholder points on the previous step (one above).&quot;,,,Other,,
+C8972,Verify &#x27;Workflow map&#x27; button in topic page of workflow,,Medium,workflow,,,,&quot;Open the website
+ 
+ Expected Result:
+ 
+ Homepage is presented
+ 
+ Go to a topic that displays a workflow map - https://docs.automationanywhere.com/category/install-control-room-on-premises
+ 
+ 
+ Expected Result:
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Topic page is presented
+ 
+ 
+ 
+ Hover over the text of an internal step
+ 
+ Expected Result:
+ 
+ The text changes to an underlined link
+ 
+ Click on the text
+ 
+ Expected Result:
+ 
+ 
+ 
+ 
+ 
+ A menu opens up on the side. Its title is the same text of the step. Below there are the options &#x27;Read Topic&#x27; and &#x27;Mark as done&#x27;. 
+  
+ 
+ Click on Read Topic
+ 
+ Expected Result:
+ 
+ 
+ 
+ 
+ 
+ You are presented the topic page titled the same as the text you clicked. Above the title there are shown three buttons to navigate in the workflow map. On the left the previous workflow is displayed vertically. 
+ 
+ 
+ 
+ Hover over the &#x27;Workflow map&#x27; button
+ 
+ Expected Result:
+ 
+ 
+ 
+ The color of the button changes
+ 
+ Click on this button
+ 
+ Expected Result:
+ 
+ You are redirected to the workflow page with &#x27;trail&#x27; appearance. Notice that the placeholder points same step as it pointed on before.&quot;,,,Other,,
+C8973,Verify &#x27;next step&#x27; in topic page of workflow,,Medium,workflow,,,,&quot;Open the website
+ 
+ Expected Result:
+ 
+ Homepage is presented
+ 
+ Go to a topic that displays a workflow map - https://docs.automationanywhere.com/category/install-control-room-on-premises
+ 
+ 
+ Expected Result:
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ Topic page is presented
+ 
+ 
+ 
+ Hover over the text of an internal step
+ 
+ Expected Result:
+ 
+ The text color changes to an underlined link
+ 
+ Click on the text
+ 
+ Expected Result:
+ 
+ 
+ 
+ 
+ 
+ A menu opens up on the side. Its title is the same text of the step. Below there are the options &#x27;Read Topic&#x27; and &#x27;Mark as done&#x27;.
+ 
+ Click on Read Topic
+ 
+ Expected Result:
+ 
+ 
+ 
+ 
+ 
+ You are presented the topic page titled the same as the text you clicked. Above the title there are shown three buttons to navigate in the workflow map.On the left the previous workflow is displayed vertically.
+ 
+ 
+ 
+ Hover over the &#x27;&amp;lt;&#x27; button
+ 
+ Expected Result:
+ 
+ 
+ The color of the button changes
+ 
+ Click on this button
+ 
+ Expected Result:
+ 
+ You are redirected to the topic page of the next step in the track. Notice that in the vertical workflow on the left side, the placeholder points on the following step (one bellow).&quot;,,,Other,,
+YL,Check web traffic - ex: https://zoomin-software.atlassian.net/browse/ZW-2976,,,,read,,,,,,,,
